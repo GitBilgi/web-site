@@ -8,12 +8,18 @@
     "test": "jest --passWithNoTests --maxWorkers=50%",
     "test:watch": "jest --watch --maxWorkers=25%",
     "test:ci": "jest --runInBand",
-    "generate": "npx plop --plopfile generators/plopfile.js",
+    "generate:core": "npx plop --plopfile generators/core/plopfile.js",
+    "generate:template": "npx plop --plopfile generators/template/plopfile.js",
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^7.0.1",
