@@ -1,6 +1,4 @@
-import type { StorybookConfig } from '@storybook/nextjs'
-
-const config: StorybookConfig = {
+const config = {
   staticDirs: ['../public'],
   stories: ['../src/components/core/**/*.stories.tsx'],
   addons: ['@storybook/addon-essentials'],
@@ -12,7 +10,7 @@ const config: StorybookConfig = {
     autodocs: true
   },
   webpackFinal: config => {
-    config?.resolve?.modules?.push(`${process.cwd()}/src`)
+    config.resolve.modules.push(`${process.cwd()}/src`)
     return config
   }
 }
