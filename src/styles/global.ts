@@ -1,38 +1,44 @@
 'use client'
 
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle, css } from 'styled-components'
+
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'react-datepicker/dist/react-datepicker.css'
+import 'react-multi-carousel/lib/styles.css'
 
 export const GlobalStyles = createGlobalStyle`
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+  ${props => css`
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
 
-  html {
-    scroll-behavior: smooth;
-    font-size: 62.5%;
-  }
+    html {
+      scroll-behavior: smooth;
+      font-size: 62.5%;
+    }
 
-  html, body, #__next {
+    /* html, body, #__next {
     height: 100%;
     
-  }
+  } */
 
-  body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    body {
+      font-family: ${props.theme.font.family.base};
+      font-size: ${props.theme.font.size.text.xs};
 
-    overflow-x: hidden;
+      overflow-x: hidden;
 
       &.no-overflow {
         overflow: hidden;
         padding-right: 17px;
       }
-  }
+    }
 
-  ol,
+    ol,
     ul,
     dl {
       list-style: none;
@@ -59,4 +65,7 @@ export const GlobalStyles = createGlobalStyle`
     strong {
       font-weight: 700;
     }
+  `}
+
+ 
 `
