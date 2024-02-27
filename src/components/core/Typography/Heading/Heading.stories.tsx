@@ -5,8 +5,8 @@ export default {
   title: 'Heading',
   component: Heading,
   args: {
-    children: 'Title',
-    size: 'xs'
+    children: 'Inteligência para Crescimento Estratégico',
+    size: 'lg'
   }
 } as Meta
 

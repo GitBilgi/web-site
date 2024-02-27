@@ -1,5 +1,6 @@
 'use client'
 
+import { Heading } from '@/components/core/Typography/Heading'
 import { TITLE_HOME } from '@/constants/title.browser'
 import { useEffect } from 'react'
 
@@ -10,7 +11,7 @@ export default function Home() {
 
   return (
     <div>
-      <h1>Site Bilgi em Construção</h1>
+      <Heading size="sm">Site Bilgi em Construção</Heading>
     </div>
   )
 }
