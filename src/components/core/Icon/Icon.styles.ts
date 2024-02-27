@@ -54,7 +54,7 @@ export const Container = styled.div<Props>`
 
               ${props.mode === 'gray' &&
               css`
-                color: ${props.theme.colors.gray.gray_700};
+                color: ${props.theme.colors.gray.gray_400};
               `}
             `
       }
