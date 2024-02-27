@@ -114,12 +114,21 @@ export const theme = {
   line: {
     height: {
       default: global.line_height_default,
-      xs: global.line_height_xs,
-      sm: global.line_height_sm,
-      md: global.line_height_md,
-      lg: global.line_height_lg,
-      xl: global.line_height_xl,
-      xxl: global.line_height_xxl
+      text: {
+        xs: global.line_height_text_xs,
+        sm: global.line_height_text_sm,
+        md: global.line_height_text_md,
+        lg: global.line_height_text_lg,
+        xl: global.line_height_text_xl
+      },
+      display: {
+        xs: global.line_height_display_xs,
+        sm: global.line_height_display_sm,
+        md: global.line_height_display_md,
+        lg: global.line_height_display_lg,
+        xl: global.line_height_display_xl,
+        xxl: global.line_height_display_xxl
+      }
     }
   },
   opacity: {

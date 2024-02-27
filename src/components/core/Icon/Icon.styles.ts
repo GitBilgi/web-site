@@ -41,10 +41,19 @@ export const Container = styled.div<Props>`
       ${
         props.disabled
           ? css`
-              color: ${rgba(
-                props.theme.colors.primary.primary_700,
-                props.theme.opacity.level.light
-              )};
+              ${!props.mode || props.mode === 'primary'
+                ? css`
+                    color: ${rgba(
+                      props.theme.colors.primary.primary_700,
+                      props.theme.opacity.level.light
+                    )};
+                  `
+                : css`
+                    color: ${rgba(
+                      props.theme.colors.gray.gray_700,
+                      props.theme.opacity.level.light
+                    )};
+                  `}
             `
           : css`
               ${(!props.mode || props.mode === 'primary') &&
@@ -54,7 +63,7 @@ export const Container = styled.div<Props>`
 
               ${props.mode === 'gray' &&
               css`
-                color: ${props.theme.colors.gray.gray_700};
+                color: ${props.theme.colors.gray.gray_400};
               `}
             `
       }

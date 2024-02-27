@@ -51,7 +51,7 @@ export const Container = styled.button<Props>`
       padding: 0 1.6rem;
       gap: 0.8rem;
 
-      line-height: ${props.theme.line.height.sm};
+      line-height: ${props.theme.line.height.text.sm};
 
       div {
         font-size: ${props.theme.font.size.text.sm};
@@ -63,7 +63,7 @@ export const Container = styled.button<Props>`
       padding: 0 2rem;
       gap: 0.8rem;
 
-      line-height: ${props.theme.line.height.lg};
+      line-height: ${props.theme.line.height.text.md};
 
       div {
         font-size: ${props.theme.font.size.text.md};
@@ -75,7 +75,7 @@ export const Container = styled.button<Props>`
       padding: 0 3.2rem;
       gap: 1.2rem;
 
-      line-height: ${props.theme.line.height.xl};
+      line-height: ${props.theme.line.height.text.lg};
 
       div {
         font-size: ${props.theme.font.size.text.lg};

@@ -9,9 +9,6 @@ export default {
     size: 'lg',
     mode: 'primary',
     IconRender: BeakerIcon
-  },
-  parameters: {
-    layout: 'fullscreen'
   }
 } as Meta
 
