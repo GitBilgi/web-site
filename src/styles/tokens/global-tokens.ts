@@ -6,7 +6,7 @@ export default {
   background_blur_level_four: '4rem',
 
   border_radius_none: '0rem',
-  border_radius_sm: '0.5rem',
+  border_radius_sm: '0.8rem',
   border_radius_md: '1rem',
   border_radius_lg: '1.5rem',
   border_radius_pill: '31.25rem',
@@ -24,13 +24,13 @@ export default {
 
   gradient_distance_default: '20%',
 
-  line_height_default: '100%',
-  line_height_xs: '115%',
-  line_height_sm: '120%',
-  line_height_md: '133%',
-  line_height_lg: '150%',
-  line_height_xl: '170%',
-  line_height_xxl: '200%',
+  line_height_default: '160%',
+  line_height_xs: '184%',
+  line_height_sm: '192%',
+  line_height_md: '212.8%',
+  line_height_lg: '240%',
+  line_height_xl: '272%',
+  line_height_xxl: '320%',
 
   opacity_level_semiopaque: 0.72,
   opacity_level_intense: 0.64,
