@@ -41,9 +41,6 @@ export const Container = styled.button<Props>`
     background-color: transparent;
     border-color: transparent;
     border-radius: ${props.theme.border.radius.sm};
-    border-width: ${props.theme.border.width.hairline};
-
-    line-height: ${props.theme.line.height.sm};
 
     display: flex;
     align-items: center;
@@ -53,18 +50,36 @@ export const Container = styled.button<Props>`
     css`
       padding: 0 1.6rem;
       gap: 0.8rem;
+
+      line-height: ${props.theme.line.height.sm};
+
+      div {
+        font-size: ${props.theme.font.size.text.sm};
+      }
     `}
 
     ${(props.button_size === 'lg' || props.button_size === 'xl') &&
     css`
       padding: 0 2rem;
       gap: 0.8rem;
+
+      line-height: ${props.theme.line.height.lg};
+
+      div {
+        font-size: ${props.theme.font.size.text.md};
+      }
     `}
 
     ${props.button_size === 'xxl' &&
     css`
       padding: 0 3.2rem;
       gap: 1.2rem;
+
+      line-height: ${props.theme.line.height.xl};
+
+      div {
+        font-size: ${props.theme.font.size.text.lg};
+      }
     `}
 
     ${props.button_size === 'sm' &&
@@ -143,7 +158,6 @@ export const Container = styled.button<Props>`
 
     div {
       font-family: ${props.theme.font.family.base};
-      font-size: ${props.theme.font.size.text.sm};
       font-weight: ${props.theme.font.weight.semi_bold};
     }
 
