@@ -13,10 +13,10 @@ export default {
   border_radius_circular: '50%',
 
   border_width_none: '0rem',
-  border_width_hairline: '0.0625rem',
-  border_width_thin: '0.125rem',
-  border_width_thick: '0.25rem',
-  border_width_heavy: '0.5rem',
+  border_width_hairline: '0.1rem',
+  border_width_thin: '0.2rem',
+  border_width_thick: '0.4rem',
+  border_width_heavy: '0.8rem',
 
   breakpoint_sm: '375px',
   breakpoint_md: '834',
