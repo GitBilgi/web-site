@@ -6,6 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'react-datepicker/dist/react-datepicker.css'
 import 'react-multi-carousel/lib/styles.css'
 
+import '../../public/fonts/styles.css'
+
 export const GlobalStyles = createGlobalStyle`
   ${props => css`
     * {

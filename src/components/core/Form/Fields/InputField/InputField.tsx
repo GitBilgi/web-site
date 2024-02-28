@@ -2,12 +2,12 @@ import { useEffect, useRef, useState } from 'react'
 
 import { v4 as uuidv4 } from 'uuid'
 
+import { ExclamationCircleIcon } from '@heroicons/react/24/outline'
+
 import { Label } from '../../Label'
 
 import { HelperText } from '../../HelperText'
 import { Icon } from '../../../Icon'
-
-import { ExclamationCircleIcon } from '@heroicons/react/24/outline'
 
 import * as S from './InputField.styles'
 

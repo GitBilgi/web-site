@@ -11,7 +11,7 @@ export default createGlobalStyle`
       font-family: ${props.theme.font.family.base} !important;
       font-size: ${props.theme.font.size.text.xs} !important;
       font-weight: ${props.theme.font.weight.regular} !important;
-      line-height: ${props.theme.line.height.md} !important;
+      line-height: ${props.theme.line.height.text.xs} !important;
 
       padding: 1rem !important;
 
