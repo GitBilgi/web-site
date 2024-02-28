@@ -4,8 +4,12 @@ import { v4 as uuidv4 } from 'uuid'
 
 import { Label } from '../../Label'
 
-import * as S from './InputField.styles'
 import { HelperText } from '../../HelperText'
+import { Icon } from '../../../Icon'
+
+import { ExclamationCircleIcon } from '@heroicons/react/24/outline'
+
+import * as S from './InputField.styles'
 
 interface Props {
   label?: string
@@ -127,13 +131,22 @@ export function InputField({
           onChange={handleOnChange}
           onBlur={onBlur}
         />
+
+        {error && (
+          <Icon
+            size="sm"
+            IconRender={ExclamationCircleIcon}
+            mode="error"
+            className="icon"
+          />
+        )}
       </div>
 
       {helperText && <HelperText text={helperText} />}
     </S.Container>
   )
 }
-
+;('')
 InputField.defaultProps = {
   size: undefined,
   label: undefined,
