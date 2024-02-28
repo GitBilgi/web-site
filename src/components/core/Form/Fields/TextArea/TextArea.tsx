@@ -91,3 +91,17 @@ export function TextArea({
     </S.Container>
   )
 }
+
+TextArea.defaultProps = {
+  label: undefined,
+  initialValue: undefined,
+  value: undefined,
+  placeholder: undefined,
+  maxlength: undefined,
+  error: undefined,
+  helperText: undefined,
+  readOnly: undefined,
+  disabled: undefined,
+  onChange: undefined,
+  onBlur: undefined
+}

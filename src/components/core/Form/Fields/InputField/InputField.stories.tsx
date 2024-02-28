@@ -5,7 +5,8 @@ export default {
   title: 'InputField',
   component: InputField,
   args: {
-    label: 'Nome'
+    label: 'Primeiro Nome',
+    placeholder: 'Digite seu primeiro nome'
   }
 } as Meta
 

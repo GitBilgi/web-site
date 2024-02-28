@@ -1,7 +1,7 @@
 import * as S from './Icon.styles'
 
 export interface Props {
-  size: 'sm' | 'md' | 'lg'
+  size: 'sm' | 'md' | 'lg' | 'xs'
   mode?: 'primary' | 'gray' | 'error'
   IconRender: React.ForwardRefExoticComponent<
     Omit<React.SVGProps<SVGSVGElement>, 'ref'> & {

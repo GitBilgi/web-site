@@ -5,13 +5,21 @@ import { rgba } from 'polished'
 
 interface Props {
   mode?: 'primary' | 'gray' | 'error'
-  size: 'sm' | 'md' | 'lg'
+  size: 'sm' | 'md' | 'lg' | 'xs'
   disabled?: boolean
 }
 
 export const Container = styled.div<Props>`
   ${props => css`
     user-select: none;
+
+    ${
+      props.size === 'xs' &&
+      css`
+        width: 1.6rem;
+        height: 1.6rem;
+      `
+    }
 
     ${
       props.size === 'sm' &&
