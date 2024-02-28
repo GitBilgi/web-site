@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components'
 import { rgba } from 'polished'
 
 interface Props {
-  mode?: 'primary' | 'gray'
+  mode?: 'primary' | 'gray' | 'error'
   size: 'sm' | 'md' | 'lg'
   disabled?: boolean
 }
@@ -64,6 +64,11 @@ export const Container = styled.div<Props>`
               ${props.mode === 'gray' &&
               css`
                 color: ${props.theme.colors.gray.gray_400};
+              `}
+
+              ${props.mode === 'error' &&
+              css`
+                color: ${props.theme.colors.error.error_500};
               `}
             `
       }

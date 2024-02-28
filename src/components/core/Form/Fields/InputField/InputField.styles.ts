@@ -12,6 +12,12 @@ export const Container = styled.div<Props>`
     position: relative;
     width: 100%;
 
+    .icon {
+      position: absolute;
+      right: 1%;
+      top: 20%;
+    }
+
     .input {
       position: relative;
     }
@@ -47,7 +53,7 @@ export const Container = styled.div<Props>`
 
       padding: ${props.theme.spacing.spacing_3};
 
-      width: 100%
+      width: 100%;
 
       transition-property: background-color, border-color;
       transition-duration: 0.6s;
