@@ -4,14 +4,22 @@ import styled, { css } from 'styled-components'
 import { rgba } from 'polished'
 
 interface Props {
-  mode?: 'primary' | 'gray' | 'error'
-  size: 'sm' | 'md' | 'lg'
+  mode?: 'primary' | 'gray' | 'hard-gray' | 'error'
+  size: 'sm' | 'md' | 'lg' | 'xs'
   disabled?: boolean
 }
 
 export const Container = styled.div<Props>`
   ${props => css`
     user-select: none;
+
+    ${
+      props.size === 'xs' &&
+      css`
+        width: 1.8rem;
+        height: 1.8rem;
+      `
+    }
 
     ${
       props.size === 'sm' &&
@@ -64,6 +72,11 @@ export const Container = styled.div<Props>`
               ${props.mode === 'gray' &&
               css`
                 color: ${props.theme.colors.gray.gray_400};
+              `}
+
+              ${props.mode === 'hard-gray' &&
+              css`
+                color: ${props.theme.colors.gray.gray_900};
               `}
 
               ${props.mode === 'error' &&

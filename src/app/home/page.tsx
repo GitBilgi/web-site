@@ -11,7 +11,7 @@ export default function Home() {
 
   return (
     <div>
-      <Heading size="sm">Site Bilgi em Construção</Heading>
+      <Heading size="lg">Site em construção</Heading>
     </div>
   )
 }
