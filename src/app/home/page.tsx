@@ -1,6 +1,6 @@
 'use client'
 
-import { Heading } from '@/components/core/Typography/Heading'
+import { FaqItem } from '@/components/core/FaqItem'
 import { TITLE_HOME } from '@/constants/title.browser'
 import { useEffect } from 'react'
 
@@ -11,7 +11,12 @@ export default function Home() {
 
   return (
     <div>
-      <Heading size="sm">Site Bilgi em Construção</Heading>
+      <FaqItem
+        question="Há uma avaliação gratuita disponível?"
+        response="Sim, você pode nos testar gratuitamente por 30 dias. Se desejar, forneceremos uma chamada de integração personalizada e gratuita de 30 minutos para que você comece a trabalhar o mais rápido possível."
+        defaultOpen={true}
+        visible={true}
+      />
     </div>
   )
 }
