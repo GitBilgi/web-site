@@ -19,8 +19,8 @@ export default {
   border_width_heavy: '0.8rem',
 
   breakpoint_sm: '375px',
-  breakpoint_md: '834',
-  breakpoint_lg: '1280',
+  breakpoint_md: '834px',
+  breakpoint_lg: '1280px',
 
   gradient_distance_default: '20%',
 
