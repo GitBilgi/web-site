@@ -1,3 +1,4 @@
+import { Layout } from '@/components/layout'
 import { Providers } from '@/providers'
 import { Styles } from '@/styles'
 import type { Metadata } from 'next'
@@ -16,7 +17,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Providers>
-          <Styles>{children}</Styles>
+          <Styles>
+            <Layout>{children}</Layout>
+          </Styles>
         </Providers>
       </body>
     </html>
