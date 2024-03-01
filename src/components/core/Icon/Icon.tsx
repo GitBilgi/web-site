@@ -11,6 +11,8 @@ export interface Props {
   >
   disabled?: boolean
   className?: string
+  onClick?: React.MouseEventHandler<HTMLButtonElement>
+  cursor?: 'pointer'
 }
 
 export function Icon({ size, mode, IconRender, disabled, className }: Props) {
@@ -29,5 +31,7 @@ export function Icon({ size, mode, IconRender, disabled, className }: Props) {
 Icon.defaultProps = {
   disabled: undefined,
   className: undefined,
-  mode: undefined
+  mode: undefined,
+  onClick: undefined,
+  cursor: undefined
 }
