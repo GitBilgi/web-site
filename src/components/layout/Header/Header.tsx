@@ -12,7 +12,7 @@ import { useDeviceDetection } from '@/hooks/utils/useDeviceDetection'
 
 import * as S from './Header.style'
 import { Icon } from '@/components/core/Icon'
-import { XMarkIcon } from '@heroicons/react/24/solid'
+import { Bars2Icon } from '@heroicons/react/24/solid'
 
 export function Header() {
   const { isMobile } = useDeviceDetection()
@@ -41,7 +41,7 @@ export function Header() {
           </div>
         </S.Content>
       ) : (
-        <div>
+        <div className="menu-bar">
           <div>
             <Image src={Logo} alt="Logo Bilgi" />
           </div>
@@ -50,7 +50,7 @@ export function Header() {
             <Icon
               size="lg"
               className="icon"
-              IconRender={XMarkIcon}
+              IconRender={Bars2Icon}
               mode={'hard-gray'}
             />
           </div>

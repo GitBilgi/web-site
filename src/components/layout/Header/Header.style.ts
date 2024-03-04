@@ -14,9 +14,10 @@ export const Container = styled.div<ContainerProps>`
     justify-content: center;
 
     @media (max-width: 768px) {
-      align-items: center;
-      justify-content: center;
       width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
     .button {
       display: block;
@@ -27,6 +28,13 @@ export const Container = styled.div<ContainerProps>`
     }
     ${props.isMobile && css``}
   `}
+
+  .menu-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1rem;
+  }
 `
 
 export const Content = styled.div`

@@ -21,8 +21,12 @@ export const Container = styled.div`
       padding: 0px, 32px, 0px, 32px;
     }
 
+    .Container-Logo {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
     .ContainerFooter {
-      width: 100%;
       display: flex;
       flex-direction: row;
       padding: 64px 320px 48px;
