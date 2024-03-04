@@ -20,11 +20,7 @@ export const Container = styled.div<ContainerProps>`
       justify-content: space-between;
     }
     .button {
-      display: block;
-
-      @media (max-width: 768px) {
-        display: none;
-      }
+      display: flex;
     }
     ${props.isMobile && css``}
   `}

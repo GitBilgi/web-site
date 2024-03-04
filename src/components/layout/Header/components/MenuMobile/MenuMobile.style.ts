@@ -78,7 +78,7 @@ export const Container = styled.div<Props>`
   }
   .button {
     width: 100%;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     border-top: solid 1px #eaecf0;
