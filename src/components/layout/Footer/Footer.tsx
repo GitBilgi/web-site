@@ -20,8 +20,12 @@ export function Footer() {
       <Row className="ContainerFooter">
         <div className="container-info-footer">
           <div className="Container-Logo">
-            <Image src={Inteligence} alt="Logo Bilgi Inteligence"></Image>
-            <Paragraph size="sm">Conectando você ao que importa.</Paragraph>
+            <div>
+              <Image src={Inteligence} alt="Logo Bilgi Inteligence"></Image>
+            </div>
+            <div>
+              <Paragraph size="sm">Conectando você ao que importa.</Paragraph>
+            </div>
           </div>
           <div className="Container-infos">
             <div className="heading">

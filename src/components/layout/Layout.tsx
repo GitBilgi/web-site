@@ -1,7 +1,7 @@
 'use client'
 import { ReactNode } from 'react'
 import { Header } from './Header'
-import { Footer } from './Footer'
+// import { Footer } from './Footer'
 
 import * as S from './Layout.style'
 
@@ -16,7 +16,7 @@ export function Layout({ children }: Props) {
 
       {children}
 
-      <Footer />
+      {/* <Footer /> */}
     </S.Container>
   )
 }
