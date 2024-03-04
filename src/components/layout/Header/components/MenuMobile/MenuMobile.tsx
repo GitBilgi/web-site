@@ -6,6 +6,9 @@ import { ButtonLink } from '@/components/core/Buttons/ButtonLink'
 import { NavForm } from '../../HeaderNav.form'
 import * as S from './MenuMobile.style'
 import { XMarkIcon } from '@heroicons/react/24/solid'
+import Logo from '@/images/Logo.png'
+import Image from 'next/image'
+import { Button } from '@/components/core/Buttons/Button'
 
 interface Props {
   menuIsVisible: boolean
@@ -15,22 +18,52 @@ interface Props {
 export function MenuMobile({ menuIsVisible, setMenuIsVisible }: Props) {
   return (
     <Container isVisible={menuIsVisible}>
-      <div onClick={() => setMenuIsVisible(false)}>
-        <Icon
-          size="lg"
-          className="icon"
-          IconRender={XMarkIcon}
-          mode={'hard-gray'}
-        />
+      <div className="container-menu-bar">
+        <div>
+          <Image src={Logo} alt="Logo Bilgi" className="logo" />
+        </div>
+        <div onClick={() => setMenuIsVisible(false)}>
+          <Icon
+            size="lg"
+            className="icon"
+            IconRender={XMarkIcon}
+            mode={'hard-gray'}
+          />
+        </div>
       </div>
 
-      <S.Nav>
-        {NavForm.map((item, idx) => (
-          <ButtonLink key={idx} size="md" link={item.link} mode="gray">
-            {item.children}
+      <div className="nav-bar">
+        <S.Nav>
+          {NavForm.map((item, idx) => (
+            <ButtonLink key={idx} size="md" link={item.link} mode="gray">
+              {item.children}
+            </ButtonLink>
+          ))}
+        </S.Nav>
+      </div>
+      <div className="footer-mobile">
+        <div className="content-footer">
+          <ButtonLink link="/" mode="gray" size="md">
+            Contato
           </ButtonLink>
-        ))}
-      </S.Nav>
+          <ButtonLink link="/" mode="gray" size="md">
+            Sobre Nós
+          </ButtonLink>
+        </div>
+        <div className="content-footer">
+          <ButtonLink link="/" mode="gray" size="md">
+            Política de Privacidade
+          </ButtonLink>
+          <ButtonLink link="/" mode="gray" size="md">
+            Termos de Uso
+          </ButtonLink>
+        </div>
+      </div>
+      <div className="button">
+        <Button button_size="xxl" styles="primary">
+          Agendar Chamada
+        </Button>
+      </div>
     </Container>
   )
 }

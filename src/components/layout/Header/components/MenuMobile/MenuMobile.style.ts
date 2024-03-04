@@ -6,20 +6,16 @@ interface Props {
 
 export const Container = styled.div<Props>`
   ${props => css`
-    position: absolute;
-    backdrop-filter: blur(3px);
-    width: 100%;
-    height: 100%;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
-    z-index: 5;
+    height: 952px;
+    position: absolute;
+    backdrop-filter: blur(3px);
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
 
-    background-color: #ac1d35;
+    background-color: #fff;
 
     opacity: 0;
     pointer-events: none;
@@ -31,11 +27,12 @@ export const Container = styled.div<Props>`
     }
 
     nav {
+      gap: 5rem;
       display: flex;
-      align-items: center;
-      justify-content: center;
+      padding-top: 45px;
+      padding-left: 16px;
       flex-direction: column;
-      gap: 2rem;
+      justify-content: center;
     }
 
     ${props.isVisible &&
@@ -44,11 +41,48 @@ export const Container = styled.div<Props>`
       pointer-events: auto;
     `}
   `}
+
+  .container-menu-bar {
+    display: flex;
+    height: 72px;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      width: 89px;
+    }
+  }
+  .nav-bar {
+    width: 100%;
+    height: 544px;
+    padding-top: 24px;
+    border-top: solid 1px #eaecf0;
+  }
+
+  .footer-mobile {
+    width: 100%;
+    display: flex;
+    padding: 24px 16px;
+    flex-direction: row;
+    text-align: start;
+    border-top: solid 1px #eaecf0;
+
+    .content-footer {
+      width: 200px;
+      height: 68px;
+      display: flex;
+      gap: 20px;
+      justify-content: flex-start;
+      flex-direction: column;
+    }
+  }
+  .button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: solid 1px #eaecf0;
+    padding: 24px 16px;
+  }
 `
-export const Nav = styled.nav`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-`
+export const Nav = styled.nav``
