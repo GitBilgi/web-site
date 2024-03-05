@@ -283,4 +283,64 @@ export const SectionDados = styled.div`
   }
 `
 
-export const SectionMap = styled.div``
+export const SectionMap = styled.div`
+  width: 100%;
+  height: 800px;
+  display: flex;
+  gap: 64px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .heading-xxs {
+    color: #80162a;
+  }
+
+  .maps {
+    width: 1283px;
+    height: 402px;
+    border: solid 1px #333;
+  }
+`
+export const SectionSupport = styled.div`
+  width: 100%;
+  height: 534px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  .content {
+    width: 1280px;
+    height: 342px;
+    align-items: center;
+    justify-content: center;
+  }
+  .text {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    padding-left: 28px;
+    padding-right: 28px;
+    align-items: center;
+    justify-content: center;
+  }
+  .avaliations {
+    display: flex;
+    flex-direction: column;
+    padding-top: 32px;
+    gap: 16px;
+  }
+  .stars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+`

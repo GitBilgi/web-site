@@ -32,8 +32,11 @@ import BrakoutRed from '@/images/BreakoutRed.png'
 
 /*Images*/
 
-import Background from '@/images/background.png'
 import Build from '@/images/build.png'
+import Background from '@/images/background.png'
+import { GoogleMaps } from './components/GoogleMaps'
+import { CarouselSupport } from './components/Carousel'
+import { FaqSection } from '../components/FaqSection'
 
 export function HomePage() {
   return (
@@ -310,10 +313,37 @@ export function HomePage() {
       </S.SectionDados>
 
       <S.SectionMap>
-        <div className="heading">
-          <Heading size="xxs">Onde estamos</Heading>
+        <div className="header">
+          <div>
+            <Heading size="xxs" className="heading-xxs">
+              Onde estamos
+            </Heading>
+          </div>
+          <div className="heading">
+            <Heading size="md">
+              Feito com excelência, em todos os lugares
+            </Heading>
+          </div>
+        </div>
+        <div className="maps">
+          <GoogleMaps />
         </div>
       </S.SectionMap>
+
+      <S.SectionSupport>
+        <div className="content">
+          <div className="text">
+            <Subtitle size="lg">
+              Love the simplicity of the service and the prompt customer
+              support. We can’t imagine working without it.
+            </Subtitle>
+          </div>
+          <div className="carousel">
+            <CarouselSupport />
+          </div>
+        </div>
+      </S.SectionSupport>
+      <FaqSection />
     </>
   )
 }
