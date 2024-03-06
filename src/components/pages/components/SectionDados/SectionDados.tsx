@@ -25,13 +25,13 @@ export function DadosSection() {
             </Heading>
           </div>
           <div className="potencial">
-            <Heading size="md">
+            <Heading size="md" className="analise">
               Potencialize Seus Dados: Explore a prévia de um dos nossos
               dashboards
             </Heading>
           </div>
-          <div className="analise">
-            <Paragraph size="lg">
+          <div>
+            <Paragraph size="lg" className="analise">
               Análise avançada de crescimento e produto de autoatendimento para
               ajudá-lo a converter, envolver e reter mais usuários.
             </Paragraph>

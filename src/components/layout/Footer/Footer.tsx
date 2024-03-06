@@ -2,7 +2,6 @@
 
 import Image from 'next/image'
 import * as S from './Footer.style'
-import { Row } from 'react-bootstrap'
 
 import { Paragraph } from '@/components/core/Typography/Paragraph'
 import { Heading } from '@/components/core/Typography/Heading'
@@ -17,7 +16,7 @@ import Facebook from '@/images/facebook.png'
 export function Footer() {
   return (
     <S.Container>
-      <Row className="ContainerFooter">
+      <div className="ContainerFooter">
         <div className="container-info-footer">
           <div className="Container-Logo">
             <div>
@@ -70,7 +69,7 @@ export function Footer() {
             </ButtonLink>
           </div>
         </div>
-      </Row>
+      </div>
       <div className="copyright">
         <div className="component-copy">
           <div className="direitos">

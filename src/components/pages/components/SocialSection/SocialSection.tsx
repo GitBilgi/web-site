@@ -18,12 +18,16 @@ export function SocialSection() {
         </Paragraph>
       </div>
       <div className="logos">
-        <Image src={Layers} alt="Logo Layers" />
-        <Image src={Sisyphus} alt="Logo Sisyphus" />
-        <Image src={Circooles} alt="Logo Circooles" />
-        <Image src={Catalog} alt="Logo Catalog" />
-        <Image src={Quotient} alt="Logo Quotient" />
-        <Image src={Hourglass} alt="Loogo Hourglass" />
+        <div className="col1">
+          <Image src={Layers} alt="Logo Layers" className="size" />
+          <Image src={Sisyphus} alt="Logo Sisyphus" className="size" />
+          <Image src={Circooles} alt="Logo Circooles" className="size" />
+        </div>
+        <div className="col2">
+          <Image src={Catalog} alt="Logo Catalog" className="size" />
+          <Image src={Quotient} alt="Logo Quotient" className="size" />
+          <Image src={Hourglass} alt="Loogo Hourglass" className="size" />
+        </div>
       </div>
     </S.SectionSocial>
   )

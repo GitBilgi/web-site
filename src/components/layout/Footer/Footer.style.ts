@@ -28,8 +28,9 @@ export const Container = styled.div`
     }
     .ContainerFooter {
       display: flex;
+      padding-top: 64px;
       flex-direction: row;
-      padding: 64px 320px 48px;
+      padding-bottom: 48px;
 
       @media (max-width: 1035px) {
         width: 100%;
@@ -87,13 +88,19 @@ export const Container = styled.div`
     }
 
     @media (max-width: 768px) {
-      width: 768px;
+      width: 100%;
+      height: 1028px;
       flex-direction: column;
       justify-content: center;
+
+      .ContainerFooter {
+        display: flex;
+        flex-direction: column;
+      }
+      .container-info-footer {
+        max-width: 100%;
+        flex-direction: column;
+      }
     }
   `}
-
-  @media (max-width:768px) {
-    display: none;
-  }
 `

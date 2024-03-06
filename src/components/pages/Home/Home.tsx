@@ -31,7 +31,11 @@ export function HomePage() {
     <>
       <S.Container>
         <div className="image-background">
-          <Image src={Background} alt="Imagem de Fundo HomePage" />
+          <Image
+            src={Background}
+            alt="Imagem de Fundo HomePage"
+            className="img"
+          />
         </div>
         <div className="container">
           <div className="content">
