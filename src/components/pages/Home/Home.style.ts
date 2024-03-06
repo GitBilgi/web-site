@@ -21,11 +21,15 @@ export const Container = styled.div`
     padding: 42px 80px 72px 80px;
 
     .subtitle {
-      width: 320px;
+      max-width: 320px;
       color: #80162a;
       padding: 4px 12px;
       border-radius: 16px;
       background-color: #fff3f0;
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
     }
 
     .content {
@@ -58,10 +62,20 @@ export const Container = styled.div`
         justify-content: center;
       }
     }
+
+    @media (max-width: 1035px) {
+      width: 100%;
+      display: flex;
+      height: 468px;
+      padding-top: 15px;
+    }
   }
+  .img {
+    max-width: 100%;
+  }
+
   .image-background {
     z-index: -1;
-    width: 100%;
     height: 100%;
     display: flex;
     position: absolute;
@@ -71,32 +85,43 @@ export const Container = styled.div`
 `
 
 export const SectionFeatures = styled.div`
-  width: 100%;
   display: flex;
-  flex-direction: column;
+  max-width: 100%;
   padding-bottom: 96px;
+  flex-direction: column;
 
   .inteligence {
+    max-width: 100%;
     display: flex;
-    align-items: center;
-    padding-left: 348px;
     padding-top: 96px;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 1035px) {
+      padding-right: 0;
+    }
   }
 
   .text {
-    display: flex;
-    flex-direction: column;
     gap: 20px;
+    display: flex;
+    max-width: 1280px;
+    padding-right: 410px;
+    flex-direction: column;
 
     .subtitle {
-      width: 800px;
+      max-width: 800px;
       color: #80162a;
     }
     .heading {
-      width: 800px;
+      max-width: 800px;
     }
     .paragraph {
       width: 100%;
+    }
+
+    @media (max-width: 1035px) {
+      padding: 10px;
     }
   }
 
@@ -142,6 +167,9 @@ export const SectionFeatures = styled.div`
         align-items: center;
       }
     }
+    @media (max-width: 1035px) {
+      flex-direction: column;
+    }
   }
 `
 
@@ -166,8 +194,12 @@ export const SectionMap = styled.div`
   }
 
   .maps {
-    width: 1283px;
+    max-width: 1283px;
     height: 402px;
     border: solid 1px #333;
+
+    @media (max-width: 1035px) {
+      width: 100%;
+    }
   }
 `

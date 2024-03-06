@@ -3,6 +3,10 @@ import styled from 'styled-components'
 export const ContainerConsulting = styled.div`
   .container {
     padding: 32px 80px 96px 80px;
+
+    @media (max-width: 1035px) {
+      padding: 32px;
+    }
   }
 
   .content {
@@ -17,10 +21,14 @@ export const ContainerConsulting = styled.div`
   }
   .font {
     color: #fff;
+
+    @media (max-width: 1035px) {
+      font-size: 30px;
+    }
   }
 
   .heading {
-    width: 944px;
+    max-width: 944px;
   }
   .buttons {
     display: flex;

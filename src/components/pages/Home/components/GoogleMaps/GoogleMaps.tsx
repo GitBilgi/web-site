@@ -1,5 +1,6 @@
 'use client'
 import { GoogleMap, Marker, useJsApiLoader } from '@react-google-maps/api'
+import * as S from './GoogleMaps.Style'
 
 export function GoogleMaps() {
   const { isLoaded } = useJsApiLoader({
@@ -11,7 +12,7 @@ export function GoogleMaps() {
     lng: -47.578030331808215
   }
   return (
-    <div>
+    <S.Maps>
       {isLoaded ? (
         <GoogleMap
           mapContainerStyle={{ width: '1280px', height: '400px' }}
@@ -23,6 +24,6 @@ export function GoogleMaps() {
       ) : (
         <></>
       )}
-    </div>
+    </S.Maps>
   )
 }

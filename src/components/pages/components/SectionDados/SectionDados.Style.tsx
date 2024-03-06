@@ -10,9 +10,9 @@ export const SectionDados = styled.div`
   background-color: #f9fafb;
 
   .text {
-    width: 1280px;
     height: 212px;
     display: flex;
+    max-width: 1280px;
     padding-top: 128px;
     align-items: center;
     justify-content: center;
@@ -21,15 +21,26 @@ export const SectionDados = styled.div`
   .potencial {
     padding-top: 16px;
     padding-bottom: 20px;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
   }
 
   .content-text {
-    width: 768px;
+    max-width: 768px;
     display: flex;
     text-align: center;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+
+    @media (max-width: 768px) {
+      max-width: 100%;
+      .analise {
+        max-width: 100%;
+      }
+    }
   }
   .demonstration {
     width: 122px;
@@ -45,16 +56,16 @@ export const SectionDados = styled.div`
   }
 
   .container {
+    gap: 64px;
     width: 100%;
     height: 910px;
     display: flex;
     align-items: center;
-    gap: 64px;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
   }
   .content-container {
-    width: 768px;
+    max-width: 768px;
     height: 512px;
     display: flex;
     align-items: center;
@@ -63,7 +74,7 @@ export const SectionDados = styled.div`
     border: solid 4px #98a2b3;
 
     .imagem {
-      width: 757px;
+      max-width: 757px;
       height: 502px;
       border-radius: 10px;
     }
@@ -71,41 +82,56 @@ export const SectionDados = styled.div`
     .div-button {
       padding-top: 64px;
     }
+
+    @media (max-width: 768px) {
+      width: 100%;
+      .imagem {
+        width: 100%;
+      }
+    }
   }
   .card-container {
     gap: 32px;
     width: 100%;
-    height: 178px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 1035px) {
+      gap: 70px;
+      display: flex;
+      padding-top: 64px;
+      padding-bottom: 200px;
+      flex-direction: column;
+    }
   }
   .cards {
     gap: 20px;
     width: 384px;
     height: 178px;
     display: flex;
+    text-align: center;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
   }
 
   .feature-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
     width: 40px;
     height: 80px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
     border: solid 8px #fff3f0;
 
     .content-icon {
       width: 30px;
       display: flex;
       align-items: center;
-      justify-content: center;
       border-radius: 28px;
+      justify-content: center;
       background-color: #f8d7cf;
     }
     .icon {
@@ -114,7 +140,7 @@ export const SectionDados = styled.div`
     }
   }
   .feature-paragraph {
-    display: flex;
     width: 340px;
+    display: flex;
   }
 `
