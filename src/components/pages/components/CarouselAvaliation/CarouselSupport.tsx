@@ -1,8 +1,8 @@
 'use client'
 
 import Carousel from 'react-multi-carousel'
-import { Avaliations, Support } from './avaliations/Avaliation.interface'
-import { Avaliation } from './avaliations/Avaliation'
+import { Avaliation } from './Avaliation'
+import { Avaliations, Support } from './Avaliation/Avaliation.interface'
 
 export function CarouselSupport() {
   return (
