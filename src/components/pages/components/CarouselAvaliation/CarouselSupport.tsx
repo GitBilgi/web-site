@@ -34,7 +34,7 @@ export function CarouselSupport() {
             },
             mobile: {
               breakpoint: {
-                max: 430,
+                max: 768,
                 min: 0
               },
               items: 1

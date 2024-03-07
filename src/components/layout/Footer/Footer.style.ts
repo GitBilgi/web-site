@@ -10,6 +10,7 @@ export const Container = styled.div`
 
     .heading {
       padding-bottom: 16px;
+      text-transform: uppercase;
     }
 
     .container-info-footer {
@@ -38,6 +39,15 @@ export const Container = styled.div`
         padding: 40px;
         justify-content: center;
       }
+      @media (max-width: 768px) {
+        padding: 10px;
+      }
+      .produtos {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-left: 35px;
+      }
     }
 
     .Container-infos {
@@ -51,7 +61,13 @@ export const Container = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
+
+      @media (max-width: 768px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
     }
+
     .component-copy {
       width: 1280px;
       height: 120px;
@@ -69,6 +85,11 @@ export const Container = styled.div`
         padding: 20px 0;
         justify-content: center;
       }
+      @media (max-width: 768px) {
+        padding: 0;
+        gap: 24px;
+        flex-direction: column-reverse;
+      }
     }
     .direitos {
       display: flex;
@@ -77,20 +98,24 @@ export const Container = styled.div`
       @media (max-width: 1035px) {
         padding-right: 32px;
         justify-content: center;
-      }
-      @media (max-width: 768px) {
-        display: none;
+        flex-direction: column-reverse;
       }
     }
     .media-icons {
       display: flex;
       gap: ${props.theme.spacing.spacing_6};
+
+      @media (max-width: 768px) {
+        width: 100%;
+        padding-left: 35px;
+      }
     }
 
     @media (max-width: 768px) {
       width: 100%;
       height: 100%;
       padding: 0;
+      padding-top: 46px;
       flex-direction: column;
       justify-content: center;
 
