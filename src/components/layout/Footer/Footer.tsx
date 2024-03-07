@@ -32,15 +32,17 @@ export function Footer() {
                 Produtos
               </Heading>
             </div>
-            <ButtonLink link="/" mode="gray" size="md">
-              Gestão de Processos
-            </ButtonLink>
-            <ButtonLink link="/" mode="gray" size="md">
-              Business Inteligente
-            </ButtonLink>
-            <ButtonLink link="/" mode="gray" size="md">
-              Atendimento
-            </ButtonLink>
+            <div className="produtos">
+              <ButtonLink link="/" mode="gray" size="md">
+                Gestão de Processos
+              </ButtonLink>
+              <ButtonLink link="/" mode="gray" size="md">
+                Business Inteligente
+              </ButtonLink>
+              <ButtonLink link="/" mode="gray" size="md">
+                Atendimento
+              </ButtonLink>
+            </div>
           </div>
           <div className="Container-infos">
             <div className="heading">
@@ -48,12 +50,14 @@ export function Footer() {
                 Empresa
               </Heading>
             </div>
-            <ButtonLink link="/" mode="gray" size="md">
-              Contato
-            </ButtonLink>
-            <ButtonLink link="/" mode="gray" size="md">
-              Sobre Nós
-            </ButtonLink>
+            <div className="produtos">
+              <ButtonLink link="/" mode="gray" size="md">
+                Contato
+              </ButtonLink>
+              <ButtonLink link="/" mode="gray" size="md">
+                Sobre Nós
+              </ButtonLink>
+            </div>
           </div>
           <div className="Container-infos">
             <div className="heading">
@@ -61,12 +65,14 @@ export function Footer() {
                 Legal
               </Heading>
             </div>
-            <ButtonLink link="/" mode="gray" size="md">
-              Política de Privacidade
-            </ButtonLink>
-            <ButtonLink link="/" mode="gray" size="md">
-              Termos de Uso
-            </ButtonLink>
+            <div className="produtos">
+              <ButtonLink link="/" mode="gray" size="md">
+                Política de Privacidade
+              </ButtonLink>
+              <ButtonLink link="/" mode="gray" size="md">
+                Termos de Uso
+              </ButtonLink>
+            </div>
           </div>
         </div>
       </div>
@@ -79,9 +85,15 @@ export function Footer() {
             </Paragraph>
           </div>
           <div className="media-icons">
-            <Image src={Instagram} alt="Icon Instagram" />
-            <Image src={Linkedin} alt="Icon Instagram" />
-            <Image src={Facebook} alt="Icon Instagram" />
+            <a href="https://www.instagram.com/bilgibpo/">
+              <Image src={Instagram} alt="Icon Instagram" />
+            </a>
+            <a href="https://www.linkedin.com/company/bilgi-servi%C3%A7os-empresariais/">
+              <Image src={Linkedin} alt="Icon Linkedin" />
+            </a>
+            <a href="https://m.facebook.com/BilgiBpo/">
+              <Image src={Facebook} alt="Icon Facebook" />
+            </a>
           </div>
         </div>
       </div>
