@@ -24,7 +24,7 @@ export default createGlobalStyle`
           width: 0.7rem;
           height: 0.7rem;
           background-color: ${props.theme.colors.base.black};
-          border-color: ${props.theme.colors.base.black};
+          border-color: ${props.theme.colors.primary.primary_800};
         }
       }
     }
