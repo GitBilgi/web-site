@@ -22,21 +22,18 @@ import Breackout from '@/images/breakout.png'
 import Message from '@/images/MessageSmile.png'
 
 import Background from '@/images/background.png'
+import BackgroundMobile from '@/images/BackgroundRight.png'
 import { GoogleMaps } from './components/GoogleMaps'
 import { SocialSection } from '../components/SocialSection'
 import { DadosSection } from '../components/SectionDados'
+import { useDeviceDetection } from '@/hooks/utils/useDeviceDetection'
 
 export function HomePage() {
+  const { isMobile } = useDeviceDetection()
+
   return (
     <>
       <S.Container>
-        <div className="image-background">
-          <Image
-            src={Background}
-            alt="Imagem de Fundo HomePage"
-            className="img"
-          />
-        </div>
         <div className="container">
           <div className="content">
             <Heading size="xxs" className="subtitle">
@@ -67,6 +64,15 @@ export function HomePage() {
               <Image src={Jira} alt="Logo Jira" />
             </div>
           </div>
+          {!isMobile ? (
+            <div className="image-background">
+              <Image src={Background} alt="Imagem de Fundo HomePage" />
+            </div>
+          ) : (
+            <div className="image-background-mobile">
+              <Image src={BackgroundMobile} alt="Imagem de Fundo HomePage" />
+            </div>
+          )}
         </div>
       </S.Container>
       <SocialSection />
@@ -191,8 +197,8 @@ export function HomePage() {
               Onde estamos
             </Heading>
           </div>
-          <div className="heading">
-            <Heading size="md">
+          <div>
+            <Heading size="md" className="heading">
               Feito com excelência, em todos os lugares
             </Heading>
           </div>

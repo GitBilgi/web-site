@@ -12,8 +12,8 @@ import Hourglass from '@/images/Hourglass.png'
 export function SocialSection() {
   return (
     <S.SectionSocial>
-      <div className="paragraph">
-        <Paragraph size="sm">
+      <div>
+        <Paragraph size="sm" className="paragraph">
           Junte-se a mais de X.000 empresas que já estão crescendo
         </Paragraph>
       </div>

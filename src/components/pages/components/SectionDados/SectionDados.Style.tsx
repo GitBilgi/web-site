@@ -16,6 +16,11 @@ export const SectionDados = styled.div`
     padding-top: 128px;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 768px) {
+      height: 100%;
+      padding-top: 64px;
+    }
   }
 
   .potencial {
@@ -37,8 +42,10 @@ export const SectionDados = styled.div`
 
     @media (max-width: 768px) {
       max-width: 100%;
+
       .analise {
         max-width: 100%;
+        line-height: 3.8rem;
       }
     }
   }
@@ -63,6 +70,12 @@ export const SectionDados = styled.div`
     align-items: center;
     flex-direction: column;
     justify-content: center;
+
+    @media (max-width: 768px) {
+      height: auto;
+      padding-top: 64px;
+      gap: 48px;
+    }
   }
   .content-container {
     max-width: 768px;
@@ -84,9 +97,12 @@ export const SectionDados = styled.div`
     }
 
     @media (max-width: 768px) {
-      width: 100%;
+      width: 390px;
+      height: 265px;
+
       .imagem {
         width: 100%;
+        height: 100%;
       }
     }
   }
@@ -103,6 +119,14 @@ export const SectionDados = styled.div`
       display: flex;
       padding-top: 64px;
       padding-bottom: 200px;
+      flex-direction: column;
+    }
+
+    @media (max-width: 768px) {
+      gap: 70px;
+      display: flex;
+      padding-top: 64px;
+      padding-bottom: 64px;
       flex-direction: column;
     }
   }
@@ -142,5 +166,8 @@ export const SectionDados = styled.div`
   .feature-paragraph {
     width: 340px;
     display: flex;
+  }
+  @media (max-width: 768px) {
+    height: 100%;
   }
 `

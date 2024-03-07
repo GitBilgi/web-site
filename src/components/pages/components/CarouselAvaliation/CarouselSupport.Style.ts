@@ -13,6 +13,10 @@ export const Content = styled.div`
     height: 342px;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 768px) {
+      height: 100%;
+    }
   }
 
   .text {
@@ -26,16 +30,28 @@ export const Content = styled.div`
 
     @media (max-width: 1035px) {
       max-width: 100%;
+
+      .heading {
+        @media (max-width: 768px) {
+          width: 100%;
+          height: auto;
+          line-height: 3.8rem;
+        }
+      }
     }
   }
   @media (max-width: 1035px) {
     .content {
       max-width: 100%;
-      height: 610px;
+      height: 100%;
     }
     .text {
       font-size: 30px;
       line-height: 38px;
     }
+  }
+
+  @media (max-width: 768px) {
+    height: auto;
   }
 `

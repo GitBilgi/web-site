@@ -22,6 +22,7 @@ export const SectionSocial = styled.div`
       gap: 50px;
     }
   }
+
   .size {
     max-width: 146px;
     padding-right: 20px;
@@ -31,12 +32,19 @@ export const SectionSocial = styled.div`
     flex-direction: column;
 
     .col1,
-    .col2 {
+    .col2,
+    .col3 {
       display: flex;
       gap: 16px;
       justify-content: center;
       align-items: center;
       flex-direction: column;
+    }
+  }
+  @media (max-width: 768px) {
+    .paragraph {
+      max-width: 100%;
+      text-align: center;
     }
   }
 `

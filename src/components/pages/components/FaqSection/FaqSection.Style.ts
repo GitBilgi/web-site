@@ -28,5 +28,20 @@ export const SectionFaq = styled.div`
     flex-direction: column;
     padding-right: 80px;
     padding-left: 80px;
+
+    @media (max-width: 768px) {
+      padding-right: 16px;
+      padding-left: 16px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    height: 100%;
+
+    .subtitle {
+      text-align: center;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
   }
 `

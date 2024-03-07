@@ -41,12 +41,22 @@ export const Container = styled.div`
       align-items: center;
       flex-direction: column;
       justify-content: center;
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
     }
 
     .buttons {
       gap: 12px;
       display: flex;
       padding-top: 48px;
+
+      @media (max-width: 768px) {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+      }
     }
 
     .integrations {
@@ -61,17 +71,22 @@ export const Container = styled.div`
         align-items: center;
         justify-content: center;
       }
+      @media (max-width: 768px) {
+        display: none;
+      }
     }
 
     @media (max-width: 1035px) {
+      gap: 40px;
       width: 100%;
+      height: auto;
       display: flex;
-      height: 468px;
-      padding-top: 15px;
     }
-  }
-  .img {
-    max-width: 100%;
+    @media (max-width: 768px) {
+      height: auto;
+      padding: 0;
+      padding-top: 50px;
+    }
   }
 
   .image-background {
@@ -82,6 +97,12 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
   }
+
+  .image-background-mobile {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
 `
 
 export const SectionFeatures = styled.div`
@@ -91,14 +112,18 @@ export const SectionFeatures = styled.div`
   flex-direction: column;
 
   .inteligence {
-    max-width: 100%;
     display: flex;
+    max-width: 100%;
     padding-top: 96px;
     align-items: center;
     justify-content: center;
 
     @media (max-width: 1035px) {
       padding-right: 0;
+    }
+    @media (max-width: 768px) {
+      padding-left: 10px;
+      text-align: start;
     }
   }
 
@@ -110,11 +135,10 @@ export const SectionFeatures = styled.div`
     flex-direction: column;
 
     .subtitle {
-      max-width: 800px;
       color: #80162a;
+      max-width: 800px;
     }
     .heading {
-      max-width: 800px;
     }
     .paragraph {
       width: 100%;
@@ -140,6 +164,11 @@ export const SectionFeatures = styled.div`
       .feature-text {
         padding-top: 24px;
         padding-left: 24px;
+
+        @media (max-width: 768px) {
+          height: 100%;
+          padding: 20px;
+        }
       }
 
       .feature-icon {
@@ -158,6 +187,11 @@ export const SectionFeatures = styled.div`
         padding-top: 64px;
         padding-bottom: 146px;
         flex-direction: column;
+
+        @media (max-width: 768px) {
+          padding-top: 48px;
+          padding-bottom: 20px;
+        }
       }
 
       .buttonlink {
@@ -166,28 +200,47 @@ export const SectionFeatures = styled.div`
         flex-direction: row;
         align-items: center;
       }
+
+      @media (max-width: 768px) {
+        height: auto;
+      }
     }
     @media (max-width: 1035px) {
+      width: 100%;
       flex-direction: column;
     }
+    @media (max-width: 768px) {
+      height: auto;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding-bottom: 64px;
   }
 `
 
 export const SectionMap = styled.div`
+  gap: 64px;
   width: 100%;
   height: 800px;
   display: flex;
-  gap: 64px;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
 
   .header {
+    gap: 12px;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
-    gap: 12px;
+    justify-content: center;
+
+    @media (max-width: 768px) {
+      .heading {
+        font-size: 36px;
+        text-align: center;
+      }
+    }
   }
   .heading-xxs {
     color: #80162a;
@@ -200,6 +253,9 @@ export const SectionMap = styled.div`
 
     @media (max-width: 1035px) {
       width: 100%;
+    }
+    @media (max-width: 768px) {
+      width: 400px;
     }
   }
 `
