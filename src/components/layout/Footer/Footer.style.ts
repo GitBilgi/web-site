@@ -41,12 +41,15 @@ export const Container = styled.div`
       }
       @media (max-width: 768px) {
         padding: 10px;
+
+        .produtos {
+          padding-left: 35px;
+        }
       }
       .produtos {
         display: flex;
         flex-direction: column;
         gap: 20px;
-        padding-left: 35px;
       }
     }
 

@@ -1,10 +1,11 @@
 'use client'
-import { StarIcon } from '@heroicons/react/24/solid'
-import { Icon } from '@/components/core/Icon'
+
 import { Subtitle } from '@/components/core/Typography/Subtitle'
 import { Paragraph } from '@/components/core/Typography/Paragraph'
 
 import Image, { StaticImageData } from 'next/image'
+
+import Star from '@/images/Star.png'
 
 import * as S from './Avaliation.Style'
 
@@ -30,11 +31,11 @@ export function Avaliation({ title, cover, resume }: Props) {
           </div>
         </div>
         <div className="stars">
-          <Icon IconRender={StarIcon} size="xs" />
-          <Icon IconRender={StarIcon} size="xs" />
-          <Icon IconRender={StarIcon} size="xs" />
-          <Icon IconRender={StarIcon} size="xs" />
-          <Icon IconRender={StarIcon} size="xs" />
+          <Image src={Star} alt="Estrela de avaliação"></Image>
+          <Image src={Star} alt="Estrela de avaliação"></Image>
+          <Image src={Star} alt="Estrela de avaliação"></Image>
+          <Image src={Star} alt="Estrela de avaliação"></Image>
+          <Image src={Star} alt="Estrela de avaliação"></Image>
         </div>
       </div>
     </S.SectionAvaliation>
