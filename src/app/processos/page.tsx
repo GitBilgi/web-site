@@ -1,6 +1,7 @@
 'use client'
-import { Heading } from '@/components/core/Typography/Heading'
+
+import { ProcessosPage } from '@/components/pages/Processos'
 
 export default function Processos() {
-  return <Heading size="lg">Pagina de Processos</Heading>
+  return <ProcessosPage />
 }
