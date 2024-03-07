@@ -14,7 +14,7 @@ export const Container = styled.div`
     }
 
     .container-info-footer {
-      gap: 48px;
+      gap: 150px;
       width: 1280px;
       height: 132px;
       display: flex;
