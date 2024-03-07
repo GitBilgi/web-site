@@ -11,7 +11,7 @@ export function CarouselSupport() {
     <S.Content>
       <div className="content">
         <div className="text">
-          <Heading size="md">
+          <Heading size="md" className="heading">
             Love the simplicity of the service and the prompt customer support.
             We can’t imagine working without it.
           </Heading>
@@ -34,7 +34,7 @@ export function CarouselSupport() {
             },
             mobile: {
               breakpoint: {
-                max: 429,
+                max: 430,
                 min: 0
               },
               items: 1
