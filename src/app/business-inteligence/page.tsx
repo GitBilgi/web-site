@@ -1,6 +1,7 @@
 'use client'
-import { Heading } from '@/components/core/Typography/Heading'
+
+import { Business } from '@/components/pages/Business-Inteligence'
 
 export default function BusinessInteligence() {
-  return <Heading size="lg"> Business Inteligence</Heading>
+  return <Business />
 }
