@@ -42,17 +42,19 @@ export function Header() {
         </S.Content>
       ) : (
         <div className="menu-bar">
-          <div>
+          <div className="LogoImage">
             <Image src={Logo} alt="Logo Bilgi" />
           </div>
 
-          <div onClick={() => setMenuIsVisible(true)}>
-            <Icon
-              size="lg"
-              className="icon"
-              IconRender={Bars2Icon}
-              mode={'hard-gray'}
-            />
+          <div className="hamburguer">
+            <div onClick={() => setMenuIsVisible(true)}>
+              <Icon
+                size="lg"
+                className="icon"
+                IconRender={Bars2Icon}
+                mode={'hard-gray'}
+              />
+            </div>
           </div>
         </div>
       )}

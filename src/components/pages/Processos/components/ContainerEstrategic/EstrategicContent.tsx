@@ -5,8 +5,11 @@ import { Paragraph } from '@/components/core/Typography/Paragraph'
 import { Button } from '@/components/core/Buttons/Button'
 import { Icon } from '@/components/core/Icon'
 import { CheckIcon } from '@heroicons/react/24/solid'
+import { useDeviceDetection } from '@/hooks/utils/useDeviceDetection'
 
 export function ContainerEstrategic() {
+  const { isMobile } = useDeviceDetection()
+
   return (
     <S.ProcessosHome>
       <div className="container1">
@@ -22,10 +25,10 @@ export function ContainerEstrategic() {
           </Paragraph>
         </div>
         <div className="buttons">
-          <Button button_size="xxl" styles="primary">
+          <Button button_size="xxl" styles="primary" className="button">
             Agendar Chamada
           </Button>
-          <Button button_size="xxl" styles="secondary">
+          <Button button_size="xxl" styles="secondary" className="button">
             Explorar
           </Button>
         </div>
@@ -44,9 +47,15 @@ export function ContainerEstrategic() {
           </div>
         </div>
       </div>
-      <div className="container2">
-        <div className="content-image">....</div>
-      </div>
+      {!isMobile ? (
+        <div className="container2">
+          <div className="content-image">....</div>
+        </div>
+      ) : (
+        <div className="container2-mobile">
+          <div className="content-image">....</div>
+        </div>
+      )}
     </S.ProcessosHome>
   )
 }

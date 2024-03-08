@@ -53,5 +53,9 @@ export const Content = styled.div`
 
   @media (max-width: 768px) {
     height: auto;
+
+    .text {
+      padding-top: 64px;
+    }
   }
 `
