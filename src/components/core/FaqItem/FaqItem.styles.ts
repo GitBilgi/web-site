@@ -35,6 +35,7 @@ export const Body = styled.div<Props>`
   ${props => css`
     visibility: hidden;
     opacity: 0;
+    padding-top: 5px;
 
     overflow: ${props.visible ? 'visible' : 'hidden'};
     max-height: 0;

@@ -27,9 +27,17 @@ export const Container = styled.div<ContainerProps>`
 
   .menu-bar {
     width: 100%;
+    height: 72px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding-right: 1rem;
+  }
+  .LogoImage {
+    padding-left: 16px;
+  }
+  .hamburguer {
+    padding-right: 10px;
   }
 `
 

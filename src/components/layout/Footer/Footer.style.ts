@@ -32,31 +32,11 @@ export const Container = styled.div`
       padding-top: 64px;
       flex-direction: row;
       padding-bottom: 48px;
-
-      @media (max-width: 1035px) {
-        width: 100%;
-        height: auto;
-        padding: 40px;
-        justify-content: center;
-      }
-      @media (max-width: 768px) {
-        padding: 10px;
-
-        .produtos {
-          padding-left: 35px;
-        }
-      }
-      .produtos {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-      }
     }
-
-    .Container-infos {
-      gap: 12px;
+    .produtos {
       display: flex;
       flex-direction: column;
+      gap: 20px;
     }
 
     .copyright {
@@ -64,11 +44,6 @@ export const Container = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
-
-      @media (max-width: 768px) {
-        padding-top: 50px;
-        padding-bottom: 50px;
-      }
     }
 
     .component-copy {
@@ -80,57 +55,102 @@ export const Container = styled.div`
       justify-content: space-between;
 
       .icon-union {
-        width: 25.5px;
         height: 20px;
-      }
-      @media (max-width: 1035px) {
-        width: 100%;
-        padding: 20px 0;
-        justify-content: center;
-      }
-      @media (max-width: 768px) {
-        padding: 0;
-        gap: 24px;
-        flex-direction: column-reverse;
+        width: 25.5px;
       }
     }
+
     .direitos {
       display: flex;
       gap: ${props.theme.spacing.spacing_8};
-
-      @media (max-width: 1035px) {
-        padding-right: 32px;
-        justify-content: center;
-        flex-direction: column-reverse;
-      }
     }
     .media-icons {
       display: flex;
       gap: ${props.theme.spacing.spacing_6};
+    }
 
-      @media (max-width: 768px) {
+    @media (max-width: 1035px) {
+      .ContainerFooter {
         width: 100%;
-        padding-left: 35px;
+        height: auto;
+        padding: 40px;
+        justify-content: center;
+      }
+
+      .component-copy {
+        width: 100%;
+        height: 100%;
+        padding: 20px 0;
+        padding-top: 64px;
+        padding-bottom: 64px;
+        justify-content: center;
+      }
+      .direitos {
+        padding-right: 32px;
+      }
+
+      .media-icons {
+        display: flex;
+        gap: ${props.theme.spacing.spacing_6};
+      }
+
+      .container-info-footer {
+        width: 100%;
+        height: 100%;
+      }
+      .Container-infos {
+        width: 211px;
       }
     }
 
     @media (max-width: 768px) {
+      padding: 0;
       width: 100%;
       height: 100%;
-      padding: 0;
       padding-top: 46px;
       flex-direction: column;
       justify-content: center;
 
       .ContainerFooter {
+        height: auto;
+        padding: 10px;
         display: flex;
         flex-direction: column;
-        height: auto;
+      }
+
+      .produtos {
+        padding: 0;
+        padding-left: 35px;
+        padding-left: 16px;
+      }
+      .copyright {
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+
+      .component-copy {
+        gap: 24px;
+        padding: 0;
+        padding: 0;
+        padding-left: 16px;
+        align-items: flex-start;
+        flex-direction: column-reverse;
+      }
+      .direitos {
+        padding-right: 32px;
+        justify-content: center;
+        flex-direction: column-reverse;
+      }
+      .media-icons {
+        width: 100%;
+        padding: 0;
+        padding-left: 35px;
       }
       .container-info-footer {
+        gap: 35px;
+        height: auto;
         max-width: 100%;
         flex-direction: column;
-        height: auto;
       }
     }
   `}

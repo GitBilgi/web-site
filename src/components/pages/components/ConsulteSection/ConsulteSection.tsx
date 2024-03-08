@@ -14,10 +14,10 @@ export function ConsultingSection() {
             </Heading>
           </div>
           <div className="buttons">
-            <Button button_size="xxl" styles="primary">
+            <Button button_size="xxl" styles="primary" className="button">
               Agendar Chamada
             </Button>
-            <Button button_size="xxl" styles="secondary">
+            <Button button_size="xxl" styles="secondary" className="button">
               Conheça os Planos
             </Button>
           </div>

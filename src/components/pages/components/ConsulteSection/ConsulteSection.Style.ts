@@ -45,10 +45,20 @@ export const ContainerConsulting = styled.div`
 
     @media (max-width: 768px) {
       flex-direction: column;
+      .button {
+      }
     }
   }
 
   @media (max-width: 768px) {
     height: 100%;
+
+    .container {
+      padding: 64px 16px;
+
+      .button {
+        max-width: 350px;
+      }
+    }
   }
 `

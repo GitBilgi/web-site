@@ -2,10 +2,10 @@ import styled from 'styled-components'
 
 export const ProcessosHome = styled.div`
   width: 100%;
-  max-height: 720px;
   display: flex;
-  justify-content: center;
+  max-height: 720px;
   flex-direction: row;
+  justify-content: center;
 
   .container1 {
     width: 100%;
@@ -78,5 +78,44 @@ export const ProcessosHome = styled.div`
     display: flex;
     width: 100%;
     background-color: #f2f4f7;
+  }
+
+  .container2-mobile {
+    width: 100%;
+    height: 375px;
+    display: flex;
+    background-color: #f2f4f7;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+
+    .content {
+      gap: 16px;
+      .title {
+        font-size: 36px;
+        line-height: 4.4rem;
+      }
+      .paragraph {
+        padding: 0;
+      }
+    }
+
+    .container1 {
+      padding: 0;
+      padding-bottom: 64px;
+      padding-top: 64px;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+    .buttons {
+      width: 100%;
+
+      .button {
+        width: 350px;
+      }
+    }
   }
 `
