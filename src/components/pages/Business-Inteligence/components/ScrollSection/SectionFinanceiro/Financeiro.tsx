@@ -104,11 +104,11 @@ export function FinanceiroSection() {
 
       {!isMobile ? (
         <div className="container2">
-          <div className="content-image">....</div>
+          <div className="content-image"></div>
         </div>
       ) : (
         <div className="container2-mobile">
-          <div className="content-image">....</div>
+          <div className="content-image"></div>
         </div>
       )}
     </S.SectionFinanceiro>

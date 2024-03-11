@@ -1,29 +1,30 @@
 'use client'
 
-import { Heading } from '@/components/core/Typography/Heading'
-import * as S from './Relacionamento.Style'
-import { HeartIcon } from '@heroicons/react/24/outline'
-import { Icon } from '@/components/core/Icon'
-import { Paragraph } from '@/components/core/Typography/Paragraph'
-import { CheckCircleIcon } from '@heroicons/react/24/solid'
 import { useDeviceDetection } from '@/hooks/utils/useDeviceDetection'
+import * as S from './Support.Style'
+import { Icon } from '@/components/core/Icon'
+import { HeartIcon } from '@heroicons/react/24/outline'
+import { Heading } from '@/components/core/Typography/Heading'
+import { Paragraph } from '@/components/core/Typography/Paragraph'
 import { Button } from '@/components/core/Buttons/Button'
+import { CheckCircleIcon } from '@heroicons/react/24/solid'
 
-export function SectionRelacionamento() {
+export function Support() {
   const { isMobile } = useDeviceDetection()
+
   return (
-    <S.RelacionamentoSection>
+    <S.ContainerSupport>
       <div className="container1">
         <div className="content">
           <div className="content-icon">
             <Icon IconRender={HeartIcon} size="lg" className="icon-customise" />
           </div>
           <div className="heading">
-            <Heading size="md">Relacionamento</Heading>
+            <Heading size="md">Suporte Nível 1 e 2, 24/7</Heading>
           </div>
           <div className="paragraph">
             <Paragraph size="lg">
-              Fortaleça os Laços com seus Clientes
+              De pessoas para pessoas. Seu cliente é muito que apenas um numero.
             </Paragraph>
           </div>
         </div>
@@ -36,10 +37,14 @@ export function SectionRelacionamento() {
                 mode="primary"
                 className="size"
               />
-              <Paragraph size="md" className="paragraph">
-                Acompanhe o Backlog de Tickets, Taxa de Abandono e Taxa de
-                Retenção para aprimorar o atendimento.
-              </Paragraph>
+              <div className="content1">
+                <Heading size="sm">Atendimento em Horário Comercial</Heading>
+                <Paragraph size="md" className="paragraph">
+                  Atendimento disponível durante as horas regulares de
+                  funcionamento, proporcionando suporte nos períodos típicos de
+                  expediente.
+                </Paragraph>
+              </div>
             </div>
             <div className="textarea">
               <Icon
@@ -48,10 +53,14 @@ export function SectionRelacionamento() {
                 mode="primary"
                 className="size"
               />
-              <Paragraph size="md" className="paragraph">
-                Integre informações com o suporte para entender quantas vezes um
-                cliente solicitou assistência e por quê.
-              </Paragraph>
+              <div className="content1">
+                <Heading size="sm">Atendimento Full Time</Heading>
+                <Paragraph size="md" className="paragraph">
+                  Atendimento contínuo e ininterrupto, 24 horas por dia, 7 dias
+                  por semana, para suporte constante e acesso à equipe em tempo
+                  integral.
+                </Paragraph>
+              </div>
             </div>
             <div className="textarea">
               <Icon
@@ -60,10 +69,16 @@ export function SectionRelacionamento() {
                 mode="primary"
                 className="size"
               />
-              <Paragraph size="md" className="paragraph">
-                Meça o NPS, Customer Satisfaction Score (CSAT) e Customer Effort
-                Score para avaliar a satisfação do cliente.
-              </Paragraph>
+              <div className="content1">
+                <Heading size="sm">
+                  Atendimento em Horários Alternativos
+                </Heading>
+                <Paragraph size="md" className="paragraph">
+                  Oferecemos suporte fora do horário comercial convencional,
+                  incluindo noites, fins de semana e feriados, para atender às
+                  necessidades flexíveis de nossos clientes.
+                </Paragraph>
+              </div>
             </div>
           </div>
           <div className="button">
@@ -83,6 +98,6 @@ export function SectionRelacionamento() {
           <div className="content-image"></div>
         </div>
       )}
-    </S.RelacionamentoSection>
+    </S.ContainerSupport>
   )
 }

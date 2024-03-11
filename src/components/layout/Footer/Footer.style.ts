@@ -144,7 +144,6 @@ export const Container = styled.div`
       .media-icons {
         width: 100%;
         padding: 0;
-        padding-left: 35px;
       }
       .container-info-footer {
         gap: 35px;

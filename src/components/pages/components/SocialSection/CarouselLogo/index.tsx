@@ -1,0 +1,1 @@
+export { CarouselLogo } from './CarouselLogo'
