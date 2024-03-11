@@ -21,6 +21,7 @@ export const ContainerRecursos = styled.div`
     justify-content: center;
 
     .paragraph {
+      padding-top: 20px;
       max-width: 592px;
     }
   }
@@ -33,7 +34,7 @@ export const ContainerRecursos = styled.div`
     gap: 32px;
     display: flex;
     max-width: 1280px;
-    padding-top: 64px;
+    padding-top: 75px;
     padding-bottom: 96px;
 
     .text {

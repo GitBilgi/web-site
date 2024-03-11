@@ -24,8 +24,8 @@ export const SectionSocial = styled.div`
   }
 
   .size {
-    max-width: 146px;
-    padding-right: 20px;
+    max-width: 200px;
+    padding-right: 10px;
   }
 
   @media (max-width: 1035px) {
@@ -45,6 +45,10 @@ export const SectionSocial = styled.div`
     .paragraph {
       max-width: 100%;
       text-align: center;
+    }
+
+    .logos {
+      gap: 15px;
     }
   }
 `
