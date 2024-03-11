@@ -19,7 +19,7 @@ export function BusinessHome() {
             Business Inteligence
           </Heading>
           <Heading size="lg" className="title">
-            Explore o Bi mais completo do mercado
+            Explore o BI mais completo do mercado
           </Heading>
           <Paragraph size="md" className="paragraph">
             Soluções para todas as áreas da sua empresa, com insights totalmente
