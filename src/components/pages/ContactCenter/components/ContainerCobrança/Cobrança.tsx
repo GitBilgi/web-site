@@ -1,18 +1,18 @@
 'use client'
-
-import { Heading } from '@/components/core/Typography/Heading'
-import * as S from './AreaComercial.Style'
-import { CurrencyDollarIcon } from '@heroicons/react/24/outline'
 import { Icon } from '@/components/core/Icon'
+import * as S from './Cobrança.Style'
+import { Heading } from '@/components/core/Typography/Heading'
 import { Paragraph } from '@/components/core/Typography/Paragraph'
-import { CheckCircleIcon } from '@heroicons/react/24/solid'
-import { useDeviceDetection } from '@/hooks/utils/useDeviceDetection'
 import { Button } from '@/components/core/Buttons/Button'
+import { useDeviceDetection } from '@/hooks/utils/useDeviceDetection'
+import { CheckCircleIcon } from '@heroicons/react/24/solid'
+import { CurrencyDollarIcon } from '@heroicons/react/24/outline'
 
-export function SectionArea() {
+export function ChargeSection() {
   const { isMobile } = useDeviceDetection()
+
   return (
-    <S.AreaSection>
+    <S.ContainerCharge>
       <div className="container1">
         <div className="content">
           <div className="content-icon">
@@ -23,24 +23,15 @@ export function SectionArea() {
             />
           </div>
           <div className="heading">
-            <Heading size="md">Área Comercial</Heading>
+            <Heading size="md">Cobrança Ativa</Heading>
           </div>
           <div className="paragraph">
-            <Paragraph size="lg">Desvendando Seu Potencial de Vendas</Paragraph>
+            <Paragraph size="lg">
+              Trazendo de volta seu investimento para seu bolso.
+            </Paragraph>
           </div>
         </div>
         <div className="content2">
-          <div className="textarea">
-            <Icon
-              IconRender={CheckCircleIcon}
-              size="md"
-              mode="primary"
-              className="size"
-            />
-            <Paragraph size="lg" className="paragraph">
-              Tenha total controle sobre suas vendas.
-            </Paragraph>
-          </div>
           <div className="content-text">
             <div className="textarea">
               <Icon
@@ -49,21 +40,11 @@ export function SectionArea() {
                 mode="primary"
                 className="size"
               />
-              <Paragraph size="lg" className="paragraph">
-                Acompanhe a quantidade de vendas, prospecções, taxa de conversão
-                e faça comparações mensais e anuais.
-              </Paragraph>
-            </div>
-            <div className="textarea">
-              <Icon
-                IconRender={CheckCircleIcon}
-                size="md"
-                mode="primary"
-                className="size"
-              />
-              <Paragraph size="lg" className="paragraph">
-                Identifique quais produtos são os mais vendidos e os mais
-                lucrativos.
+
+              <Paragraph size="md" className="paragraph">
+                Entramos em contato com clientes em atraso, buscando recuperar
+                valores pendentes e, em caso de cancelamento, o valor e
+                equipamentos.
               </Paragraph>
             </div>
             <div className="textarea">
@@ -74,9 +55,9 @@ export function SectionArea() {
                 className="size"
               />
 
-              <Paragraph size="lg" className="paragraph">
-                Conheça profundamente seus clientes. Saiba o que compram, quanto
-                compram e suas opiniões sobre seus produtos.
+              <Paragraph size="md" className="paragraph">
+                Revertemos situações, trazendo clientes de volta à base com
+                estratégias eficazes.
               </Paragraph>
             </div>
             <div className="textarea">
@@ -86,9 +67,25 @@ export function SectionArea() {
                 mode="primary"
                 className="size"
               />
-              <Paragraph size="lg" className="paragraph">
-                Explore análises de lucro por regiões, apresentadas de maneira
-                visual através de mapas.
+
+              <Paragraph size="md" className="paragraph">
+                Além de gerenciar a inadimplência atual, recuperamos valores
+                retroativos de meses e anos anteriores, incluindo contratos
+                cancelados com débitos.
+              </Paragraph>
+            </div>
+            <div className="textarea">
+              <Icon
+                IconRender={CheckCircleIcon}
+                size="md"
+                mode="primary"
+                className="size"
+              />
+
+              <Paragraph size="md" className="paragraph">
+                Realizamos cálculos precisos, considerando períodos
+                proporcionais de débito, ajustando conforme informações reais,
+                mesmo quando divergentes do sistema.
               </Paragraph>
             </div>
           </div>
@@ -109,6 +106,6 @@ export function SectionArea() {
           <div className="content-image"></div>
         </div>
       )}
-    </S.AreaSection>
+    </S.ContainerCharge>
   )
 }

@@ -1,6 +1,7 @@
 'use client'
-import { Heading } from '@/components/core/Typography/Heading'
+
+import { ContactCenterPage } from '@/components/pages/ContactCenter/ContactCenter'
 
 export default function ContactCenter() {
-  return <Heading size="lg"> Contact Center</Heading>
+  return <ContactCenterPage />
 }

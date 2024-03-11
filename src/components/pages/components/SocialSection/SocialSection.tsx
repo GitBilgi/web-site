@@ -1,18 +1,19 @@
-import Image from 'next/image'
+// import Image from 'next/image'
 import * as S from './SocialSection.Style'
-import { Paragraph } from '@/components/core/Typography/Paragraph'
+// import { Paragraph } from '@/components/core/Typography/Paragraph'
 
-import Layers from '@/images/Layers.png'
-import Sisyphus from '@/images/Sisyphus.png'
-import Circooles from '@/images/Circooles.png'
-import Catalog from '@/images/Catalog.png'
-import Quotient from '@/images/Quotient.png'
-import Hourglass from '@/images/Hourglass.png'
+// import Layers from '@/images/Layers.png'
+// import Sisyphus from '@/images/Sisyphus.png'
+// import Circooles from '@/images/Circooles.png'
+// import Catalog from '@/images/Catalog.png'
+// import Quotient from '@/images/Quotient.png'
+// import Hourglass from '@/images/Hourglass.png'
+import { CarouselLogo } from './CarouselLogo'
 
 export function SocialSection() {
   return (
     <S.SectionSocial>
-      <div>
+      {/* <div>
         <Paragraph size="sm" className="paragraph">
           Junte-se a mais de X.000 empresas que já estão crescendo
         </Paragraph>
@@ -28,6 +29,9 @@ export function SocialSection() {
           <Image src={Quotient} alt="Logo Quotient" className="size" />
           <Image src={Hourglass} alt="Loogo Hourglass" className="size" />
         </div>
+      </div> */}
+      <div className="carousel">
+        <CarouselLogo />
       </div>
     </S.SectionSocial>
   )

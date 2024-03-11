@@ -1,0 +1,1 @@
+export { Atendimento } from './Atendimento'

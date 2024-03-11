@@ -1,29 +1,35 @@
 'use client'
 
-import { Heading } from '@/components/core/Typography/Heading'
-import * as S from './Relacionamento.Style'
-import { HeartIcon } from '@heroicons/react/24/outline'
 import { Icon } from '@/components/core/Icon'
+import * as S from './Atualization.Style'
+import { Heading } from '@/components/core/Typography/Heading'
 import { Paragraph } from '@/components/core/Typography/Paragraph'
 import { CheckCircleIcon } from '@heroicons/react/24/solid'
-import { useDeviceDetection } from '@/hooks/utils/useDeviceDetection'
+import { CheckBadgeIcon } from '@heroicons/react/24/outline'
 import { Button } from '@/components/core/Buttons/Button'
+import { useDeviceDetection } from '@/hooks/utils/useDeviceDetection'
 
-export function SectionRelacionamento() {
+export function Atualization() {
   const { isMobile } = useDeviceDetection()
+
   return (
-    <S.RelacionamentoSection>
+    <S.ContainerAtualization>
       <div className="container1">
         <div className="content">
           <div className="content-icon">
-            <Icon IconRender={HeartIcon} size="lg" className="icon-customise" />
+            <Icon
+              IconRender={CheckBadgeIcon}
+              size="lg"
+              className="icon-customise"
+            />
           </div>
           <div className="heading">
-            <Heading size="md">Relacionamento</Heading>
+            <Heading size="md">Atualização de Planos</Heading>
           </div>
           <div className="paragraph">
             <Paragraph size="lg">
-              Fortaleça os Laços com seus Clientes
+              A melhor forma de trazer seu cliente para o novo plano com baixo
+              custo e alta eficiência.
             </Paragraph>
           </div>
         </div>
@@ -36,9 +42,10 @@ export function SectionRelacionamento() {
                 mode="primary"
                 className="size"
               />
+
               <Paragraph size="md" className="paragraph">
-                Acompanhe o Backlog de Tickets, Taxa de Abandono e Taxa de
-                Retenção para aprimorar o atendimento.
+                Conversamos com clientes usando planos antigos, trazendo ofertas
+                que os fazem querer ficar
               </Paragraph>
             </div>
             <div className="textarea">
@@ -48,21 +55,10 @@ export function SectionRelacionamento() {
                 mode="primary"
                 className="size"
               />
+
               <Paragraph size="md" className="paragraph">
-                Integre informações com o suporte para entender quantas vezes um
-                cliente solicitou assistência e por quê.
-              </Paragraph>
-            </div>
-            <div className="textarea">
-              <Icon
-                IconRender={CheckCircleIcon}
-                size="md"
-                mode="primary"
-                className="size"
-              />
-              <Paragraph size="md" className="paragraph">
-                Meça o NPS, Customer Satisfaction Score (CSAT) e Customer Effort
-                Score para avaliar a satisfação do cliente.
+                Fazemos o upgrade de forma eficiente, otimizando o suporte no
+                dia-a-dia e aumentando o ticket médio.
               </Paragraph>
             </div>
           </div>
@@ -83,6 +79,6 @@ export function SectionRelacionamento() {
           <div className="content-image"></div>
         </div>
       )}
-    </S.RelacionamentoSection>
+    </S.ContainerAtualization>
   )
 }
