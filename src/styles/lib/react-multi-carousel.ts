@@ -9,6 +9,10 @@ export default createGlobalStyle`
       display: flex;
       align-items: center;
       justify-content: center;
+
+      @media (max-width: 768px) {
+        overflow: hidden;
+      }
     }
     .react-multi-carousel-dot {
       button {

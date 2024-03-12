@@ -9,11 +9,13 @@ export const Container = styled.div<Props>`
     top: 0;
     left: 0;
     right: 0;
+    bottom: 0;
     height: 952px;
-    position: absolute;
-    backdrop-filter: blur(3px);
     display: flex;
+    position: fixed;
+    z-index: 1000;
     flex-direction: column;
+    backdrop-filter: blur(3px);
 
     background-color: #fff;
 
@@ -43,13 +45,14 @@ export const Container = styled.div<Props>`
   `}
 
   .container-menu-bar {
-    display: flex;
     height: 72px;
+    display: flex;
     align-items: center;
     justify-content: space-between;
 
     .logo {
-      width: 89px;
+      width: 75px;
+      margin-left: 16px;
     }
   }
   .nav-bar {
@@ -62,27 +65,27 @@ export const Container = styled.div<Props>`
   .footer-mobile {
     width: 100%;
     display: flex;
+    text-align: start;
     padding: 24px 16px;
     flex-direction: row;
-    text-align: start;
     border-top: solid 1px #eaecf0;
 
     .content-footer {
+      gap: 20px;
       width: 200px;
       height: 68px;
       display: flex;
-      gap: 20px;
-      justify-content: flex-start;
       flex-direction: column;
+      justify-content: flex-start;
     }
   }
+
   .button {
     width: 100%;
-    display: block;
+    padding: 24px 16px;
     align-items: center;
     justify-content: center;
     border-top: solid 1px #eaecf0;
-    padding: 24px 16px;
   }
 `
 export const Nav = styled.nav``
