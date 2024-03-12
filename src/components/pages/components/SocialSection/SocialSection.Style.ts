@@ -3,15 +3,22 @@ import styled from 'styled-components'
 export const SectionSocial = styled.div`
   gap: 32px;
   width: 100%;
-  height: 296px;
+  height: 300px;
   display: flex;
-  padding: 96px 80px;
+  padding: 96px 20px;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   background-color: #f9fafb;
 
-  .logos {
+  .carousel {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* .logos {
     gap: 35.4px;
     display: flex;
     flex-direction: row;
@@ -41,7 +48,10 @@ export const SectionSocial = styled.div`
       flex-direction: column;
     }
   }
+
   @media (max-width: 768px) {
+    padding: 30px;
+
     .paragraph {
       max-width: 100%;
       text-align: center;
@@ -50,5 +60,5 @@ export const SectionSocial = styled.div`
     .logos {
       gap: 15px;
     }
-  }
+  } */
 `

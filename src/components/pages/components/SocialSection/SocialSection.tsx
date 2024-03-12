@@ -1,4 +1,5 @@
 // import Image from 'next/image'
+import { Carousell } from './CarouselLogo'
 import * as S from './SocialSection.Style'
 // import { Paragraph } from '@/components/core/Typography/Paragraph'
 
@@ -8,7 +9,6 @@ import * as S from './SocialSection.Style'
 // import Catalog from '@/images/Catalog.png'
 // import Quotient from '@/images/Quotient.png'
 // import Hourglass from '@/images/Hourglass.png'
-import { CarouselLogo } from './CarouselLogo'
 
 export function SocialSection() {
   return (
@@ -31,7 +31,7 @@ export function SocialSection() {
         </div>
       </div> */}
       <div className="carousel">
-        <CarouselLogo />
+        <Carousell />
       </div>
     </S.SectionSocial>
   )

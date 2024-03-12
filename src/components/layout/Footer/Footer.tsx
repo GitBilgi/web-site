@@ -85,13 +85,25 @@ export function Footer() {
             </Paragraph>
           </div>
           <div className="media-icons">
-            <a href="https://www.instagram.com/bilgibpo/">
+            <a
+              href="https://www.instagram.com/bilgibpo/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Image src={Instagram} alt="Icon Instagram" />
             </a>
-            <a href="https://www.linkedin.com/company/bilgi-servi%C3%A7os-empresariais/">
+            <a
+              href="https://www.linkedin.com/company/bilgi-servi%C3%A7os-empresariais/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Image src={Linkedin} alt="Icon Linkedin" />
             </a>
-            <a href="https://m.facebook.com/BilgiBpo/">
+            <a
+              href="https://m.facebook.com/BilgiBpo/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Image src={Facebook} alt="Icon Facebook" />
             </a>
           </div>

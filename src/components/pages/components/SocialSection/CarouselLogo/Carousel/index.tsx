@@ -1,1 +1,1 @@
-export { ContentLogo } from './Carousel'
+export { CardLogo } from './Carousel'
