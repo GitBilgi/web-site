@@ -1,38 +1,41 @@
+'use client'
+
+import Hourglass from '@/images/Hourglass.png'
+import Quotient from '@/images/Quotient.png'
+import Catalog from '@/images/Catalog.png'
+import Circooles from '@/images/Circooles.png'
+import Sisyphus from '@/images/Sisyphus.png'
 import Layers from '@/images/Layers.png'
 import { StaticImageData } from 'next/image'
 
-export interface Logos {
+export interface ILogo {
   cover: StaticImageData
   title: string
 }
 
-export const LOGOS: Logos[] = [
+export const LOGOS: ILogo[] = [
   {
     cover: Layers,
-    title: 'logo'
+    title: 'Logo Layers'
   },
   {
-    cover: Layers,
-    title: 'logo'
+    cover: Sisyphus,
+    title: 'Logo Layers'
   },
   {
-    cover: Layers,
-    title: 'logo'
+    cover: Circooles,
+    title: 'Logo Layers'
   },
   {
-    cover: Layers,
-    title: 'logo'
+    cover: Catalog,
+    title: 'Logo Layers'
   },
   {
-    cover: Layers,
-    title: 'logo'
+    cover: Quotient,
+    title: 'Logo Layers'
   },
   {
-    cover: Layers,
-    title: 'logo'
-  },
-  {
-    cover: Layers,
-    title: 'logo'
+    cover: Hourglass,
+    title: 'Logo Layers'
   }
 ]

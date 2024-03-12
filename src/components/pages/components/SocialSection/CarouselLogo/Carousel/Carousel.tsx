@@ -6,12 +6,12 @@ interface Props {
   title: string
 }
 
-export function ContentLogo({ title, cover }: Props) {
+export function CardLogo({ title, cover }: Props) {
   return (
-    <S.ContainerLogo>
-      <div className="book-image">
+    <S.LogosContent>
+      <div className="logo-image">
         <Image src={cover} alt={title} />
       </div>
-    </S.ContainerLogo>
+    </S.LogosContent>
   )
 }
