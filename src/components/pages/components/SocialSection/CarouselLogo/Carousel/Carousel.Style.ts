@@ -11,12 +11,17 @@ export const LogosContent = styled.div`
       height: 5rem;
       width: 13rem;
 
-      @media (max-width: 1200px) {
-        width: 11.25rem;
-        height: 12.5rem;
+      @media (max-width: 1035px) {
+        width: 14rem;
+        height: 5rem;
       }
     }
-    @media (max-width: 1200px) {
+
+    @media (max-width: 768px) {
+      width: 12rem;
+      height: 5rem;
+    }
+    @media (max-width: 1035px) {
       margin: 0;
       padding: 0;
     }
