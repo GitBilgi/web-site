@@ -118,4 +118,10 @@ export const ProcessosHome = styled.div`
       }
     }
   }
+
+  @media (max-width: 1035px) {
+    .container2 {
+      display: none;
+    }
+  }
 `

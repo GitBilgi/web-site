@@ -7,9 +7,12 @@ import { Button } from '@/components/core/Buttons/Button'
 import { CheckCircleIcon } from '@heroicons/react/24/solid'
 import { UserGroupIcon } from '@heroicons/react/24/outline'
 import { useDeviceDetection } from '@/hooks/utils/useDeviceDetection'
+import { useRouter } from 'next/navigation'
 
 export function Atendimento() {
   const { isMobile } = useDeviceDetection()
+
+  const router = useRouter()
 
   return (
     <S.ContainerAtendimento>
@@ -49,7 +52,11 @@ export function Atendimento() {
             </div>
           </div>
           <div className="button">
-            <Button button_size="xxl" styles="primary">
+            <Button
+              button_size="xxl"
+              styles="primary"
+              onClick={() => router.push('/form')}
+            >
               Agendar Chamada
             </Button>
           </div>

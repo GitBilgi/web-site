@@ -21,11 +21,6 @@ export const Content = styled.div`
     @media (max-width: 1035px) {
       height: 100%;
       width: 100%;
-
-      img {
-        width: 150px;
-        height: 10px;
-      }
     }
   }
 `

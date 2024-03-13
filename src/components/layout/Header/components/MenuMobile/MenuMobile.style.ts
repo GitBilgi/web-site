@@ -10,7 +10,7 @@ export const Container = styled.div<Props>`
     left: 0;
     right: 0;
     bottom: 0;
-    height: 952px;
+    height: 100%;
     display: flex;
     position: fixed;
     z-index: 1000;

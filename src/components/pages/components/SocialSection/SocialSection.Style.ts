@@ -14,8 +14,14 @@ export const SectionSocial = styled.div`
   .carousel {
     display: flex;
     width: 100%;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  .paragraph {
+    padding-top: 64px;
+    text-align: center;
   }
 
   /* .logos {
@@ -33,9 +39,9 @@ export const SectionSocial = styled.div`
   .size {
     max-width: 200px;
     padding-right: 10px;
-  }
+  } */
 
-  @media (max-width: 1035px) {
+  /* @media (max-width: 1035px) {
     flex-direction: column;
 
     .col1,
@@ -47,8 +53,8 @@ export const SectionSocial = styled.div`
       align-items: center;
       flex-direction: column;
     }
-  }
-
+  } */
+  /* 
   @media (max-width: 768px) {
     padding: 30px;
 
@@ -60,5 +66,5 @@ export const SectionSocial = styled.div`
     .logos {
       gap: 15px;
     }
-  } */
+  }  */
 `

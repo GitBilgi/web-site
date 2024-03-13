@@ -101,4 +101,15 @@ export const Container = styled.div`
     display: flex;
     justify-content: flex-end;
   }
+
+  @media (max-width: 1035px) {
+    .image-background-mobile {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .image {
+      max-width: 1035px;
+    }
+  }
 `

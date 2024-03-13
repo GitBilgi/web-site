@@ -8,9 +8,13 @@ import { Paragraph } from '@/components/core/Typography/Paragraph'
 import { CheckCircleIcon } from '@heroicons/react/24/solid'
 import { useDeviceDetection } from '@/hooks/utils/useDeviceDetection'
 import { Button } from '@/components/core/Buttons/Button'
+import { useRouter } from 'next/navigation'
 
 export function FinanceiroSection() {
   const { isMobile } = useDeviceDetection()
+
+  const router = useRouter()
+
   return (
     <S.SectionFinanceiro>
       <div className="container1">
@@ -95,7 +99,11 @@ export function FinanceiroSection() {
             </div>
           </div>
           <div className="button">
-            <Button button_size="xxl" styles="primary">
+            <Button
+              button_size="xxl"
+              styles="primary"
+              onClick={() => router.push('/form')}
+            >
               Agendar Chamada
             </Button>
           </div>

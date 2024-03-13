@@ -13,10 +13,13 @@ import { useDeviceDetection } from '@/hooks/utils/useDeviceDetection'
 import * as S from './Header.style'
 import { Icon } from '@/components/core/Icon'
 import { Bars2Icon } from '@heroicons/react/24/solid'
+import { useRouter } from 'next/navigation'
 
 export function Header() {
   const { isMobile } = useDeviceDetection()
   const [menuIsVisible, setMenuIsVisible] = useState<boolean>(false)
+
+  const router = useRouter()
 
   return (
     <S.Container isMobile={isMobile}>
@@ -35,7 +38,11 @@ export function Header() {
           </S.Nav>
 
           <div className="button">
-            <Button button_size="sm" styles="primary">
+            <Button
+              button_size="sm"
+              styles="primary"
+              onClick={() => router.push('/form')}
+            >
               Agendar Chamada
             </Button>
           </div>

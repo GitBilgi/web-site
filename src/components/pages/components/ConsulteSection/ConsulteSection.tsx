@@ -1,8 +1,11 @@
 import { Heading } from '@/components/core/Typography/Heading'
 import { ContainerConsulting } from './ConsulteSection.Style'
 import { Button } from '@/components/core/Buttons/Button'
+import { useRouter } from 'next/navigation'
 
 export function ConsultingSection() {
+  const router = useRouter()
+
   return (
     <ContainerConsulting>
       <div className="container">
@@ -14,7 +17,12 @@ export function ConsultingSection() {
             </Heading>
           </div>
           <div className="buttons">
-            <Button button_size="xxl" styles="primary" className="button">
+            <Button
+              button_size="xxl"
+              styles="primary"
+              className="button"
+              onClick={() => router.push('/form')}
+            >
               Agendar Chamada
             </Button>
             <Button button_size="xxl" styles="secondary" className="button">

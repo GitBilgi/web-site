@@ -9,6 +9,7 @@ import { XMarkIcon } from '@heroicons/react/24/solid'
 import Logo from '@/images/Logo.png'
 import Image from 'next/image'
 import { Button } from '@/components/core/Buttons/Button'
+import { useRouter } from 'next/navigation'
 
 interface Props {
   menuIsVisible: boolean
@@ -16,6 +17,8 @@ interface Props {
 }
 
 export function MenuMobile({ menuIsVisible, setMenuIsVisible }: Props) {
+  const router = useRouter()
+
   return (
     <Container isVisible={menuIsVisible}>
       <div className="container-menu-bar">
@@ -60,7 +63,11 @@ export function MenuMobile({ menuIsVisible, setMenuIsVisible }: Props) {
         </div>
       </div>
       <div className="button">
-        <Button button_size="xxl" styles="primary">
+        <Button
+          button_size="xxl"
+          styles="primary"
+          onClick={() => router.push('/form')}
+        >
           Agendar Chamada
         </Button>
       </div>

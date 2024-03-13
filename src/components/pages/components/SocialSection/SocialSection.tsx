@@ -1,24 +1,12 @@
 // import Image from 'next/image'
 import { Carousell } from './CarouselLogo'
 import * as S from './SocialSection.Style'
-// import { Paragraph } from '@/components/core/Typography/Paragraph'
-
-// import Layers from '@/images/Layers.png'
-// import Sisyphus from '@/images/Sisyphus.png'
-// import Circooles from '@/images/Circooles.png'
-// import Catalog from '@/images/Catalog.png'
-// import Quotient from '@/images/Quotient.png'
-// import Hourglass from '@/images/Hourglass.png'
+import { Paragraph } from '@/components/core/Typography/Paragraph'
 
 export function SocialSection() {
   return (
     <S.SectionSocial>
-      {/* <div>
-        <Paragraph size="sm" className="paragraph">
-          Junte-se a mais de X.000 empresas que já estão crescendo
-        </Paragraph>
-      </div>
-      <div className="logos">
+      {/* <div className="logos">
         <div className="col1">
           <Image src={Layers} alt="Logo Layers" className="size" />
           <Image src={Sisyphus} alt="Logo Sisyphus" className="size" />
@@ -31,6 +19,11 @@ export function SocialSection() {
         </div>
       </div> */}
       <div className="carousel">
+        <div>
+          <Paragraph size="sm" className="paragraph">
+            Junte-se a mais de X.000 empresas que já estão crescendo
+          </Paragraph>
+        </div>
         <Carousell />
       </div>
     </S.SectionSocial>

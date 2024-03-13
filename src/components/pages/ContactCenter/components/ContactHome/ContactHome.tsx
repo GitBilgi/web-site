@@ -8,9 +8,13 @@ import { useDeviceDetection } from '@/hooks/utils/useDeviceDetection'
 import * as S from './ContactHome.Style'
 
 import { Icon } from '@/components/core/Icon'
+import { useRouter } from 'next/navigation'
 
 export function ContactHome() {
   const { isMobile } = useDeviceDetection()
+
+  const router = useRouter()
+
   return (
     <S.ContainerHome>
       <div className="container1">
@@ -26,7 +30,12 @@ export function ContactHome() {
           </Paragraph>
         </div>
         <div className="buttons">
-          <Button button_size="xxl" styles="primary" className="button">
+          <Button
+            button_size="xxl"
+            styles="primary"
+            className="button"
+            onClick={() => router.push('/form')}
+          >
             Agendar Chamada
           </Button>
           <Button button_size="xxl" styles="secondary" className="button">
