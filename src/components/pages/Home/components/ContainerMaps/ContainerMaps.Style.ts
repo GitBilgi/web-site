@@ -33,7 +33,7 @@ export const SectionMap = styled.div`
     border: solid 1px #333;
 
     @media (max-width: 1035px) {
-      width: 100%;
+      width: 800px;
     }
     @media (max-width: 768px) {
       width: 400px;

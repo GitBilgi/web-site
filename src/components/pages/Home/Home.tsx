@@ -5,6 +5,9 @@ import { DadosSection } from '../components/SectionDados'
 import { ContainerHome } from './components/ContainerHome'
 import { FeatureSection } from './components/ContainerFeatures'
 import { ContainerMaps } from './components/ContainerMaps'
+import { CarouselSupport } from '../components/CarouselAvaliation'
+import { FaqSection } from '../components/FaqSection'
+import { ConsultingSection } from '../components/ConsulteSection'
 
 export function HomePage() {
   return (
@@ -18,6 +21,12 @@ export function HomePage() {
       <DadosSection />
 
       <ContainerMaps />
+
+      <CarouselSupport />
+
+      <FaqSection />
+
+      <ConsultingSection />
     </>
   )
 }

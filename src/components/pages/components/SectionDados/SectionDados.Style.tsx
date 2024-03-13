@@ -170,4 +170,13 @@ export const SectionDados = styled.div`
   @media (max-width: 768px) {
     height: 100%;
   }
+
+  @media (max-width: 1035px) {
+    display: flex;
+    height: 100%;
+
+    .card-container {
+      display: flex;
+    }
+  }
 `

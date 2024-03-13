@@ -1,6 +1,9 @@
 'use client'
 
+import { CarouselSupport } from '../components/CarouselAvaliation'
+import { ConsultingSection } from '../components/ConsulteSection'
 import { Dados } from '../components/DadosSemDestaques'
+import { FaqSection } from '../components/FaqSection'
 import { SocialSection } from '../components/SocialSection'
 import { BusinessHome } from './components/BusinesHome/BusinessHome'
 import { Recursos } from './components/RecursoContainer'
@@ -24,6 +27,12 @@ export function Business() {
       <FinanceiroSection />
 
       <SectionRelacionamento />
+
+      <CarouselSupport />
+
+      <FaqSection />
+
+      <ConsultingSection />
     </>
   )
 }

@@ -10,7 +10,7 @@ export function Service() {
       <div className="container">
         <div className="recursos">
           <Heading size="xs" className="heading">
-            Recursos
+            Serviços
           </Heading>
           <Heading size="lg" className="size">
             Atendimento personalizado para as necessidades da sua empresa

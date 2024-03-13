@@ -4,13 +4,13 @@ export const Content = styled.div`
   width: 100%;
   height: 534px;
   display: flex;
+  text-align: center;
   align-items: center;
   justify-content: center;
-  text-align: center;
 
   .content {
-    max-width: 1280px;
     height: 342px;
+    max-width: 1280px;
     align-items: center;
     justify-content: center;
 
@@ -30,22 +30,19 @@ export const Content = styled.div`
 
     @media (max-width: 1035px) {
       max-width: 100%;
-
-      .heading {
-        @media (max-width: 768px) {
-          width: 100%;
-          height: auto;
-          line-height: 3.8rem;
-        }
-      }
     }
   }
   @media (max-width: 1035px) {
     .content {
-      max-width: 100%;
       height: 100%;
+      display: flex;
+      max-width: 100%;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
     }
     .text {
+      width: 850px;
       font-size: 30px;
       line-height: 38px;
     }
@@ -53,6 +50,12 @@ export const Content = styled.div`
 
   @media (max-width: 768px) {
     height: auto;
+
+    .heading {
+      width: 100%;
+      height: auto;
+      line-height: 3.8rem;
+    }
 
     .text {
       padding-top: 64px;

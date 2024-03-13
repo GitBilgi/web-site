@@ -6,8 +6,11 @@ import { Paragraph } from '@/components/core/Typography/Paragraph'
 import Image from 'next/image'
 import * as S from './Dados.Style'
 import { Button } from '@/components/core/Buttons/Button'
+import { useRouter } from 'next/navigation'
 
 export function Dados() {
+  const router = useRouter()
+
   return (
     <S.SectionDados>
       <div className="text">
@@ -40,7 +43,11 @@ export function Dados() {
         </div>
 
         <div className="div-button">
-          <Button button_size="xxl" styles="primary">
+          <Button
+            button_size="xxl"
+            styles="primary"
+            onClick={() => router.push('/form')}
+          >
             Agendar Chamada
           </Button>
         </div>

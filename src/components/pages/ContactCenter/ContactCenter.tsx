@@ -1,5 +1,8 @@
 'use client'
 
+import { CarouselSupport } from '../components/CarouselAvaliation'
+import { ConsultingSection } from '../components/ConsulteSection'
+import { FaqSection } from '../components/FaqSection'
 import { SocialSection } from '../components/SocialSection'
 import { ContactHome } from './components/ContactHome/ContactHome'
 import { Atendimento } from './components/ContainerAtendimento'
@@ -27,6 +30,12 @@ export function ContactCenterPage() {
       <Atualization />
 
       <Atendimento />
+
+      <CarouselSupport />
+
+      <FaqSection />
+
+      <ConsultingSection />
     </>
   )
 }

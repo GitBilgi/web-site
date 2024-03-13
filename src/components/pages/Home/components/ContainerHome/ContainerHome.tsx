@@ -13,9 +13,12 @@ import GDrive from '@/images/g-drive.png'
 import Background from '@/images/background.png'
 import BackgroundMobile from '@/images/BackgroundRight.png'
 import { useDeviceDetection } from '@/hooks/utils/useDeviceDetection'
+import { useRouter } from 'next/navigation'
 
 export function ContainerHome() {
   const { isMobile } = useDeviceDetection()
+
+  const router = useRouter()
 
   return (
     <S.Container>
@@ -31,7 +34,11 @@ export function ContainerHome() {
           </Paragraph>
         </div>
         <div className="buttons">
-          <Button button_size="xxl" styles="primary">
+          <Button
+            button_size="xxl"
+            styles="primary"
+            onClick={() => router.push('/form')}
+          >
             Agendar Chamada
           </Button>
           <Button button_size="xxl" styles="secondary">
@@ -49,7 +56,11 @@ export function ContainerHome() {
         </div>
         {!isMobile ? (
           <div className="image-background">
-            <Image src={Background} alt="Imagem de Fundo HomePage" />
+            <Image
+              src={Background}
+              alt="Imagem de Fundo HomePage"
+              className="image"
+            />
           </div>
         ) : (
           <div className="image-background-mobile">

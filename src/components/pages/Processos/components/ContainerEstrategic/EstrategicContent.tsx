@@ -6,9 +6,12 @@ import { Button } from '@/components/core/Buttons/Button'
 import { Icon } from '@/components/core/Icon'
 import { CheckIcon } from '@heroicons/react/24/solid'
 import { useDeviceDetection } from '@/hooks/utils/useDeviceDetection'
+import { useRouter } from 'next/navigation'
 
 export function ContainerEstrategic() {
   const { isMobile } = useDeviceDetection()
+
+  const router = useRouter()
 
   return (
     <S.ProcessosHome>
@@ -25,7 +28,12 @@ export function ContainerEstrategic() {
           </Paragraph>
         </div>
         <div className="buttons">
-          <Button button_size="xxl" styles="primary" className="button">
+          <Button
+            button_size="xxl"
+            styles="primary"
+            className="button"
+            onClick={() => router.push('/form')}
+          >
             Agendar Chamada
           </Button>
           <Button button_size="xxl" styles="secondary" className="button">

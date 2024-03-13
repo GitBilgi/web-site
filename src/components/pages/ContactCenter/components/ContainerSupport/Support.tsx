@@ -8,9 +8,12 @@ import { Heading } from '@/components/core/Typography/Heading'
 import { Paragraph } from '@/components/core/Typography/Paragraph'
 import { Button } from '@/components/core/Buttons/Button'
 import { CheckCircleIcon } from '@heroicons/react/24/solid'
+import { useRouter } from 'next/navigation'
 
 export function Support() {
   const { isMobile } = useDeviceDetection()
+
+  const router = useRouter()
 
   return (
     <S.ContainerSupport>
@@ -82,7 +85,11 @@ export function Support() {
             </div>
           </div>
           <div className="button">
-            <Button button_size="xxl" styles="primary">
+            <Button
+              button_size="xxl"
+              styles="primary"
+              onClick={() => router.push('/form')}
+            >
               Agendar Chamada
             </Button>
           </div>

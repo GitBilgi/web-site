@@ -6,8 +6,11 @@ import Fast from '@/images/Icon.png'
 import { Heading } from '@/components/core/Typography/Heading'
 import { Paragraph } from '@/components/core/Typography/Paragraph'
 import { Button } from '@/components/core/Buttons/Button'
+import { useRouter } from 'next/navigation'
 
 export function Features() {
+  const router = useRouter()
+
   return (
     <S.ContainerFeatures>
       <div className="text-content">
@@ -87,7 +90,11 @@ export function Features() {
           </div>
         </div>
       </div>
-      <Button button_size="xxl" styles="primary">
+      <Button
+        button_size="xxl"
+        styles="primary"
+        onClick={() => router.push('/form')}
+      >
         Agendar Chamada
       </Button>
     </S.ContainerFeatures>

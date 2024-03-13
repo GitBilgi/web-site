@@ -7,9 +7,12 @@ import { Paragraph } from '@/components/core/Typography/Paragraph'
 import { Button } from '@/components/core/Buttons/Button'
 import { Icon } from '@/components/core/Icon'
 import { CheckIcon } from '@heroicons/react/24/solid'
+import { useRouter } from 'next/navigation'
 
 export function BusinessHome() {
   const { isMobile } = useDeviceDetection()
+
+  const router = useRouter()
 
   return (
     <ContainerHome>
@@ -27,7 +30,12 @@ export function BusinessHome() {
           </Paragraph>
         </div>
         <div className="buttons">
-          <Button button_size="xxl" styles="primary" className="button">
+          <Button
+            button_size="xxl"
+            styles="primary"
+            className="button"
+            onClick={() => router.push('/form')}
+          >
             Agendar Chamada
           </Button>
           <Button button_size="xxl" styles="secondary" className="button">
