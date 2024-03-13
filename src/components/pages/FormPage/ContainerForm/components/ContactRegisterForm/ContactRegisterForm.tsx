@@ -15,7 +15,7 @@ export function ContactRegisterForm() {
     >
       {({ values, touched, errors, isValid }) => (
         <Form>
-          <Row className="mb-4">
+          <Row className="mb-4 g-4">
             <Col xs={12} md={6}>
               <Field
                 as={InputField}
@@ -88,7 +88,7 @@ export function ContactRegisterForm() {
             />
           </Row>
 
-          <Row className="mb-4">
+          <Row className="mb-4 g-4">
             <Col xs={12} md={6}>
               <Field
                 as={InputField}
@@ -129,7 +129,7 @@ export function ContactRegisterForm() {
               />
             </Col>
           </Row>
-          <Row className="mb-4">
+          <Row className="mb-5">
             <Col>
               <Field
                 as={TextArea}
@@ -163,7 +163,7 @@ export function ContactRegisterForm() {
             </Col>
           </Row>
 
-          <Row className="mb-4">
+          <Row className="mb-5 ">
             <Col>
               <Field
                 as={CheckBox}
