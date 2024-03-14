@@ -78,13 +78,11 @@ export function ContactRegisterForm() {
               label="Celular"
               name="celular"
               placeholder="(00) 00000-0000"
-              type="number"
-              error={
-                touched.ultimoNome && !!errors.ultimoNome
-                  ? errors.ultimoNome
-                  : ''
+              type="text"
+              error={touched.celular && !!errors.celular ? errors.celular : ''}
+              helperText={
+                touched.celular && !!errors.celular ? errors.celular : ''
               }
-              helperText={touched.email && !!errors.email ? errors.email : ''}
             />
           </Row>
 
@@ -175,7 +173,7 @@ export function ContactRegisterForm() {
           </Row>
 
           <Row className="mb-4">
-            <Col>
+            <Col className="d-flex justify-content-center">
               <Button
                 button_size="xxl"
                 styles="primary"
