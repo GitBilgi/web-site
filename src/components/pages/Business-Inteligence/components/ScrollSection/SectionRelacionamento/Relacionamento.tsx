@@ -6,12 +6,12 @@ import { HeartIcon } from '@heroicons/react/24/outline'
 import { Icon } from '@/components/core/Icon'
 import { Paragraph } from '@/components/core/Typography/Paragraph'
 import { CheckCircleIcon } from '@heroicons/react/24/solid'
-import { useDeviceDetection } from '@/hooks/utils/useDeviceDetection'
+// import { useDeviceDetection } from '@/hooks/utils/useDeviceDetection'
 import { Button } from '@/components/core/Buttons/Button'
 import { useRouter } from 'next/navigation'
 
 export function SectionRelacionamento() {
-  const { isMobile } = useDeviceDetection()
+  // const { isMobile } = useDeviceDetection()
 
   const router = useRouter()
 
@@ -82,7 +82,7 @@ export function SectionRelacionamento() {
         </div>
       </div>
 
-      {!isMobile ? (
+      {/* {!isMobile ? (
         <div className="container2">
           <div className="content-image"></div>
         </div>
@@ -90,7 +90,7 @@ export function SectionRelacionamento() {
         <div className="container2-mobile">
           <div className="content-image"></div>
         </div>
-      )}
+      )} */}
     </S.RelacionamentoSection>
   )
 }

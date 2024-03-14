@@ -2,16 +2,16 @@ import styled from 'styled-components'
 
 export const AreaSection = styled.div`
   width: 100%;
-  max-height: 100%;
   display: flex;
+  max-height: 100%;
   flex-direction: row;
   justify-content: center;
 
   .container1 {
     width: 100%;
     display: flex;
-    padding-left: 112px;
     padding-top: 190px;
+    padding-left: 112px;
     padding-bottom: 128px;
     flex-direction: column;
   }
@@ -22,9 +22,9 @@ export const AreaSection = styled.div`
     justify-content: center;
   }
   .content-text {
+    gap: 20px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
   }
 
   .textarea {
@@ -59,12 +59,21 @@ export const AreaSection = styled.div`
     justify-content: flex-end;
   }
 
-  .container2 {
+  /* .container2 {
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
-  }
+    justify-content: center;
+
+    .content-image {
+      width: 100%;
+      height: 100%;
+
+      .image {
+        width: 100%;
+      }
+    }
+  } */
 
   .button {
     display: flex;
@@ -72,8 +81,8 @@ export const AreaSection = styled.div`
 
     @media (max-width: 768px) {
       width: 100%;
-      flex-direction: column;
       align-items: center;
+      flex-direction: column;
     }
   }
 
@@ -92,8 +101,8 @@ export const AreaSection = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
-    display: flex;
     height: 100%;
+    display: flex;
     flex-direction: column;
 
     .content {
@@ -102,17 +111,17 @@ export const AreaSection = styled.div`
 
     .container1 {
       padding: 0;
-      padding-bottom: 64px;
       padding-top: 64px;
       padding-left: 16px;
       padding-right: 16px;
+      padding-bottom: 64px;
     }
     .paragraph {
       font-size: 16px;
     }
     .size {
-      display: flex;
       width: 20px;
+      display: flex;
     }
     .button {
       padding-top: 100px;

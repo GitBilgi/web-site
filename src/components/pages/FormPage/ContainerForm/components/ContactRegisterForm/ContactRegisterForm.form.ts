@@ -37,7 +37,7 @@ export const validationSchema = Yup.object().shape({
     .max(64, 'O nome deve ter o máximo de 64 caracteres'),
   email: Yup.string().required('Campo Obrigatório'),
   celular: Yup.string().required('Campo Obrigatório'),
-  totalClientes: Yup.number().required('Campo Obrigatório'),
+  totalClientes: Yup.string().required('Campo Obrigatório'),
   sistemaAtual: Yup.string().required('Campo Obrigatório'),
   mensagem: Yup.string()
     .required()
