@@ -17,7 +17,7 @@ export const ContainerAtualization = styled.div`
     flex-direction: column;
   }
   .heading {
-    width: 650px;
+    max-width: 650px;
   }
   .content {
     gap: 24px;
