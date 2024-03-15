@@ -3,7 +3,7 @@ import { Heading } from '@/components/core/Typography/Heading'
 import { Paragraph } from '@/components/core/Typography/Paragraph'
 import { Button } from '@/components/core/Buttons/Button'
 import { CheckIcon } from '@heroicons/react/24/solid'
-// import { useDeviceDetection } from '@/hooks/utils/useDeviceDetection'
+import { useDeviceDetection } from '@/hooks/utils/useDeviceDetection'
 
 import * as S from './ContactHome.Style'
 
@@ -11,7 +11,7 @@ import { Icon } from '@/components/core/Icon'
 import { useRouter } from 'next/navigation'
 
 export function ContactHome() {
-  // const { isMobile } = useDeviceDetection()
+  const { isMobile } = useDeviceDetection()
 
   const router = useRouter()
 
@@ -57,7 +57,7 @@ export function ContactHome() {
           </div>
         </div>
       </div>
-      {/* {!isMobile ? (
+      {!isMobile ? (
         <div className="container2">
           <div className="content-image">....</div>
         </div>
@@ -65,7 +65,7 @@ export function ContactHome() {
         <div className="container2-mobile">
           <div className="content-image">....</div>
         </div>
-      )} */}
+      )}
     </S.ContainerHome>
   )
 }
