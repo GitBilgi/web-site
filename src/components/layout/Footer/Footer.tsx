@@ -8,7 +8,7 @@ import { Heading } from '@/components/core/Typography/Heading'
 import { ButtonLink } from '@/components/core/Buttons/ButtonLink'
 
 import Union from '@/images/Union.png'
-import Inteligence from '@/images/BilgiInteligence.png'
+import Logo from '@/images/Logo.png'
 import Instagram from '@/images/instagram.png'
 import Linkedin from '@/images/linkedin.png'
 import Facebook from '@/images/facebook.png'
@@ -20,7 +20,7 @@ export function Footer() {
         <div className="container-info-footer">
           <div className="Container-Logo">
             <div>
-              <Image src={Inteligence} alt="Logo Bilgi Inteligence"></Image>
+              <Image src={Logo} alt="Logo Bilgi Inteligence"></Image>
             </div>
             <div>
               <Paragraph size="sm">Conectando você ao que importa.</Paragraph>

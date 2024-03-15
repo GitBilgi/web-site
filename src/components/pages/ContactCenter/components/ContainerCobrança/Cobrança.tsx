@@ -4,13 +4,13 @@ import * as S from './Cobrança.Style'
 import { Heading } from '@/components/core/Typography/Heading'
 import { Paragraph } from '@/components/core/Typography/Paragraph'
 import { Button } from '@/components/core/Buttons/Button'
-import { useDeviceDetection } from '@/hooks/utils/useDeviceDetection'
+// import { useDeviceDetection } from '@/hooks/utils/useDeviceDetection'
 import { CheckCircleIcon } from '@heroicons/react/24/solid'
 import { CurrencyDollarIcon } from '@heroicons/react/24/outline'
 import { useRouter } from 'next/navigation'
 
 export function ChargeSection() {
-  const { isMobile } = useDeviceDetection()
+  // const { isMobile } = useDeviceDetection()
 
   const router = useRouter()
 
@@ -104,7 +104,7 @@ export function ChargeSection() {
         </div>
       </div>
 
-      {!isMobile ? (
+      {/* {!isMobile ? (
         <div className="container2">
           <div className="content-image"></div>
         </div>
@@ -112,7 +112,7 @@ export function ChargeSection() {
         <div className="container2-mobile">
           <div className="content-image"></div>
         </div>
-      )}
+      )} */}
     </S.ContainerCharge>
   )
 }
