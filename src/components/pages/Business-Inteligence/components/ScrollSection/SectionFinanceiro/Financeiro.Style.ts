@@ -9,10 +9,11 @@ export const SectionFinanceiro = styled.div`
 
   .container1 {
     width: 100%;
+    height: 100%;
     display: flex;
     padding-left: 112px;
-    padding-top: 190px;
-    padding-bottom: 128px;
+    padding-top: 90px;
+    padding-bottom: 80px;
     flex-direction: column;
   }
   .content {
@@ -68,7 +69,7 @@ export const SectionFinanceiro = styled.div`
 
   .button {
     display: flex;
-    padding-top: 166px;
+    padding-top: 80px;
 
     @media (max-width: 768px) {
       width: 100%;

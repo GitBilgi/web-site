@@ -9,10 +9,11 @@ export const AreaSection = styled.div`
 
   .container1 {
     width: 100%;
+    height: 100%;
     display: flex;
-    padding-top: 190px;
+    padding-top: 80px;
     padding-left: 112px;
-    padding-bottom: 128px;
+    padding-bottom: 80px;
     flex-direction: column;
   }
   .content {
@@ -77,7 +78,7 @@ export const AreaSection = styled.div`
 
   .button {
     display: flex;
-    padding-top: 166px;
+    padding-top: 80px;
 
     @media (max-width: 768px) {
       width: 100%;
