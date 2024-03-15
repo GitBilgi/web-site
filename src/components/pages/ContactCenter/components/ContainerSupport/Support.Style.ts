@@ -9,11 +9,15 @@ export const ContainerSupport = styled.div`
 
   .container1 {
     width: 100%;
+    height: 100%;
     display: flex;
+    padding-top: 100px;
     padding-left: 112px;
-    padding-top: 190px;
-    padding-bottom: 128px;
+    padding-bottom: 80px;
     flex-direction: column;
+  }
+  .heading {
+    width: 650px;
   }
   .content {
     gap: 24px;
@@ -25,12 +29,6 @@ export const ContainerSupport = styled.div`
     display: flex;
     flex-direction: column;
     gap: 20px;
-  }
-  .content1 {
-    gap: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
 
   .textarea {
@@ -74,7 +72,7 @@ export const ContainerSupport = styled.div`
 
   .button {
     display: flex;
-    padding-top: 166px;
+    padding-top: 100px;
 
     @media (max-width: 768px) {
       width: 100%;
