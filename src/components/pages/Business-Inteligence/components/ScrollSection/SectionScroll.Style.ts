@@ -3,7 +3,7 @@
 import styled from 'styled-components'
 
 export const ContainerScroll = styled.section`
-  height: 100vh;
+  max-height: 100vh;
   display: flex;
   overflow: auto;
   position: relative;
