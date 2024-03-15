@@ -30,6 +30,10 @@ export const ContainerRecursos = styled.div`
     color: #80162a;
   }
 
+  .size {
+    line-height: 6rem;
+  }
+
   .container-cards {
     gap: 32px;
     display: flex;
