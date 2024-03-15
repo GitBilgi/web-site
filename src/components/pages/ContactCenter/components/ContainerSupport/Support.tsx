@@ -1,6 +1,6 @@
 'use client'
 
-import { useDeviceDetection } from '@/hooks/utils/useDeviceDetection'
+// import { useDeviceDetection } from '@/hooks/utils/useDeviceDetection'
 import * as S from './Support.Style'
 import { Icon } from '@/components/core/Icon'
 import { HeartIcon } from '@heroicons/react/24/outline'
@@ -11,7 +11,7 @@ import { CheckCircleIcon } from '@heroicons/react/24/solid'
 import { useRouter } from 'next/navigation'
 
 export function Support() {
-  const { isMobile } = useDeviceDetection()
+  // const { isMobile } = useDeviceDetection()
 
   const router = useRouter()
 
@@ -96,7 +96,7 @@ export function Support() {
         </div>
       </div>
 
-      {!isMobile ? (
+      {/* {!isMobile ? (
         <div className="container2">
           <div className="content-image"></div>
         </div>
@@ -104,7 +104,7 @@ export function Support() {
         <div className="container2-mobile">
           <div className="content-image"></div>
         </div>
-      )}
+      )} */}
     </S.ContainerSupport>
   )
 }

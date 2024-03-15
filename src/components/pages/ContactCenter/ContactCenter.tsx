@@ -5,11 +5,12 @@ import { ConsultingSection } from '../components/ConsulteSection'
 import { FaqSection } from '../components/FaqSection'
 import { SocialSection } from '../components/SocialSection'
 import { ContactHome } from './components/ContactHome/ContactHome'
-import { Atendimento } from './components/ContainerAtendimento'
-import { Atualization } from './components/ContainerAtualization'
-import { ChargeSection } from './components/ContainerCobrança'
+// import { Atendimento } from './components/ContainerAtendimento'
+// import { Atualization } from './components/ContainerAtualization'
+// import { ChargeSection } from './components/ContainerCobrança'
 import { ContentRecurso } from './components/ContainerRecursos'
-import { Support } from './components/ContainerSupport'
+import { ContainerScroll } from './components/ContainerScroll'
+// import { Support } from './components/ContainerSupport'
 import { Service } from './components/Serviços'
 
 export function ContactCenterPage() {
@@ -23,13 +24,15 @@ export function ContactCenterPage() {
 
       <Service />
 
-      <Support />
+      {/* <Support /> */}
 
-      <ChargeSection />
+      {/* <ChargeSection />
 
       <Atualization />
 
-      <Atendimento />
+      <Atendimento /> */}
+
+      <ContainerScroll />
 
       <CarouselSupport />
 

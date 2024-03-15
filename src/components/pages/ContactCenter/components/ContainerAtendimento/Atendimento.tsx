@@ -6,11 +6,11 @@ import { Paragraph } from '@/components/core/Typography/Paragraph'
 import { Button } from '@/components/core/Buttons/Button'
 import { CheckCircleIcon } from '@heroicons/react/24/solid'
 import { UserGroupIcon } from '@heroicons/react/24/outline'
-import { useDeviceDetection } from '@/hooks/utils/useDeviceDetection'
+// import { useDeviceDetection } from '@/hooks/utils/useDeviceDetection'
 import { useRouter } from 'next/navigation'
 
 export function Atendimento() {
-  const { isMobile } = useDeviceDetection()
+  // const { isMobile } = useDeviceDetection()
 
   const router = useRouter()
 
@@ -63,7 +63,7 @@ export function Atendimento() {
         </div>
       </div>
 
-      {!isMobile ? (
+      {/* {!isMobile ? (
         <div className="container2">
           <div className="content-image"></div>
         </div>
@@ -71,7 +71,7 @@ export function Atendimento() {
         <div className="container2-mobile">
           <div className="content-image"></div>
         </div>
-      )}
+      )} */}
     </S.ContainerAtendimento>
   )
 }
