@@ -78,7 +78,7 @@ export const AreaSection = styled.div`
 
   .button {
     display: flex;
-    padding-top: 80px;
+    padding-top: 100px;
 
     @media (max-width: 768px) {
       width: 100%;

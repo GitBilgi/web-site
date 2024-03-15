@@ -8,6 +8,9 @@ export const ContainerScroll = styled.section`
   flex-direction: column;
 `
 export const TextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   overflow-y: auto;
   flex: 1;
 
