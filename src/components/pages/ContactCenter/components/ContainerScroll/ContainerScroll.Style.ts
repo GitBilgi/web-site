@@ -9,6 +9,7 @@ export const ContainerScroll = styled.section`
 `
 export const TextContainer = styled.div`
   display: flex;
+  max-width: 50vw;
   flex-direction: column;
   height: 100%;
   overflow-y: auto;
