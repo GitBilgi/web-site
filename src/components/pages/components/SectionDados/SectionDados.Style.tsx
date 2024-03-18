@@ -106,8 +106,6 @@ export const SectionDados = styled.div`
         width: 100%;
         max-height: 100%;
       }
-      .container {
-      }
     }
   }
   .card-container {
