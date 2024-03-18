@@ -9,7 +9,7 @@ export function GoogleMaps() {
   })
   const positions = [
     { lat: -22.39432306590823, lng: -47.578030331808215 },
-    { lat: -8.277645110523023, lng: -35.971084669410416 }
+    { lat: -8.277682747555193, lng: -35.97119713262611 }
   ]
   return (
     <S.Maps>

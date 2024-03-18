@@ -84,11 +84,10 @@ export const SectionDados = styled.div`
     align-items: center;
     border-radius: 10px;
     justify-content: center;
-    border: solid 4px #98a2b3;
 
-    .imagem {
+    .image {
       max-width: 757px;
-      height: 502px;
+      max-height: 502px;
       border-radius: 10px;
     }
 
@@ -97,12 +96,17 @@ export const SectionDados = styled.div`
     }
 
     @media (max-width: 768px) {
-      width: 390px;
-      height: 265px;
+      max-width: 390px;
+      height: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
 
-      .imagem {
+      .image {
+        display: flex;
         width: 100%;
-        height: 100%;
+        max-height: 100%;
+      }
+      .container {
       }
     }
   }
