@@ -7,19 +7,21 @@ export function GoogleMaps() {
     id: 'google-map-script',
     googleMapsApiKey: 'AIzaSyCSwaAgUHFURfwE9nlNVjBtehvCb0Lu_CA'
   })
-  const Position = {
-    lat: -22.39432306590823,
-    lng: -47.578030331808215
-  }
+  const positions = [
+    { lat: -22.39432306590823, lng: -47.578030331808215 },
+    { lat: -8.277645110523023, lng: -35.971084669410416 }
+  ]
   return (
     <S.Maps>
       {isLoaded ? (
         <GoogleMap
           mapContainerStyle={{ width: '1280px', height: '400px' }}
-          center={Position}
-          zoom={15}
+          center={positions[0]}
+          zoom={3.7}
         >
-          <Marker position={Position} />
+          {positions.map((position, index) => (
+            <Marker key={index} position={position} />
+          ))}
         </GoogleMap>
       ) : (
         <></>

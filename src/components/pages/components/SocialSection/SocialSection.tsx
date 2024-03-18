@@ -21,7 +21,7 @@ export function SocialSection() {
       <div className="carousel">
         <div>
           <Paragraph size="sm" className="paragraph">
-            Junte-se a mais de X.000 empresas que já estão crescendo
+            Junte-se a empresas que já estão crescendo
           </Paragraph>
         </div>
         <Carousell />
