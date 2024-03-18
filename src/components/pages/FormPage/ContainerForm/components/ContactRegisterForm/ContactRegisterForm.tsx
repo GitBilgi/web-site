@@ -5,7 +5,7 @@ import { InputField } from '@/components/core/Form/Fields/InputField'
 import { Button } from '@/components/core/Buttons/Button'
 import { CheckBox } from '@/components/core/Form/Fields/CheckBox'
 import { TextArea } from '@/components/core/Form/Fields/TextArea'
-// import { insertMaskInPhone } from '@/components/pages/components/utils/FunctionMask'
+import { cellPhoneNumberMask } from '@/components/pages/components/utils/FunctionMask'
 
 export function ContactRegisterForm() {
   return (
@@ -14,7 +14,7 @@ export function ContactRegisterForm() {
       validationSchema={validationSchema}
       onSubmit={() => console.log(initialValues)}
     >
-      {({ values, touched, errors, isValid }) => (
+      {({ values, touched, errors, isValid, setFieldValue }) => (
         <Form>
           <Row className="mb-4 g-4">
             <Col xs={12} md={6}>
@@ -78,9 +78,9 @@ export function ContactRegisterForm() {
               as={InputField}
               label="Celular"
               name="celular"
-              // onChange={(e: string) => {
-              //   setFieldValue('celular', insertMaskInPhone(e.target.value))
-              // }}
+              onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+                setFieldValue('celular', cellPhoneNumberMask(e.target.value))
+              }}
               placeholder="(00) 00000-0000"
               type="text"
               error={touched.celular && !!errors.celular ? errors.celular : ''}

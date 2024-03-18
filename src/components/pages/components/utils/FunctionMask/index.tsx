@@ -1,11 +1,6 @@
-export const insertMaskInPhone = (phone: string) => {
-  const noMask = phone.replace(/\D/, '')
-  const { length } = noMask
-
-  if (length <= 11) {
-    return noMask
-      .replace(/(\d{2}) (\d)/, '($1) $1')
-      .replace(length === 11 ? /(\d{5}) (\d)/ : /(\d{4}) (\d)/, '$1-$2')
-  }
-  return phone
+export function cellPhoneNumberMask(value: string): string {
+  return value
+    .replace(/\D/g, '')
+    .replace(/^(\d{2})(\d)/g, '($1) $2 ')
+    .replace(/(\d)(\d{4})$/, '$1-$2')
 }
