@@ -9,11 +9,12 @@ export const ItemFaq: FaqItens[] = [
   {
     question: 'Há uma avaliação gratuita disponível?',
     response:
-      'Sim, você pode nos testar gratuitamente por 30 dias. Se desejar, forneceremos uma chamada de integração personalizada e gratuita de 30 minutos para que você comece a trabalhar o mais rápido possível.'
+      'Sim, nossa Demo de Business Intelligence esta disponível para teste em nosso site por tempo ilimitado, caso haja dúvidas em algum de nossos serviços poderá constatar um de nossos especialistas.'
   },
   {
     question: 'Posso alterar meu plano posteriormente?',
-    response: ''
+    response:
+      'Sim, nossos especialistas realizam a proposta de acordo com a necessidade do cliente, podendo realizar um upgrade a qualquer momento.'
   },
   {
     question: 'Qual é sua política de cancelamento?',

@@ -59,7 +59,7 @@ export function FeatureSection() {
               </div>
             </div>
             <div className="buttonlink">
-              <ButtonLink link="/" mode="red" size="md">
+              <ButtonLink link="/processos" mode="red" size="md">
                 Explorer
               </ButtonLink>
               <Icon size="xs" IconRender={ArrowRightIcon} mode="primary" />
@@ -89,7 +89,7 @@ export function FeatureSection() {
               </div>
             </div>
             <div className="buttonlink">
-              <ButtonLink link="/" mode="red" size="md">
+              <ButtonLink link="/business-inteligence" mode="red" size="md">
                 Explorer
               </ButtonLink>
               <Icon size="xs" IconRender={ArrowRightIcon} mode="primary" />
@@ -118,7 +118,7 @@ export function FeatureSection() {
               </div>
             </div>
             <div className="buttonlink">
-              <ButtonLink link="/" mode="red" size="md">
+              <ButtonLink link="/contact-center" mode="red" size="md">
                 Explorer
               </ButtonLink>
               <Icon size="xs" IconRender={ArrowRightIcon} mode="primary" />

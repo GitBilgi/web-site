@@ -5,7 +5,7 @@ import { createGlobalStyle, css } from 'styled-components'
 export default createGlobalStyle`
   ${props => css`
     .react-multi-carousel-track {
-      height: 280px;
+      height: 300px;
       display: flex;
       align-items: center;
       justify-content: center;

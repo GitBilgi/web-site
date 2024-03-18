@@ -51,7 +51,7 @@ export function Footer() {
               </Heading>
             </div>
             <div className="produtos">
-              <ButtonLink link="/" mode="gray" size="md">
+              <ButtonLink link="/form" mode="gray" size="md">
                 Contato
               </ButtonLink>
               <ButtonLink link="/" mode="gray" size="md">
