@@ -7,7 +7,7 @@ import BrakoutRed from '@/images/BreakoutRed.png'
 
 /*Images*/
 
-import Build from '@/images/build.png'
+// import Build from '@/images/build.png'
 import { Heading } from '@/components/core/Typography/Heading'
 import { Paragraph } from '@/components/core/Typography/Paragraph'
 import Image from 'next/image'
@@ -45,7 +45,13 @@ export function DadosSection() {
       <div className="container">
         <div className="content-container">
           <div className="image">
-            <Image src={Build} alt="imagem ilustrativa" className="imagem" />
+            <iframe
+              className="BI"
+              title="atividade"
+              width="600"
+              height="373.5"
+              src="https://app.powerbi.com/view?r=eyJrIjoiNTViZTliNWEtNTA1Mi00MzI5LWIwMmItZDA1YTllNDlhNTQxIiwidCI6IjYzOWQ1NmI2LTlhNWMtNDUxNC1iODFjLWZkMzgxMTY2MzFlYiJ9"
+            />
           </div>
         </div>
 
