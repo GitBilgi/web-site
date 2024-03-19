@@ -14,10 +14,35 @@ import Image from 'next/image'
 import * as S from './SectionDados.Style'
 import { Button } from '@/components/core/Buttons/Button'
 import { useRouter } from 'next/navigation'
+import { useEffect, useRef } from 'react'
 
 export function DadosSection() {
   const router = useRouter()
 
+  const containerRef = useRef(null) // Criamos a ref aqui
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate__animated', 'animate__zoomIn')
+          }
+        })
+      },
+      {
+        threshold: 0.8
+      }
+    )
+
+    if (containerRef.current) {
+      observer.observe(containerRef.current)
+    }
+
+    return () => {
+      if (observer) observer.disconnect()
+    }
+  }, [])
   return (
     <S.SectionDados>
       <div className="text">
@@ -43,7 +68,7 @@ export function DadosSection() {
       </div>
 
       <div className="container">
-        <div className="content-container">
+        <div className="content-container" ref={containerRef}>
           <div className="image">
             <iframe
               className="BI"
