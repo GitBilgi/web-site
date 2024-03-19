@@ -5,10 +5,36 @@ import { Paragraph } from '@/components/core/Typography/Paragraph'
 import * as S from './Dados.Style'
 import { Button } from '@/components/core/Buttons/Button'
 import { useRouter } from 'next/navigation'
+import 'animate.css'
+import { useEffect, useRef } from 'react'
 
 export function Dados() {
   const router = useRouter()
 
+  const containerRef = useRef(null) // Criamos a ref aqui
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate__animated', 'animate__zoomIn')
+          }
+        })
+      },
+      {
+        threshold: 0.8
+      }
+    )
+
+    if (containerRef.current) {
+      observer.observe(containerRef.current)
+    }
+
+    return () => {
+      if (observer) observer.disconnect()
+    }
+  }, [])
   return (
     <S.SectionDados>
       <div className="text">
@@ -33,11 +59,10 @@ export function Dados() {
         </div>
       </div>
 
-      <div className="container">
+      <div className="container" ref={containerRef}>
         <div className="content-container">
           <div className="image">
             <iframe
-              className="BI"
               title="atividade"
               width="600"
               height="373.5"
