@@ -59,13 +59,13 @@ export function Dados() {
         </div>
       </div>
 
-      <div className="container" ref={containerRef}>
+      <div className="container">
         <div className="content-container">
-          <div className="image">
+          <div className="image" ref={containerRef}>
             <iframe
               title="atividade"
-              width="600"
-              height="373.5"
+              width="800"
+              height="500"
               src="https://app.powerbi.com/view?r=eyJrIjoiNTViZTliNWEtNTA1Mi00MzI5LWIwMmItZDA1YTllNDlhNTQxIiwidCI6IjYzOWQ1NmI2LTlhNWMtNDUxNC1iODFjLWZkMzgxMTY2MzFlYiJ9"
             />
           </div>

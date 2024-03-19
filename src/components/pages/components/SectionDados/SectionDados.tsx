@@ -4,7 +4,7 @@
 import MessageCircle from '@/images/MessageChat.png'
 import Zap from '@/images/zap.png'
 import BrakoutRed from '@/images/BreakoutRed.png'
-
+import 'animate.css'
 /*Images*/
 
 // import Build from '@/images/build.png'
@@ -43,6 +43,7 @@ export function DadosSection() {
       if (observer) observer.disconnect()
     }
   }, [])
+
   return (
     <S.SectionDados>
       <div className="text">
@@ -68,13 +69,12 @@ export function DadosSection() {
       </div>
 
       <div className="container">
-        <div className="content-container" ref={containerRef}>
-          <div className="image">
+        <div className="content-container">
+          <div className="image" ref={containerRef}>
             <iframe
-              className="BI"
               title="atividade"
-              width="600"
-              height="373.5"
+              width="800"
+              height="500"
               src="https://app.powerbi.com/view?r=eyJrIjoiNTViZTliNWEtNTA1Mi00MzI5LWIwMmItZDA1YTllNDlhNTQxIiwidCI6IjYzOWQ1NmI2LTlhNWMtNDUxNC1iODFjLWZkMzgxMTY2MzFlYiJ9"
             />
           </div>
