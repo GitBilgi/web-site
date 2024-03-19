@@ -15,9 +15,12 @@ import * as S from './SectionDados.Style'
 import { Button } from '@/components/core/Buttons/Button'
 import { useRouter } from 'next/navigation'
 import { useEffect, useRef } from 'react'
+import { useDeviceDetection } from '@/hooks/utils/useDeviceDetection'
 
 export function DadosSection() {
   const router = useRouter()
+
+  const { isMobile } = useDeviceDetection()
 
   const containerRef = useRef(null) // Criamos a ref aqui
 
@@ -68,28 +71,53 @@ export function DadosSection() {
         </div>
       </div>
 
-      <div className="container">
-        <div className="content-container">
-          <div className="image" ref={containerRef}>
-            <iframe
-              title="atividade"
-              width="800"
-              height="500"
-              src="https://app.powerbi.com/view?r=eyJrIjoiNTViZTliNWEtNTA1Mi00MzI5LWIwMmItZDA1YTllNDlhNTQxIiwidCI6IjYzOWQ1NmI2LTlhNWMtNDUxNC1iODFjLWZkMzgxMTY2MzFlYiJ9"
-            />
+      {!isMobile ? (
+        <div className="container">
+          <div className="content-container">
+            <div className="image" ref={containerRef}>
+              <iframe
+                title="atividade"
+                width="800"
+                height="500"
+                src="https://app.powerbi.com/view?r=eyJrIjoiNTViZTliNWEtNTA1Mi00MzI5LWIwMmItZDA1YTllNDlhNTQxIiwidCI6IjYzOWQ1NmI2LTlhNWMtNDUxNC1iODFjLWZkMzgxMTY2MzFlYiJ9"
+              />
+            </div>
+          </div>
+
+          <div className="div-button">
+            <Button
+              button_size="xxl"
+              styles="primary"
+              onClick={() => router.push('/form')}
+            >
+              Agendar Chamada
+            </Button>
           </div>
         </div>
+      ) : (
+        <div className="container">
+          <div className="content-container">
+            <div className="image" ref={containerRef}>
+              <iframe
+                title="atividade"
+                width="500"
+                height="280"
+                src="https://app.powerbi.com/view?r=eyJrIjoiNTViZTliNWEtNTA1Mi00MzI5LWIwMmItZDA1YTllNDlhNTQxIiwidCI6IjYzOWQ1NmI2LTlhNWMtNDUxNC1iODFjLWZkMzgxMTY2MzFlYiJ9"
+              />
+            </div>
+          </div>
 
-        <div className="div-button">
-          <Button
-            button_size="xxl"
-            styles="primary"
-            onClick={() => router.push('/form')}
-          >
-            Agendar Chamada
-          </Button>
+          <div className="div-button">
+            <Button
+              button_size="xxl"
+              styles="primary"
+              onClick={() => router.push('/form')}
+            >
+              Agendar Chamada
+            </Button>
+          </div>
         </div>
-      </div>
+      )}
 
       <div className="card-container">
         <div className="cards">
