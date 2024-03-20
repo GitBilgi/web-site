@@ -8,8 +8,8 @@ export const LogosContent = styled.div`
 
   .logo-image {
     img {
-      width: 19rem;
-      height: 9.5rem;
+      width: 18rem;
+      height: 8.5rem;
 
       @media (max-width: 1035px) {
         width: 14rem;
