@@ -4,18 +4,19 @@
 import MessageCircle from '@/images/MessageChat.png'
 import Zap from '@/images/zap.png'
 import BrakoutRed from '@/images/BreakoutRed.png'
-import 'animate.css'
+import Image from 'next/image'
 /*Images*/
 
 // import Build from '@/images/build.png'
 import { Heading } from '@/components/core/Typography/Heading'
 import { Paragraph } from '@/components/core/Typography/Paragraph'
-import Image from 'next/image'
-import * as S from './SectionDados.Style'
 import { Button } from '@/components/core/Buttons/Button'
 import { useRouter } from 'next/navigation'
 import { useEffect, useRef } from 'react'
 import { useDeviceDetection } from '@/hooks/utils/useDeviceDetection'
+
+import * as S from './SectionDados.Style'
+import 'animate.css'
 
 export function DadosSection() {
   const router = useRouter()

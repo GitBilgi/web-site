@@ -83,9 +83,9 @@ export const ContainerFeatures = styled.div`
 
   @media (max-width: 768px) {
     padding: 0;
+    height: 100%;
     padding-top: 64px;
     padding-bottom: 64px;
-    height: 100%;
 
     .text-content {
       padding-left: 16px;

@@ -7,8 +7,8 @@ export const ContainerRecursos = styled.div`
     max-width: 1216px;
     align-items: center;
     padding-bottom: 64px;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
   }
 
   .recursos {
@@ -71,11 +71,11 @@ export const ContainerRecursos = styled.div`
 
     .container-cards {
       padding: 0;
+      padding-top: 48px;
       padding-left: 16px;
       padding-right: 16px;
-      align-items: flex-start;
-      padding-top: 48px;
       flex-direction: column;
+      align-items: flex-start;
     }
 
     .cards {

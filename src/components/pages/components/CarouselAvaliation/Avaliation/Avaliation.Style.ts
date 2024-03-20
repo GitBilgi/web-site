@@ -1,18 +1,18 @@
 import styled from 'styled-components'
 
 export const SectionAvaliation = styled.div`
-  max-width: 100%;
   height: 534px;
   display: flex;
+  max-width: 100%;
+  text-align: center;
   align-items: center;
   justify-content: center;
-  text-align: center;
 
   .avaliations {
-    display: flex;
-    flex-direction: column;
-    padding-top: 32px;
     gap: 16px;
+    display: flex;
+    padding-top: 32px;
+    flex-direction: column;
   }
   .stars {
     display: flex;

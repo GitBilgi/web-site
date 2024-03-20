@@ -2,8 +2,8 @@ import styled from 'styled-components'
 
 export const ContainerCharge = styled.div`
   width: 100%;
-  max-height: 100%;
   display: flex;
+  max-height: 100%;
   flex-direction: row;
   justify-content: center;
 
@@ -26,9 +26,9 @@ export const ContainerCharge = styled.div`
     justify-content: center;
   }
   .content-text {
+    gap: 20px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
   }
 
   .textarea {
@@ -66,8 +66,8 @@ export const ContainerCharge = styled.div`
   .container2 {
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
   }
 
   .button {
@@ -76,8 +76,8 @@ export const ContainerCharge = styled.div`
 
     @media (max-width: 768px) {
       width: 100%;
-      flex-direction: column;
       align-items: center;
+      flex-direction: column;
     }
   }
 
@@ -96,8 +96,8 @@ export const ContainerCharge = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
-    display: flex;
     height: 100%;
+    display: flex;
     flex-direction: column;
 
     .content {
@@ -105,18 +105,14 @@ export const ContainerCharge = styled.div`
     }
 
     .container1 {
-      padding: 0;
-      padding-bottom: 64px;
-      padding-top: 64px;
-      padding-left: 16px;
-      padding-right: 16px;
+      padding: 64px 16px;
     }
     .paragraph {
       font-size: 16px;
     }
     .size {
-      display: flex;
       width: 20px;
+      display: flex;
     }
     .button {
       padding-top: 100px;

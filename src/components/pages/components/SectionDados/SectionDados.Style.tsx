@@ -33,8 +33,8 @@ export const SectionDados = styled.div`
   }
 
   .content-text {
-    max-width: 768px;
     display: flex;
+    max-width: 768px;
     text-align: center;
     align-items: center;
     flex-direction: column;
@@ -72,15 +72,15 @@ export const SectionDados = styled.div`
     justify-content: center;
 
     @media (max-width: 768px) {
+      gap: 48px;
       height: auto;
       padding-top: 64px;
-      gap: 48px;
     }
   }
   .content-container {
-    max-width: 768px;
-    height: 512px;
     display: flex;
+    height: 512px;
+    max-width: 768px;
     align-items: center;
     border-radius: 10px;
     justify-content: center;
@@ -96,14 +96,14 @@ export const SectionDados = styled.div`
     }
 
     @media (max-width: 768px) {
-      max-width: 390px;
       height: 100%;
+      max-width: 390px;
       padding-left: 10px;
       padding-right: 10px;
 
       .image {
-        display: flex;
         width: 100%;
+        display: flex;
         max-height: 100%;
       }
     }
@@ -174,8 +174,8 @@ export const SectionDados = styled.div`
   }
 
   @media (max-width: 1035px) {
-    display: flex;
     height: 100%;
+    display: flex;
 
     .card-container {
       display: flex;

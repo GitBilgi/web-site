@@ -7,8 +7,8 @@ export const RecursoContainer = styled.div`
     max-width: 1216px;
     align-items: center;
     padding-bottom: 64px;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
   }
 
   .recursos {
@@ -21,8 +21,8 @@ export const RecursoContainer = styled.div`
     justify-content: center;
 
     .paragraph {
-      padding-top: 20px;
       max-width: 592px;
+      padding-top: 20px;
     }
   }
 
@@ -72,11 +72,11 @@ export const RecursoContainer = styled.div`
 
     .container-cards {
       padding: 0;
+      padding-top: 48px;
       padding-left: 16px;
       padding-right: 16px;
-      align-items: flex-start;
-      padding-top: 48px;
       flex-direction: column;
+      align-items: flex-start;
     }
 
     .cards {

@@ -95,8 +95,8 @@ export const ContentForm = styled.div`
     } */
     .politic {
       display: flex;
-      flex-direction: column;
       text-align: center;
+      flex-direction: column;
     }
 
     .content-text {
