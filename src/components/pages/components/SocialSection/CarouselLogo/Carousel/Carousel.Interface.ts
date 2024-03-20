@@ -11,6 +11,7 @@ import Telecom from '@/images/telecomlogo.png'
 import TINet from '@/images/Tinetlogo.png'
 import Pixel from '@/images/Pixellogo.png'
 import Sermed from '@/images/sermedlogo.png'
+
 import { StaticImageData } from 'next/image'
 
 export interface ILogo {
@@ -25,19 +26,19 @@ export const LOGOS: ILogo[] = [
   },
   {
     cover: Pixel,
-    title: 'Logo Layers'
+    title: 'Logo Pixel'
   },
   {
     cover: TINet,
-    title: 'Logo Layers'
+    title: 'Logo TiNet'
   },
   {
     cover: Telecom,
-    title: 'Logo Layers'
+    title: 'Logo Telecom'
   },
   {
     cover: Sage,
-    title: 'Logo Layers'
+    title: 'Logo Sage'
   },
   {
     cover: Caruaru,
@@ -61,6 +62,6 @@ export const LOGOS: ILogo[] = [
   },
   {
     cover: PolyCanal,
-    title: 'Logo Poly Canal'
+    title: 'Logo PolyCanal'
   }
 ]
