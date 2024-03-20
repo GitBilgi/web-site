@@ -10,8 +10,8 @@ export const ProcessosHome = styled.div`
   .container1 {
     width: 100%;
     display: flex;
-    padding-left: 112px;
     padding-top: 128px;
+    padding-left: 112px;
     padding-bottom: 128px;
     flex-direction: column;
   }
@@ -19,8 +19,8 @@ export const ProcessosHome = styled.div`
   .container2 {
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
   }
 
   .content {
@@ -35,8 +35,8 @@ export const ProcessosHome = styled.div`
     .title {
       height: 100%;
       font-size: 60px;
-      line-height: 7rem;
       max-width: 544px;
+      line-height: 7rem;
     }
   }
   .subtitle {
@@ -45,9 +45,9 @@ export const ProcessosHome = styled.div`
     max-width: 250px;
     padding: 4px 12px;
     border-radius: 16px;
-    background-color: #fff3f0;
     align-items: center;
     justify-content: center;
+    background-color: #fff3f0;
   }
   .buttons {
     gap: 12px;
@@ -56,16 +56,16 @@ export const ProcessosHome = styled.div`
 
     @media (max-width: 768px) {
       width: 100%;
-      flex-direction: column;
       align-items: center;
+      flex-direction: column;
     }
   }
 
   .extra {
+    gap: 4px;
     display: flex;
     padding-top: 48px;
     flex-direction: column;
-    gap: 4px;
   }
   .extra-infos {
     gap: 4px;
@@ -75,8 +75,8 @@ export const ProcessosHome = styled.div`
   }
 
   .container2 {
-    display: flex;
     width: 100%;
+    display: flex;
     background-color: #f2f4f7;
   }
 
@@ -88,8 +88,8 @@ export const ProcessosHome = styled.div`
   }
   @media (max-width: 768px) {
     width: 100%;
-    display: flex;
     height: 100%;
+    display: flex;
     flex-direction: column;
 
     .content {
@@ -104,11 +104,7 @@ export const ProcessosHome = styled.div`
     }
 
     .container1 {
-      padding: 0;
-      padding-bottom: 64px;
-      padding-top: 64px;
-      padding-left: 16px;
-      padding-right: 16px;
+      padding: 64px 16px;
     }
     .buttons {
       width: 100%;

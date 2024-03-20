@@ -4,8 +4,8 @@ export const Container = styled.div`
   width: 100%;
   display: flex;
   padding-top: 54px;
-  padding-bottom: 54px;
   align-items: center;
+  padding-bottom: 54px;
   flex-direction: column;
   justify-content: center;
 
@@ -19,8 +19,8 @@ export const Container = styled.div`
     padding: 42px 80px 72px 80px;
 
     .subtitle {
-      max-width: 320px;
       color: #80162a;
+      max-width: 320px;
       padding: 4px 12px;
       border-radius: 16px;
       background-color: #fff3f0;
@@ -52,8 +52,8 @@ export const Container = styled.div`
 
       @media (max-width: 768px) {
         width: 100%;
-        flex-direction: column;
         align-items: center;
+        flex-direction: column;
       }
     }
 
@@ -81,8 +81,8 @@ export const Container = styled.div`
       display: flex;
     }
     @media (max-width: 768px) {
-      height: auto;
       padding: 0;
+      height: auto;
       padding-top: 50px;
     }
   }

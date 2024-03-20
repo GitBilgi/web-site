@@ -22,9 +22,9 @@ export const ContainerConsulting = styled.div`
       background-color: ${props.theme.colors.gray.gray_900};
 
       @media (max-width: 768px) {
-        padding: 30px;
         width: 100%;
         height: 100%;
+        padding: 30px;
         align-items: center;
         justify-content: center;
       }
@@ -42,8 +42,8 @@ export const ContainerConsulting = styled.div`
       max-width: 944px;
     }
     .buttons {
-      display: flex;
       gap: 12px;
+      display: flex;
 
       @media (max-width: 768px) {
         flex-direction: column;

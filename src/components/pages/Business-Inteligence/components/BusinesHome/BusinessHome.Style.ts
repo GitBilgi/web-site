@@ -2,16 +2,16 @@ import styled from 'styled-components'
 
 export const ContainerHome = styled.div`
   width: 100%;
-  max-height: 792px;
   display: flex;
+  max-height: 792px;
   flex-direction: row;
   justify-content: center;
 
   .container1 {
     width: 100%;
     display: flex;
-    padding-left: 112px;
     padding-top: 128px;
+    padding-left: 112px;
     padding-bottom: 128px;
     flex-direction: column;
   }
@@ -19,8 +19,8 @@ export const ContainerHome = styled.div`
   .container2 {
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
   }
 
   .content {
@@ -36,8 +36,8 @@ export const ContainerHome = styled.div`
     .title {
       height: 100%;
       font-size: 60px;
-      line-height: 7rem;
       max-width: 544px;
+      line-height: 7rem;
     }
   }
   .subtitle {
@@ -46,8 +46,8 @@ export const ContainerHome = styled.div`
     max-width: 250px;
     padding: 4px 12px;
     border-radius: 16px;
-    background-color: #fff3f0;
     align-items: center;
+    background-color: #fff3f0;
     justify-content: center;
   }
   .buttons {
@@ -57,8 +57,8 @@ export const ContainerHome = styled.div`
 
     @media (max-width: 768px) {
       width: 100%;
-      flex-direction: column;
       align-items: center;
+      flex-direction: column;
     }
   }
 
@@ -91,8 +91,8 @@ export const ContainerHome = styled.div`
   }
   @media (max-width: 768px) {
     width: 100%;
-    display: flex;
     height: 100%;
+    display: flex;
     flex-direction: column;
 
     .content {
@@ -108,10 +108,10 @@ export const ContainerHome = styled.div`
 
     .container1 {
       padding: 0;
-      padding-bottom: 64px;
       padding-top: 64px;
       padding-left: 16px;
       padding-right: 16px;
+      padding-bottom: 64px;
     }
     .buttons {
       width: 100%;

@@ -3,12 +3,12 @@ import styled from 'styled-components'
 export const ContainerService = styled.div`
   .container {
     display: flex;
-    padding-top: 80px;
     max-width: 1216px;
+    padding-top: 80px;
     align-items: center;
     padding-bottom: 64px;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
   }
 
   .recursos {
@@ -21,8 +21,8 @@ export const ContainerService = styled.div`
     justify-content: center;
 
     .paragraph {
-      padding-top: 20px;
       max-width: 592px;
+      padding-top: 20px;
     }
     .size {
       line-height: 5.6rem;

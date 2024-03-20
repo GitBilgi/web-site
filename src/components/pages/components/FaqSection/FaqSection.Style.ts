@@ -4,16 +4,16 @@ export const SectionFaq = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
 
   .text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding-top: 64px;
     gap: 20px;
+    display: flex;
+    padding-top: 64px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .container {
@@ -24,14 +24,14 @@ export const SectionFaq = styled.div`
 
   .container-faqitem {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding-right: 80px;
     padding-left: 80px;
+    padding-right: 80px;
+    flex-direction: column;
+    justify-content: center;
 
     @media (max-width: 768px) {
-      padding-right: 16px;
       padding-left: 16px;
+      padding-right: 16px;
     }
   }
 

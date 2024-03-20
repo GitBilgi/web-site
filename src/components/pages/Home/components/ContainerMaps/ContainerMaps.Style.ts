@@ -28,8 +28,8 @@ export const SectionMap = styled.div`
   }
 
   .maps {
-    max-width: 1283px;
     height: 402px;
+    max-width: 1283px;
     border: solid 1px #333;
 
     @media (max-width: 1035px) {

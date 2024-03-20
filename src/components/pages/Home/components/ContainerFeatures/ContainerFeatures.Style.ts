@@ -17,8 +17,8 @@ export const SectionFeatures = styled.div`
       padding-right: 0;
     }
     @media (max-width: 768px) {
-      padding-left: 10px;
       text-align: start;
+      padding-left: 10px;
     }
   }
 

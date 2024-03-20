@@ -1,19 +1,19 @@
 import styled from 'styled-components'
 
 export const ContainerScroll = styled.section`
-  max-height: 100vh;
   display: flex;
   overflow: auto;
+  max-height: 100vh;
   position: relative;
   flex-direction: column;
 `
 export const TextContainer = styled.div`
+  flex: 1;
+  height: 100%;
   display: flex;
   max-width: 50vw;
-  flex-direction: column;
-  height: 100%;
   overflow-y: auto;
-  flex: 1;
+  flex-direction: column;
 
   scrollbar-width: none;
   scroll-behavior: smooth;
@@ -21,8 +21,8 @@ export const TextContainer = styled.div`
 export const ImageContainer = styled.div`
   top: 0;
   right: 0;
-  z-index: -1;
   width: 50%;
+  z-index: -1;
   height: 100%;
   position: absolute;
   background-size: cover;
