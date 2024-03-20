@@ -12,10 +12,10 @@ export const SectionSocial = styled.div`
   background-color: #f9fafb;
 
   .carousel {
-    display: flex;
     width: 100%;
-    flex-direction: column;
+    display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
   }
 
