@@ -6,7 +6,7 @@ import { ContainerEstrategic } from './components/ContainerEstrategic'
 import { Features } from './components/ContainerFeatures'
 import { CarouselSupport } from '../components/CarouselAvaliation'
 import { ConsultingSection } from '../components/ConsulteSection'
-import { FaqSectionProcessos } from '../components/FaqSectionProcessos'
+import { FaqSectionProcessos } from '../components/FaqSections/FaqSectionProcessos'
 
 export function ProcessosPage() {
   return (

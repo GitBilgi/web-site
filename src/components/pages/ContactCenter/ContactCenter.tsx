@@ -2,7 +2,7 @@
 
 import { CarouselSupport } from '../components/CarouselAvaliation'
 import { ConsultingSection } from '../components/ConsulteSection'
-import { FaqSectionContact } from '../components/FaqSectionContact'
+import { FaqSectionContact } from '../components/FaqSections/FaqSectionContact'
 import { SocialSection } from '../components/SocialSection'
 import { ContactHome } from './components/ContactHome/ContactHome'
 // import { Atendimento } from './components/ContainerAtendimento'
