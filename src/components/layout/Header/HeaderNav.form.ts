@@ -11,7 +11,7 @@ export const NavForm: INavForm[] = [
   },
   {
     link: '/processos',
-    children: 'Gestão de Processos'
+    children: 'Gerenciamento Estratégico'
   },
   {
     link: '/business-inteligence',

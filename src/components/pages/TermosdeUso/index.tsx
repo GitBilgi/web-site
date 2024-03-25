@@ -1,0 +1,1 @@
+export { TermosdeUso } from './Termos'
