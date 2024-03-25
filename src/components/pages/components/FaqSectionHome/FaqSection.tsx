@@ -5,7 +5,7 @@ import { Paragraph } from '@/components/core/Typography/Paragraph'
 import { FaqItem } from '@/components/core/FaqItem'
 import { ItemFaq } from './FaqSection.interface'
 
-export function FaqSection() {
+export function FaqSectionHome() {
   return (
     <SectionFaq>
       <div className="text">
