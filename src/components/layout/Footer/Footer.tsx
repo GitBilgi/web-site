@@ -34,7 +34,7 @@ export function Footer() {
             </div>
             <div className="produtos">
               <ButtonLink link="/processos" mode="gray" size="md">
-                Gestão de Processos
+                Gerenciamento Estratégico
               </ButtonLink>
               <ButtonLink link="/business-inteligence" mode="gray" size="md">
                 Business Inteligente
@@ -66,7 +66,7 @@ export function Footer() {
               <ButtonLink link="/politica-de-privacidade" mode="gray" size="md">
                 Política de Privacidade
               </ButtonLink>
-              <ButtonLink link="/" mode="gray" size="md">
+              <ButtonLink link="/termos-de-uso" mode="gray" size="md">
                 Termos de Uso
               </ButtonLink>
             </div>

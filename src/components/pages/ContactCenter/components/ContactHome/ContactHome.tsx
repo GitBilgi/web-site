@@ -59,11 +59,11 @@ export function ContactHome() {
       </div>
       {!isMobile ? (
         <div className="container2">
-          <div className="content-image"></div>
+          <S.Image />
         </div>
       ) : (
         <div className="container2-mobile">
-          <div className="content-image"></div>
+          <S.Image2 />
         </div>
       )}
     </S.ContainerHome>

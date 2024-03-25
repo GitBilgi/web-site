@@ -1,7 +1,11 @@
 'use client'
 
 import { useDeviceDetection } from '@/hooks/utils/useDeviceDetection'
-import { ContainerHome } from './BusinessHome.Style'
+import {
+  ContainerHome,
+  ImageContainer,
+  ImageContainer2
+} from './BusinessHome.Style'
 import { Heading } from '@/components/core/Typography/Heading'
 import { Paragraph } from '@/components/core/Typography/Paragraph'
 import { Button } from '@/components/core/Buttons/Button'
@@ -53,17 +57,17 @@ export function BusinessHome() {
           </div>
           <div className="extra-infos">
             <Icon IconRender={CheckIcon} mode="primary" size="sm"></Icon>
-            <Paragraph size="sm">Terceira Vantagem</Paragraph>
+            <Paragraph size="sm">Transforme Insights em impacto</Paragraph>
           </div>
         </div>
       </div>
       {!isMobile ? (
         <div className="container2">
-          <div className="content-image"></div>
+          <ImageContainer />
         </div>
       ) : (
         <div className="container2-mobile">
-          <div className="content-image"></div>
+          <ImageContainer2 />
         </div>
       )}
     </ContainerHome>

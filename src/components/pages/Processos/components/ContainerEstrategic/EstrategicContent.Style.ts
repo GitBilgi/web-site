@@ -3,7 +3,6 @@ import styled from 'styled-components'
 export const ProcessosHome = styled.div`
   width: 100%;
   display: flex;
-  max-height: 720px;
   flex-direction: row;
   justify-content: center;
 
@@ -82,7 +81,6 @@ export const ProcessosHome = styled.div`
 
   .container2-mobile {
     width: 100%;
-    height: 375px;
     display: flex;
     background-color: #f2f4f7;
   }
@@ -120,4 +118,18 @@ export const ProcessosHome = styled.div`
       display: none;
     }
   }
+`
+export const Image = styled.div`
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: top;
+  background-image: url('img/GerenciamentoEstratégico.jpg');
+`
+export const Image2 = styled.div`
+  width: 100%;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  background-image: url('img/GerenciamentoEstratégico.jpg');
 `

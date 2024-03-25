@@ -43,25 +43,27 @@ export function ContainerEstrategic() {
         <div className="extra">
           <div className="extra-infos">
             <Icon IconRender={CheckIcon} mode="primary" size="sm"></Icon>
-            <Paragraph size="sm">Dashboard personalizados</Paragraph>
+            <Paragraph size="sm">Tomada de Decisões</Paragraph>
           </div>
           <div className="extra-infos">
             <Icon IconRender={CheckIcon} mode="primary" size="sm"></Icon>
-            <Paragraph size="sm">Dashboard personalizados</Paragraph>
+            <Paragraph size="sm">Eficiência Operacional</Paragraph>
           </div>
           <div className="extra-infos">
             <Icon IconRender={CheckIcon} mode="primary" size="sm"></Icon>
-            <Paragraph size="sm">Dashboard personalizados</Paragraph>
+            <Paragraph size="sm">
+              Fortalecimento da Posição Competitiva
+            </Paragraph>
           </div>
         </div>
       </div>
       {!isMobile ? (
         <div className="container2">
-          <div className="content-image"></div>
+          <S.Image />
         </div>
       ) : (
         <div className="container2-mobile">
-          <div className="content-image"></div>
+          <S.Image2 />
         </div>
       )}
     </S.ProcessosHome>

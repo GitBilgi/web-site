@@ -1,3 +1,5 @@
+'use client'
+
 import styled from 'styled-components'
 
 export const ContainerHome = styled.div`
@@ -121,4 +123,18 @@ export const ContainerHome = styled.div`
       }
     }
   }
+`
+export const ImageContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: bottom left;
+  background-image: url('img/BI.jpg');
+`
+export const ImageContainer2 = styled.div`
+  width: 100%;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  background-image: url('img/BI.jpg');
 `

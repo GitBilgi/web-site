@@ -119,3 +119,18 @@ export const ContainerHome = styled.div`
     }
   }
 `
+export const Image = styled.div`
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url('img/ContactCenter.jpg');
+`
+
+export const Image2 = styled.div`
+  width: 100%;
+  height: 180px;
+  background-size: cover;
+  background-position: top;
+  background-image: url('img/ContactCenter.jpg');
+`
