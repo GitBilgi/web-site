@@ -10,7 +10,7 @@ export const SectionDados = styled.div`
   background-color: #f9fafb;
 
   .text {
-    height: 212px;
+    height: 100%;
     display: flex;
     max-width: 1280px;
     padding-top: 128px;
@@ -68,6 +68,7 @@ export const SectionDados = styled.div`
     height: 910px;
     display: flex;
     align-items: center;
+    padding-bottom: 70px;
     flex-direction: column;
     justify-content: center;
 
@@ -79,20 +80,23 @@ export const SectionDados = styled.div`
   }
   .content-container {
     display: flex;
-    height: 512px;
-    max-width: 768px;
+    height: 750px;
+    max-width: 1000px;
     align-items: center;
-    border-radius: 10px;
     justify-content: center;
 
     .image {
-      max-width: 757px;
-      max-height: 502px;
-      border-radius: 10px;
+      max-width: 1100px;
+      max-height: 700px;
     }
 
     .div-button {
       padding-top: 64px;
+    }
+
+    iframe {
+      width: 1100px;
+      height: 690px;
     }
 
     @media (max-width: 768px) {
@@ -106,12 +110,15 @@ export const SectionDados = styled.div`
         display: flex;
         max-height: 100%;
       }
+      iframe {
+        height: 270px;
+      }
     }
   }
   .card-container {
     gap: 32px;
     width: 100%;
-    height: auto;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,8 +144,10 @@ export const SectionDados = styled.div`
     width: 384px;
     height: 178px;
     display: flex;
+    padding-top: 30px;
     text-align: center;
     align-items: center;
+    padding-bottom: 50px;
     flex-direction: column;
     justify-content: center;
   }

@@ -112,4 +112,13 @@ export const Container = styled.div`
       max-width: 1035px;
     }
   }
+
+  .logoIXC {
+    width: 26px;
+    height: 26px;
+  }
+  .logoIOB {
+    width: 35px;
+    height: 20px;
+  }
 `

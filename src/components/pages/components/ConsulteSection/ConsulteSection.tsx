@@ -25,9 +25,6 @@ export function ConsultingSection() {
             >
               Agendar Chamada
             </Button>
-            <Button button_size="xxl" styles="secondary" className="button">
-              Conheça os Planos
-            </Button>
           </div>
         </div>
       </div>

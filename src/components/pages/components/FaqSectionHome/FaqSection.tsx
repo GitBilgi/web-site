@@ -3,7 +3,7 @@ import { Heading } from '@/components/core/Typography/Heading'
 import { SectionFaq } from './FaqSection.Style'
 import { Paragraph } from '@/components/core/Typography/Paragraph'
 import { FaqItem } from '@/components/core/FaqItem'
-import { ItemFaq } from './FacSection.interface'
+import { ItemFaq } from './FaqSection.interface'
 
 export function FaqSection() {
   return (
@@ -14,7 +14,7 @@ export function FaqSection() {
         </div>
         <div className="subtitle">
           <Paragraph size="md">
-            Tudo o que você precisa saber sobre o produto e o faturamento.
+            Tudo o que você precisa saber sobre os serviços e o faturamento.
           </Paragraph>
         </div>
       </div>

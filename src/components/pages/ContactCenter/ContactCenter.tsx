@@ -2,7 +2,7 @@
 
 import { CarouselSupport } from '../components/CarouselAvaliation'
 import { ConsultingSection } from '../components/ConsulteSection'
-import { FaqSection } from '../components/FaqSection'
+import { FaqSectionContact } from '../components/FaqSectionContact'
 import { SocialSection } from '../components/SocialSection'
 import { ContactHome } from './components/ContactHome/ContactHome'
 // import { Atendimento } from './components/ContainerAtendimento'
@@ -36,7 +36,7 @@ export function ContactCenterPage() {
 
       <CarouselSupport />
 
-      <FaqSection />
+      <FaqSectionContact />
 
       <ConsultingSection />
     </>

@@ -33,13 +33,13 @@ export function Footer() {
               </Heading>
             </div>
             <div className="produtos">
-              <ButtonLink link="/" mode="gray" size="md">
+              <ButtonLink link="/processos" mode="gray" size="md">
                 Gestão de Processos
               </ButtonLink>
-              <ButtonLink link="/" mode="gray" size="md">
+              <ButtonLink link="/business-inteligence" mode="gray" size="md">
                 Business Inteligente
               </ButtonLink>
-              <ButtonLink link="/" mode="gray" size="md">
+              <ButtonLink link="/contact-center" mode="gray" size="md">
                 Atendimento
               </ButtonLink>
             </div>
@@ -53,9 +53,6 @@ export function Footer() {
             <div className="produtos">
               <ButtonLink link="/form" mode="gray" size="md">
                 Contato
-              </ButtonLink>
-              <ButtonLink link="/" mode="gray" size="md">
-                Sobre Nós
               </ButtonLink>
             </div>
           </div>
