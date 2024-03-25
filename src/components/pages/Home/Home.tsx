@@ -6,7 +6,7 @@ import { ContainerHome } from './components/ContainerHome'
 import { FeatureSection } from './components/ContainerFeatures'
 import { ContainerMaps } from './components/ContainerMaps'
 import { CarouselSupport } from '../components/CarouselAvaliation'
-import { FaqSection } from '../components/FaqSection'
+import { FaqSection } from '../components/FaqSectionHome'
 import { ConsultingSection } from '../components/ConsulteSection'
 
 export function HomePage() {
