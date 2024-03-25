@@ -15,7 +15,7 @@ export const NavForm: INavForm[] = [
   },
   {
     link: '/business-inteligence',
-    children: 'Business Inteligence'
+    children: 'Business Intelligence'
   },
   {
     link: '/contact-center',

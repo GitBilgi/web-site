@@ -19,7 +19,7 @@ export function BusinessHome() {
       <div className="container1">
         <div className="content">
           <Heading size="xxs" className="subtitle">
-            Business Inteligence
+            Business Intelligence
           </Heading>
           <Heading size="lg" className="title">
             Explore o BI mais completo do mercado
