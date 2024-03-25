@@ -34,6 +34,6 @@ export const ItemFaq: FaqItens[] = [
     question:
       'Como as ferramentas de BI podem ajudar na identificação oportunidades de crescimento para minha empresa?',
     response:
-      'As ferramentas de BI podem ajudar na identificação de tendências de mercado e oportunidades de crescimento para sua empresa ao analisar e visualizar grandes volumes de dados de mercado, comportamento do cliente, concorrência e outros fatores relevantes. Com recursos como análise de séries temporais, modelagem preditiva e mineração de dados, o BI fornecer uma visão ampla do ambiente de negócios, facilitando a identificação de necessidades no mercado e o desenvolvimento de estratégias de crescimento e expansão.'
+      'As ferramentas de BI podem ajudar na identificação de tendências de mercado e oportunidades de crescimento para sua empresa ao analisar e visualizar grandes volumes de dados de mercado, comportamento do cliente, concorrência e outros fatores relevantes. Com recursos como análise de séries temporais, modelagem preditiva e mineração de dados, o BI fornece uma visão ampla do ambiente de negócios, facilitando a identificação de necessidades no mercado e o desenvolvimento de estratégias de crescimento e expansão.'
   }
 ]

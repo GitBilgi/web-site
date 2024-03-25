@@ -97,7 +97,7 @@ export function PrivacidadePage() {
                 referência a um identificador, como por exemplo, um nome, um
                 número de identificação, dados de localização, identificadores
                 por via electrónica ou a um ou mais elementos específicos de
-                identidade física, fisiológica, genética, mental, económica,
+                identidade física, fisiológica, genética, mental, econômica,
                 cultural, ou social dessa pessoa singular.
               </Paragraph>
             </div>
@@ -120,7 +120,7 @@ export function PrivacidadePage() {
             </div>
             <div className="paragraph">
               <Paragraph size="md">
-                A Bilgi no âmbito da sua actividade procede à recolha e ao
+                A Bilgi no âmbito da sua atividade procede à recolha e ao
                 tratamento de dados pessoais, como o nome, o número de
                 identificação fiscal, o contacto telefónico, o email, a
                 quantidade de clientes e o sistema utilizado.
@@ -180,7 +180,7 @@ export function PrivacidadePage() {
             <div className="paragraph">
               <Paragraph size="md">
                 Efeitos de Marketing e Vendas, como por exemplo: campanhas de
-                marketing, eventos, promoções, informação sobre novos ou actuais
+                marketing, eventos, promoções, informação sobre novos ou atuais
                 serviços e/ou produtos, inquéritos de satisfação.
               </Paragraph>
             </div>
@@ -210,8 +210,8 @@ export function PrivacidadePage() {
             </div>
             <div className="paragraph">
               <Paragraph size="md">
-                Quando o tratamento de dados pessoais corresponda a um interesse
-                legitimo, como por exemplo o tratamento de dados para melhoria
+                Quando o tratamento de dados pessoais corresponde a um interesse
+                legítimo, como por exemplo o tratamento de dados para melhoria
                 de qualidade de serviço, a detecção de fraude etc.
               </Paragraph>
             </div>
@@ -247,7 +247,7 @@ export function PrivacidadePage() {
                 do serviço pela Bilgi ou para o cumprimento de obrigações
                 legais), o direito de oposição à utilização dos mesmos para fins
                 comerciais pela Bilgi e à retirada do consentimento, sem que tal
-                comprometa a licitude do tratamento efetuado ao abrigo desse
+                comprometa a licitude do tratamento efetuado ao abrigo deste
                 consentimento, bem como o direito à portabilidade dos dados.
               </Paragraph>
               <Paragraph size="md">

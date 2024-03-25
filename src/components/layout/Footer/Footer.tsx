@@ -63,7 +63,7 @@ export function Footer() {
               </Heading>
             </div>
             <div className="produtos">
-              <ButtonLink link="/" mode="gray" size="md">
+              <ButtonLink link="/politica-de-privacidade" mode="gray" size="md">
                 Política de Privacidade
               </ButtonLink>
               <ButtonLink link="/" mode="gray" size="md">
