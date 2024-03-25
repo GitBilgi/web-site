@@ -118,7 +118,7 @@ export const Container = styled.div`
     height: 26px;
   }
   .logoIOB {
-    width: 35px;
-    height: 20px;
+    width: 45px;
+    height: 15px;
   }
 `
