@@ -1,6 +1,6 @@
 'use client'
 
-import { CarouselSupport } from '../components/CarouselAvaliation'
+// import { CarouselSupport } from '../components/CarouselAvaliation'
 import { ConsultingSection } from '../components/ConsulteSection'
 import { FaqSectionContact } from '../components/FaqSections/FaqSectionContact'
 import { SocialSection } from '../components/SocialSection'
@@ -34,7 +34,7 @@ export function ContactCenterPage() {
 
       <ContainerScroll />
 
-      <CarouselSupport />
+      {/* <CarouselSupport /> */}
 
       <FaqSectionContact />
 

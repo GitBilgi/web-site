@@ -1,6 +1,6 @@
 'use client'
 
-import { CarouselSupport } from '../components/CarouselAvaliation'
+// import { CarouselSupport } from '../components/CarouselAvaliation'
 import { ConsultingSection } from '../components/ConsulteSection'
 import { Dados } from '../components/DadosSemDestaques'
 import { FaqSectionBusiness } from '../components/FaqSections/FaqSectionBusiness'
@@ -31,7 +31,7 @@ export function Business() {
 
       <Scroll />
 
-      <CarouselSupport />
+      {/* <CarouselSupport /> */}
 
       <FaqSectionBusiness />
 

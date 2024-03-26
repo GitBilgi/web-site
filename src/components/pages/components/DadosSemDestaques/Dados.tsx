@@ -9,6 +9,9 @@ import 'animate.css'
 import { useEffect, useRef } from 'react'
 import { useDeviceDetection } from '@/hooks/utils/useDeviceDetection'
 
+import Build from '@/images/build.png'
+import Image from 'next/image'
+
 export function Dados() {
   const router = useRouter()
 
@@ -66,11 +69,17 @@ export function Dados() {
         <div className="container">
           <div className="content-container">
             <div className="image" ref={containerRef}>
-              <iframe
+              {/* <iframe
                 title="atividade"
                 width="800"
                 height="500"
                 src="https://app.powerbi.com/view?r=eyJrIjoiNTViZTliNWEtNTA1Mi00MzI5LWIwMmItZDA1YTllNDlhNTQxIiwidCI6IjYzOWQ1NmI2LTlhNWMtNDUxNC1iODFjLWZkMzgxMTY2MzFlYiJ9"
+              /> */}
+
+              <Image
+                src={Build}
+                alt="imagem de um BI fictício"
+                className="image"
               />
             </div>
           </div>
@@ -89,11 +98,17 @@ export function Dados() {
         <div className="container">
           <div className="content-container">
             <div className="image" ref={containerRef}>
-              <iframe
+              {/* <iframe
                 title="atividade"
                 width="500"
                 height="280"
                 src="https://app.powerbi.com/view?r=eyJrIjoiNTViZTliNWEtNTA1Mi00MzI5LWIwMmItZDA1YTllNDlhNTQxIiwidCI6IjYzOWQ1NmI2LTlhNWMtNDUxNC1iODFjLWZkMzgxMTY2MzFlYiJ9"
+              /> */}
+
+              <Image
+                src={Build}
+                alt="imagem de um BI fictício"
+                className="image"
               />
             </div>
           </div>
