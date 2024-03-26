@@ -7,7 +7,7 @@ import BrakoutRed from '@/images/BreakoutRed.png'
 import Image from 'next/image'
 /*Images*/
 
-// import Build from '@/images/build.png'
+import Build from '@/images/build.png'
 import { Heading } from '@/components/core/Typography/Heading'
 import { Paragraph } from '@/components/core/Typography/Paragraph'
 import { Button } from '@/components/core/Buttons/Button'
@@ -76,11 +76,17 @@ export function DadosSection() {
         <div className="container">
           <div className="content-container">
             <div className="image" ref={containerRef}>
-              <iframe
+              {/* <iframe
                 title="atividade"
                 width="800"
                 height="500"
                 src="https://app.powerbi.com/view?r=eyJrIjoiNTViZTliNWEtNTA1Mi00MzI5LWIwMmItZDA1YTllNDlhNTQxIiwidCI6IjYzOWQ1NmI2LTlhNWMtNDUxNC1iODFjLWZkMzgxMTY2MzFlYiJ9"
+              /> */}
+
+              <Image
+                src={Build}
+                alt="imagem de um BI fictício"
+                className="image"
               />
             </div>
           </div>
@@ -99,11 +105,16 @@ export function DadosSection() {
         <div className="container">
           <div className="content-container">
             <div className="image" ref={containerRef}>
-              <iframe
+              {/* <iframe
                 title="atividade"
                 width="500"
                 height="280"
                 src="https://app.powerbi.com/view?r=eyJrIjoiNTViZTliNWEtNTA1Mi00MzI5LWIwMmItZDA1YTllNDlhNTQxIiwidCI6IjYzOWQ1NmI2LTlhNWMtNDUxNC1iODFjLWZkMzgxMTY2MzFlYiJ9"
+              /> */}
+              <Image
+                src={Build}
+                alt="imagem de um BI fictício"
+                className="image"
               />
             </div>
           </div>

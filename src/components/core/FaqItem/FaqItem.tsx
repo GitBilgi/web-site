@@ -41,6 +41,7 @@ export function FaqItem({
         tabIndex={0}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
+        onClick={() => setIsOpen(!isOpen)}
       >
         <div className="question">
           <Subtitle size="sm">{question}</Subtitle>
