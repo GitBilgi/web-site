@@ -1,0 +1,1 @@
+export { FaqSectionHome } from './FaqSection'

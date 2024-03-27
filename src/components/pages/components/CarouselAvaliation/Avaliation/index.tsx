@@ -1,0 +1,1 @@
+export { Avaliation } from './Avaliation'

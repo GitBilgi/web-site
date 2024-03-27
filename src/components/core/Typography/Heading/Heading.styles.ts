@@ -1,15 +1,31 @@
 import styled, { css } from 'styled-components'
 
 interface Props {
-  size: 'xs' | 'sm' | 'md' | 'lg'
+  mode?: 'dark' | 'light'
+  size: 'xxs' | 'xs' | 'sm' | 'md' | 'lg'
 }
 
 export const Container = styled.div<Props>`
   ${props => css`
-    color: ${props.theme.colors.gray.gray_900};
+    ${(!props.mode || props.mode === 'dark') &&
+    css`
+      color: ${props.theme.colors.gray.gray_900};
+    `}
+
+    ${props.mode === 'light' &&
+    css`
+      color: ${props.theme.colors.gray.gray_500};
+    `}
+
     font-family: ${props.theme.font.family.base};
     font-weight: ${props.theme.font.weight.semi_bold};
     line-height: ${props.theme.line.height.display.md};
+
+    ${props.size === 'xxs' &&
+    css`
+      font-size: ${props.theme.font.size.text.sm};
+      line-height: ${props.theme.line.height.text.sm};
+    `}
 
     ${props.size === 'xs' &&
     css`

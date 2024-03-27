@@ -1,0 +1,1 @@
+export { Recursos } from './Recursos'
