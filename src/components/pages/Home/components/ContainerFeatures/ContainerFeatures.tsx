@@ -46,7 +46,7 @@ export function FeatureSection() {
             <div className="heading-feature">
               <div className="content-heading">
                 <Heading size="sm" mode="dark">
-                  Gestão Simplificada de Processos
+                  Gerenciamento Estratégico
                 </Heading>
               </div>
               <div className="paragraph-feature">
@@ -105,7 +105,7 @@ export function FeatureSection() {
             <div className="heading-feature">
               <div className="content-heading">
                 <Heading size="sm" mode="dark">
-                  Call Center
+                  Contact Center
                 </Heading>
               </div>
               <div className="paragraph-feature">

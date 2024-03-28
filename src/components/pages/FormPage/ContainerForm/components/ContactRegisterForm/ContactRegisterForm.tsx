@@ -149,7 +149,7 @@ export function ContactRegisterForm() {
                 as={CheckBox}
                 checked={values.gestaoProcessos}
                 name="gestaoProcessos"
-                description="Gestão de Processos"
+                description="Gerenciamento Estratégico"
               />
             </Col>
           </Row>
@@ -160,7 +160,7 @@ export function ContactRegisterForm() {
                 as={CheckBox}
                 checked={values.businessInteligence}
                 name="businessInteligence"
-                description="Business Inteligence"
+                description="Business Intelligence"
               />
             </Col>
           </Row>
