@@ -11,7 +11,7 @@ import Union from '@/images/Union.png'
 import Logo from '@/images/Logo.png'
 import Instagram from '@/images/instagram.png'
 import Linkedin from '@/images/linkedin.png'
-import Facebook from '@/images/facebook.png'
+// import Facebook from '@/images/facebook.png'
 
 export function Footer() {
   return (
@@ -37,10 +37,10 @@ export function Footer() {
                 Gerenciamento Estratégico
               </ButtonLink>
               <ButtonLink link="/business-inteligence" mode="gray" size="md">
-                Business Inteligente
+                Business Intelligence
               </ButtonLink>
               <ButtonLink link="/contact-center" mode="gray" size="md">
-                Atendimento
+                Contact Center
               </ButtonLink>
             </div>
           </div>
@@ -96,13 +96,13 @@ export function Footer() {
             >
               <Image src={Linkedin} alt="Icon Linkedin" />
             </a>
-            <a
+            {/* <a
               href="https://m.facebook.com/BilgiBpo/"
               target="_blank"
               rel="noreferrer"
             >
               <Image src={Facebook} alt="Icon Facebook" />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

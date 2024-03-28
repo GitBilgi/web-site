@@ -30,7 +30,7 @@ export function ContainerForm() {
           <div className="paragraph">
             <Paragraph size="md">
               Você pode entrar em contato conosco a qualquer momento pelo e-mail{' '}
-              <a href="/">email@bilgi.com</a>
+              <a href="/">contato@bilgi.com.br</a>
             </Paragraph>
           </div>
         </div>
