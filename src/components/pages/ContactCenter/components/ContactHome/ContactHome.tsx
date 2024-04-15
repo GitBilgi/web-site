@@ -38,9 +38,9 @@ export function ContactHome() {
           >
             Agendar Chamada
           </Button>
-          <Button button_size="xxl" styles="secondary" className="button">
+          {/* <Button button_size="xxl" styles="secondary" className="button">
             Explorar
-          </Button>
+          </Button> */}
         </div>
         <div className="extra">
           <div className="extra-infos">
