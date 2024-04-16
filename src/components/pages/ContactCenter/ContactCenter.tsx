@@ -1,5 +1,6 @@
 'use client'
 
+import { Header } from '@/components/layout/Header'
 // import { CarouselSupport } from '../components/CarouselAvaliation'
 import { ConsultingSection } from '../components/ConsulteSection'
 import { FaqSectionContact } from '../components/FaqSections/FaqSectionContact'
@@ -12,10 +13,13 @@ import { ContentRecurso } from './components/ContainerRecursos'
 import { ContainerScroll } from './components/ContainerScroll'
 // import { Support } from './components/ContainerSupport'
 import { Service } from './components/Serviços'
+import { Footer } from '@/components/layout/Footer'
 
 export function ContactCenterPage() {
   return (
     <>
+      <Header />
+
       <ContactHome />
 
       <SocialSection />
@@ -39,6 +43,8 @@ export function ContactCenterPage() {
       <FaqSectionContact />
 
       <ConsultingSection />
+
+      <Footer />
     </>
   )
 }

@@ -128,7 +128,7 @@ export const ImageContainer = styled.div`
   width: 100%;
   height: 100%;
   background-size: cover;
-  background-position: bottom left;
+  background-position: center;
   background-image: url('img/BI.jpg');
 `
 export const ImageContainer2 = styled.div`

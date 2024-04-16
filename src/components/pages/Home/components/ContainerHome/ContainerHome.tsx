@@ -41,9 +41,9 @@ export function ContainerHome() {
           >
             Agendar Chamada
           </Button>
-          <Button button_size="xxl" styles="secondary">
+          {/* <Button button_size="xxl" styles="secondary">
             Explorar
-          </Button>
+          </Button> */}
         </div>
         <div className="integrations">
           <Paragraph size="sm">Integrações Inteligentes</Paragraph>
