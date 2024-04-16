@@ -7,10 +7,14 @@ import { Features } from './components/ContainerFeatures'
 // import { CarouselSupport } from '../components/CarouselAvaliation'
 import { ConsultingSection } from '../components/ConsulteSection'
 import { FaqSectionProcessos } from '../components/FaqSections/FaqSectionProcessos'
+import { Header } from '@/components/layout/Header'
+import { Footer } from '@/components/layout/Footer'
 
 export function ProcessosPage() {
   return (
     <>
+      <Header />
+
       <ContainerEstrategic />
 
       <SocialSection />
@@ -24,6 +28,8 @@ export function ProcessosPage() {
       <FaqSectionProcessos />
 
       <ConsultingSection />
+
+      <Footer />
     </>
   )
 }

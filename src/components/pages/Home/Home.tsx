@@ -8,10 +8,14 @@ import { ContainerMaps } from './components/ContainerMaps'
 // import { CarouselSupport } from '../components/CarouselAvaliation'
 import { FaqSectionHome } from '../components/FaqSections/FaqSectionHome'
 import { ConsultingSection } from '../components/ConsulteSection'
+import { Header } from '@/components/layout/Header'
+import { Footer } from '@/components/layout/Footer'
 
 export function HomePage() {
   return (
     <>
+      <Header />
+
       <ContainerHome />
 
       <SocialSection />
@@ -27,6 +31,8 @@ export function HomePage() {
       <FaqSectionHome />
 
       <ConsultingSection />
+
+      <Footer />
     </>
   )
 }
