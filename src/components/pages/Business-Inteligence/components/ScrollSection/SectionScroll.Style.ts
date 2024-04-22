@@ -27,8 +27,8 @@ export const ImageContainer = styled.div`
   height: 100%;
   position: absolute;
   background-size: cover;
-  background-position: bottom;
+  background-position: top;
   /* background-attachment: fixed;
   background-repeat: no-repeat; */
-  background-image: url('/img/ImageForm.png');
+  background-image: url('/img/ImageForm.jpg');
 `

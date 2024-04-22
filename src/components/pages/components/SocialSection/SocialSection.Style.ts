@@ -3,7 +3,6 @@ import styled from 'styled-components'
 export const SectionSocial = styled.div`
   gap: 32px;
   width: 100%;
-  height: 100%;
   display: flex;
   padding: 20px 20px;
   align-items: center;

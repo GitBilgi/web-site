@@ -27,7 +27,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/components/pages/Home/components/GoogleMaps/GoogleMaps.jsx"
+    "src/components/pages/Home/components/GoogleMaps/GoogleMaps.jsx",
+    "src/components/pages/Demo-Bi/Demobi.js"
   ],
   "exclude": ["node_modules"]
 }
