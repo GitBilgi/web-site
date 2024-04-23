@@ -6,7 +6,8 @@ import { Paragraph } from '@/components/core/Typography/Paragraph'
 
 import Image from 'next/image'
 
-import ImageForm from '@/images/ImageFormulario.png'
+import ImageForm from '@/images/ImageFormulario.jpg'
+
 import { ContactRegisterForm } from './components/ContactRegisterForm'
 
 export function ContainerForm() {
