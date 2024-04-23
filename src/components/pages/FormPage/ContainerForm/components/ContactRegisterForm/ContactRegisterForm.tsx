@@ -1,6 +1,10 @@
 import { Field, Form, Formik } from 'formik'
 import { Col, Row } from 'react-bootstrap'
-import { initialValues, validationSchema } from './ContactRegisterForm.form'
+import {
+  ContactForm,
+  initialValues,
+  validationSchema
+} from './ContactRegisterForm.form'
 import { InputField } from '@/components/core/Form/Fields/InputField'
 import { Button } from '@/components/core/Buttons/Button'
 import { CheckBox } from '@/components/core/Form/Fields/CheckBox'
@@ -8,11 +12,22 @@ import { TextArea } from '@/components/core/Form/Fields/TextArea'
 import { cellPhoneNumberMask } from '@/components/pages/components/utils/FunctionMask'
 
 export function ContactRegisterForm() {
+  async function handleOnSubmit(formValues: ContactForm) {
+    const data = await fetch('http://localhost:3000/api/contacts', {
+      method: 'POST',
+      body: JSON.stringify(formValues),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+
+    console.log(data)
+  }
   return (
     <Formik
       initialValues={initialValues}
       validationSchema={validationSchema}
-      onSubmit={() => console.log(initialValues)}
+      onSubmit={handleOnSubmit}
     >
       {({ values, touched, errors, isValid, setFieldValue }) => (
         <Form>
