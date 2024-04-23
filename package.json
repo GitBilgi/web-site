@@ -31,7 +31,6 @@
     "eslint-plugin-react": "^7.33.2",
     "formik": "^2.4.5",
     "framer-motion": "^10.16.16",
-    "mysql": "^2.18.1",
     "next": "14.1.0",
     "polished": "^4.2.2",
     "react": "^18",
