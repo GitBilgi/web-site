@@ -8,7 +8,6 @@ import Image from 'next/image'
 import Jira from '@/images/jira.png'
 import LogoIOB from '@/images/LogoIOB.png'
 import LogoIxc from '@/images/LogoIXC.png'
-import GDrive from '@/images/g-drive.png'
 import logosci from '@/images/logosci.png'
 
 import Background from '@/images/background.png'
@@ -51,7 +50,6 @@ export function ContainerHome() {
           <div className="apps">
             <Image src={LogoIxc} alt="Logo IXC" className="logoIXC" />
             <Image src={LogoIOB} alt="Logo Stack" className="logoIOB" />
-            <Image src={GDrive} alt="Logo Google Drive" />
             <Image src={Jira} alt="Logo Jira" />
             <Image src={logosci} alt="Logo SCI" />
           </div>
