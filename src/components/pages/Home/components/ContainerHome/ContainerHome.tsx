@@ -9,6 +9,7 @@ import Jira from '@/images/jira.png'
 import LogoIOB from '@/images/LogoIOB.png'
 import LogoIxc from '@/images/LogoIXC.png'
 import logosci from '@/images/logosci.png'
+import google from '@/images/g-drive.png'
 
 import Background from '@/images/background.png'
 import BackgroundMobile from '@/images/BackgroundRight.png'
@@ -52,6 +53,7 @@ export function ContainerHome() {
             <Image src={LogoIOB} alt="Logo Stack" className="logoIOB" />
             <Image src={Jira} alt="Logo Jira" />
             <Image src={logosci} alt="Logo SCI" />
+            <Image src={google} alt="Google" />
           </div>
         </div>
         {!isMobile ? (
