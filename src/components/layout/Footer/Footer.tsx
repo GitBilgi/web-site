@@ -78,7 +78,7 @@ export function Footer() {
           <div className="direitos">
             <Image src={Union} alt="Icon Union" className="icon-union" />
             <Paragraph size="sm">
-              © 2024 Bilgi. Todos os direitos reservados.
+              © 2025 Bilgi. Todos os direitos reservados.
             </Paragraph>
           </div>
           <div className="media-icons">
