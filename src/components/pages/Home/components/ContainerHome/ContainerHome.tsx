@@ -47,7 +47,7 @@ export function ContainerHome() {
           </Button> */}
         </div>
         <div className="integrations">
-          <Paragraph size="sm">Integrações Inteligentes</Paragraph>
+          <Paragraph size="sm">Nova Integrações Inteligentes</Paragraph>
           <div className="apps">
             <Image src={LogoIxc} alt="Logo IXC" className="logoIXC" />
             <Image src={LogoIOB} alt="Logo Stack" className="logoIOB" />
