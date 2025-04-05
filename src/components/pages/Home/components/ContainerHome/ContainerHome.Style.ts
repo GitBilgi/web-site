@@ -121,4 +121,8 @@ export const Container = styled.div`
     width: 45px;
     height: 15px;
   }
+  .logosci {
+    width: 32px;
+    height: 32px;
+  }
 `
