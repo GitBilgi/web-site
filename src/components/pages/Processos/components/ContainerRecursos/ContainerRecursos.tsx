@@ -25,8 +25,8 @@ export function RecursosContent() {
             Garantimos resultados constantes
           </Heading>
           <Paragraph size="md" className="paragraph">
-            Organize e guie as tarefas importantes da sua empresa com
-            fluxogramas simples e procedimentos claros
+            Organize e administre as tarefas importantes da sua empresa com
+            fluxogramas simples, procedimentos claros e dados relevantes.
           </Paragraph>
         </div>
         <div className="container-cards">

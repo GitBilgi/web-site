@@ -11,11 +11,11 @@ export const NavForm: INavForm[] = [
   },
   {
     link: '/processos',
-    children: 'Gerenciamento Estratégico'
+    children: 'BPO de Controladoria'
   },
   {
     link: '/business-inteligence',
-    children: 'Business Intelligence'
+    children: 'Desenvolvimento'
   },
   {
     link: '/contact-center',

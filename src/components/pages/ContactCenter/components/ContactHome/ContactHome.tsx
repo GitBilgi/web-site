@@ -20,13 +20,13 @@ export function ContactHome() {
       <div className="container1">
         <div className="content">
           <Heading size="xxs" className="subtitle">
-            Contact Center
+            Contabilidade
           </Heading>
           <Heading size="lg" className="title">
-            Priorizamos o atendimento humanizado
+            Priorizamos o atendimento personalizado
           </Heading>
           <Paragraph size="md" className="paragraph">
-            Deixe suas dores de cabeça para nós.
+            Sua Gestão Contábil Real Time
           </Paragraph>
         </div>
         <div className="buttons">
@@ -45,11 +45,11 @@ export function ContactHome() {
         <div className="extra">
           <div className="extra-infos">
             <Icon IconRender={CheckIcon} mode="primary" size="sm"></Icon>
-            <Paragraph size="sm">“Suporte 24/7”</Paragraph>
+            <Paragraph size="sm">“Otimização Tributária”</Paragraph>
           </div>
           <div className="extra-infos">
             <Icon IconRender={CheckIcon} mode="primary" size="sm"></Icon>
-            <Paragraph size="sm">“Recuperação de Clientes”</Paragraph>
+            <Paragraph size="sm">“Recuperação de crédito tributário”</Paragraph>
           </div>
           <div className="extra-infos">
             <Icon IconRender={CheckIcon} mode="primary" size="sm"></Icon>

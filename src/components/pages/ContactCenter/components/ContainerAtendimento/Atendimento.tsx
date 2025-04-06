@@ -26,11 +26,14 @@ export function Atendimento() {
             />
           </div>
           <div className="heading">
-            <Heading size="md">Atendimento Integrado e Venda Passiva</Heading>
+            <Heading size="md">
+              Integração Inteligente: Como o KOD Transforma a Gestão Financeira
+              e Contábil
+            </Heading>
           </div>
           <div className="paragraph">
             <Paragraph size="lg">
-              Somos a melhor porta de entrada para seu cliente.
+              KOD: A Integração que Simplifica, Automação que Impulsiona.
             </Paragraph>
           </div>
         </div>
@@ -45,9 +48,14 @@ export function Atendimento() {
               />
 
               <Paragraph size="md" className="paragraph">
-                Facilitamos a jornada do seu cliente. Do suporte ao comercial,
-                fornecemos dados sobre planos, cadastros e ordens de serviço,
-                deixando tudo pronto para a instalação.
+                A integração do KOD ao ERP e à gestão contábil proporciona uma
+                automação completa de processos financeiros, garantindo maior
+                precisão e eficiência. Com dados centralizados e atualizados em
+                tempo real, a empresa ganha visibilidade total sobre seu fluxo
+                de caixa, contas a pagar e a receber, além de facilitar a
+                conformidade fiscal. O KOD reduz erros manuais, acelera a tomada
+                de decisões e otimiza o tempo da equipe, resultando em um
+                controle mais ágil, transparente e livre de complicações.
               </Paragraph>
             </div>
           </div>

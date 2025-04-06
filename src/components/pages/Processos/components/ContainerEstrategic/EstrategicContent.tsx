@@ -18,13 +18,13 @@ export function ContainerEstrategic() {
       <div className="container1">
         <div className="content">
           <Heading size="xxs" className="subtitle">
-            Gerenciamento Estratégico
+            BPO de Controladoria
           </Heading>
           <Heading size="lg" className="title">
             Deixamos tudo mais eficiente
           </Heading>
           <Paragraph size="md" className="paragraph">
-            Transformamos seus processos em aliados para o sucesso.
+            Transformamos seus dados e processos em aliados para o sucesso.
           </Paragraph>
         </div>
         <div className="buttons">

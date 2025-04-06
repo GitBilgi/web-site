@@ -34,13 +34,13 @@ export function Footer() {
             </div>
             <div className="produtos">
               <ButtonLink link="/processos" mode="gray" size="md">
-                Gerenciamento Estratégico
+                BPO de Controladoria
               </ButtonLink>
               <ButtonLink link="/business-inteligence" mode="gray" size="md">
-                Business Intelligence
+                Desenvolvimento
               </ButtonLink>
               <ButtonLink link="/contact-center" mode="gray" size="md">
-                Contact Center
+                Contabilidade
               </ButtonLink>
             </div>
           </div>

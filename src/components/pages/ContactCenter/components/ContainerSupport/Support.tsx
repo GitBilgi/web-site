@@ -23,11 +23,13 @@ export function Support() {
             <Icon IconRender={HeartIcon} size="lg" className="icon-customise" />
           </div>
           <div className="heading">
-            <Heading size="md">Suporte Nível 1 e 2, 24/7</Heading>
+            <Heading size="md">Consultoria Multidisciplinar</Heading>
           </div>
           <div className="paragraph">
             <Paragraph size="lg">
-              De pessoas para pessoas. Seu cliente é muito que apenas um numero.
+              Oferecemos consultoria especializada em diversas áreas, garantindo
+              soluções completas e integradas para o crescimento e sucesso de
+              sua empresa.
             </Paragraph>
           </div>
         </div>
@@ -41,27 +43,11 @@ export function Support() {
                 className="size"
               />
               <div className="content1">
-                <Heading size="sm">Atendimento em Horário Comercial</Heading>
+                <Heading size="sm">Atendimento Remoto</Heading>
                 <Paragraph size="md" className="paragraph">
-                  Atendimento disponível durante as horas regulares de
-                  funcionamento, proporcionando suporte nos períodos típicos de
-                  expediente.
-                </Paragraph>
-              </div>
-            </div>
-            <div className="textarea">
-              <Icon
-                IconRender={CheckCircleIcon}
-                size="md"
-                mode="primary"
-                className="size"
-              />
-              <div className="content1">
-                <Heading size="sm">Atendimento Full Time</Heading>
-                <Paragraph size="md" className="paragraph">
-                  Atendimento contínuo e ininterrupto, 24 horas por dia, 7 dias
-                  por semana, para suporte constante e acesso à equipe em tempo
-                  integral.
+                  Oferecemos suporte ágil e eficiente de forma remota,
+                  garantindo soluções rápidas e práticas para a sua empresa,
+                  onde quer que você esteja.
                 </Paragraph>
               </div>
             </div>
@@ -74,12 +60,29 @@ export function Support() {
               />
               <div className="content1">
                 <Heading size="sm">
-                  Atendimento em Horários Alternativos
+                  Atendimento Presencial com Consultoria
                 </Heading>
                 <Paragraph size="md" className="paragraph">
-                  Oferecemos suporte fora do horário comercial convencional,
-                  incluindo noites, fins de semana e feriados, para atender às
-                  necessidades flexíveis de nossos clientes.
+                  Proporcionamos atendimento presencial acompanhado de
+                  consultoria especializada, garantindo soluções personalizadas
+                  e um acompanhamento mais próximo para o sucesso da sua
+                  empresa.
+                </Paragraph>
+              </div>
+            </div>
+            <div className="textarea">
+              <Icon
+                IconRender={CheckCircleIcon}
+                size="md"
+                mode="primary"
+                className="size"
+              />
+              <div className="content1">
+                <Heading size="sm">Treinamentos Remotos e Presenciais</Heading>
+                <Paragraph size="md" className="paragraph">
+                  Oferecemos treinamentos personalizados, tanto remotos quanto
+                  presenciais, para capacitar sua equipe com as melhores
+                  práticas e soluções para o seu negócio.
                 </Paragraph>
               </div>
             </div>

@@ -27,12 +27,14 @@ export function Atualization() {
             />
           </div>
           <div className="heading">
-            <Heading size="md">Atualização de Planos</Heading>
+            <Heading size="md">
+              Resultado Baseado em Dados: Tomada de Decisão Estratégica
+            </Heading>
           </div>
           <div className="paragraph">
             <Paragraph size="lg">
-              A melhor forma de trazer seu cliente para o novo plano com baixo
-              custo e alta eficiência.
+              A Redução de Custos: Eficiência Operacional e Otimização de
+              Recursos
             </Paragraph>
           </div>
         </div>
@@ -47,8 +49,17 @@ export function Atualization() {
               />
 
               <Paragraph size="md" className="paragraph">
-                Conversamos com clientes usando planos antigos, trazendo ofertas
-                que os fazem querer ficar
+                A utilização de dados precisos e atualizados permite uma análise
+                mais eficaz do desempenho financeiro e operacional da empresa.
+                Ao coletar e analisar informações de diferentes fontes, como
+                vendas, fluxo de caixa, indicadores de desempenho (KPIs) e
+                custos operacionais, é possível tomar decisões mais assertivas.
+                Isso inclui identificar áreas de alto desempenho, pontos de
+                melhoria e potenciais oportunidades de crescimento. O uso de
+                dados permite projetar cenários, otimizar processos e prever
+                tendências de mercado, resultando em decisões estratégicas que
+                impactam positivamente os resultados financeiros e a
+                competitividade da empresa.
               </Paragraph>
             </div>
             <div className="textarea">
@@ -60,8 +71,16 @@ export function Atualization() {
               />
 
               <Paragraph size="md" className="paragraph">
-                Fazemos o upgrade de forma eficiente, otimizando o suporte no
-                dia-a-dia e aumentando o ticket médio.
+                A redução de custos não significa apenas cortar despesas, mas
+                sim melhorar a eficiência operacional. Ao analisar os dados de
+                forma detalhada, é possível identificar onde os recursos estão
+                sendo desperdiçados ou mal alocados. Isso pode envolver desde a
+                otimização de processos internos, melhoria no uso de tecnologia,
+                até renegociação de contratos com fornecedores. A implementação
+                de medidas para reduzir o desperdício de recursos e melhorar a
+                produtividade pode resultar em uma redução significativa dos
+                custos fixos e variáveis, proporcionando maior margem de lucro e
+                aumento da rentabilidade.
               </Paragraph>
             </div>
           </div>

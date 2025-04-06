@@ -21,10 +21,10 @@ export function ContentRecurso() {
             Recursos
           </Heading>
           <Heading size="lg" className="size">
-            Enxergamos os clientes de nossos clientes como pessoas
+            Aplicamos tecnologia para facilitar as integrações contábeis
           </Heading>
           <Paragraph size="md" className="paragraph">
-            Buscamos recuperação de clientes com atendimento de ponta a ponta.
+            Nosso atendimento de ponta a ponta.
           </Paragraph>
         </div>
         <div className="container-cards">
@@ -32,10 +32,13 @@ export function ContentRecurso() {
             <Icon IconRender={HeartIcon} size="sm"></Icon>
 
             <div className="text">
-              <Heading size="sm">Suporte e Atendimento Humanizado</Heading>
+              <Heading size="sm">
+                Suporte e Atendimento Contábil Humanizado
+              </Heading>
               <Paragraph size="md">
-                Atendemos seu cliente como uma pessoa, não apenas um número, com
-                suporte 24/7, em horário comercial e alternativo.
+                Tratamos seu negócio com a atenção que ele merece, oferecendo
+                suporte contábil em horários comerciais e alternativos, sempre
+                com a preocupação de entender suas necessidades de forma única.
               </Paragraph>
             </div>
           </div>
@@ -43,10 +46,10 @@ export function ContentRecurso() {
             <Icon IconRender={UserPlusIcon} size="sm"></Icon>
 
             <div className="text">
-              <Heading size="sm">Recuperação e Reversão Financeira</Heading>
+              <Heading size="sm">Recuperação de Crédito Tributário</Heading>
               <Paragraph size="md">
-                Recuperamos valores, revertendo cancelamentos e ajustando
-                débitos com precisão e eficácia estratégica.
+                Recuperamos créditos tributários, revertendo cancelamentos e
+                ajustando débitos com precisão e uma estratégia eficaz.
               </Paragraph>
             </div>
           </div>
@@ -56,8 +59,9 @@ export function ContentRecurso() {
             <div className="text">
               <Heading size="sm">Atualização de Planos Descomplicada</Heading>
               <Paragraph size="md">
-                Simplificamos upgrades, tornando ofertas atrativas para seus
-                clientes antigos e otimizando o suporte diário.
+                Adequamos seus planos para SCM e SVA, tornando as ofertas mais
+                atrativas para seus clientes antigos e otimizando o suporte
+                diário de forma simplificada.
               </Paragraph>
             </div>
           </div>
@@ -67,9 +71,10 @@ export function ContentRecurso() {
             <div className="text">
               <Heading size="sm">Atendimento Totalmente Personalizado</Heading>
               <Paragraph size="md">
-                Cada interação é adaptada às necessidades individuais,
-                proporcionando uma experiência única e satisfatória para o
-                cliente.
+                Somos uma das poucas contabilidades que oferece atendimento
+                presencial, adaptando cada interação às necessidades individuais
+                e proporcionando uma experiência única e satisfatória para todas
+                as empresas. cliente.
               </Paragraph>
             </div>
           </div>

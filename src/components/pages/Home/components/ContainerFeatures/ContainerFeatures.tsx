@@ -20,7 +20,7 @@ export function FeatureSection() {
         <div className="text">
           <div>
             <Subtitle size="sm" className="subtitle">
-              Por que a Bilgi Intelligence?
+              Por que a Bilgi?
             </Subtitle>
           </div>
           <div className="heading">
@@ -46,21 +46,21 @@ export function FeatureSection() {
             <div className="heading-feature">
               <div className="content-heading">
                 <Heading size="sm" mode="dark">
-                  Gerenciamento Estratégico
+                  BPO - Controladoria
                 </Heading>
               </div>
               <div className="paragraph-feature">
                 <Paragraph size="sm">
-                  Garanta resultados previsíveis e consistentes para sua empresa
-                  ao planejar e controlar os processos críticos. Utilizamos
-                  abordagens simples, como fluxogramas de tarefas e
-                  procedimentos padrão, para garantir eficiência operacional.
+                  O BPO (Business Process Outsourcing) de Controladoria oferece
+                  uma gestão estratégica completa dos processos financeiros da
+                  sua empresa. Ao contar com especialistas para controlar e
+                  monitorar indicadores financeiros, custos, e orçamentos.
                 </Paragraph>
               </div>
             </div>
             <div className="buttonlink">
               <ButtonLink link="/processos" mode="red" size="md">
-                Gerenciamento Estratégico
+                BPO de Controladoria
               </ButtonLink>
               <Icon size="xs" IconRender={ArrowRightIcon} mode="primary" />
             </div>
@@ -90,7 +90,7 @@ export function FeatureSection() {
             </div>
             <div className="buttonlink">
               <ButtonLink link="/business-inteligence" mode="red" size="md">
-                Business Intelligence
+                Desenvolvimento
               </ButtonLink>
               <Icon size="xs" IconRender={ArrowRightIcon} mode="primary" />
             </div>
@@ -105,21 +105,21 @@ export function FeatureSection() {
             <div className="heading-feature">
               <div className="content-heading">
                 <Heading size="sm" mode="dark">
-                  Contact Center
+                  Contabilidade
                 </Heading>
               </div>
               <div className="paragraph-feature">
                 <Paragraph size="sm">
-                  Descomplicamos o suporte ao cliente, indo diretamente até você
-                  para treinar sua equipe e solucionar desafios na busca por mão
-                  de obra. Nosso Contact Center oferece terceirização flexível,
-                  com planos para horário comercial e além.
+                  Levamos a contabilidade até sua empresa, treinando sua equipe
+                  e solucionando desafios fiscais e tributários. Nosso serviço
+                  de contabilidade oferece terceirização flexível, com planos
+                  para horários comerciais e além, tudo 100% personalizado.
                 </Paragraph>
               </div>
             </div>
             <div className="buttonlink">
               <ButtonLink link="/contact-center" mode="red" size="md">
-                Contact Center
+                Contabilidade
               </ButtonLink>
               <Icon size="xs" IconRender={ArrowRightIcon} mode="primary" />
             </div>
