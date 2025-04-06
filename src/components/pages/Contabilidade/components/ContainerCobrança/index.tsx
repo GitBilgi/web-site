@@ -1,1 +1,0 @@
-export { ChargeSection } from './Cobrança'

@@ -1,1 +1,0 @@
-export { Atualization } from './Atualization'

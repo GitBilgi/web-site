@@ -1,1 +1,0 @@
-export { ContentRecurso } from './ContainerRecursos'
