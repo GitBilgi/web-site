@@ -20,10 +20,10 @@ export function Contabilidade() {
       <div className="container1">
         <div className="content">
           <Heading size="xxs" className="subtitle">
-            Contabilidade
+            Contact Center
           </Heading>
           <Heading size="lg" className="title">
-            XXXXXXX
+            Priorizamos o atendimento humanizado
           </Heading>
           <Paragraph size="md" className="paragraph">
             Deixe suas dores de cabeça para nós.

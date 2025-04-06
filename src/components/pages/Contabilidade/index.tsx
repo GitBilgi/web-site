@@ -1,1 +1,1 @@
-export { ContactCenterPage } from './ContactCenter'
+export { Contabilidade } from './Contabilidade'

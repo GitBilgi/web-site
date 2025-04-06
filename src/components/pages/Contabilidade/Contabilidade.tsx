@@ -5,7 +5,8 @@ import { Header } from '@/components/layout/Header'
 import { ConsultingSection } from '../components/ConsulteSection'
 import { FaqSectionContact } from '../components/FaqSections/FaqSectionContact'
 import { SocialSection } from '../components/SocialSection'
-import { ContactHome } from './components/Contabilidade/Contabilidade'
+import { ContactHome } from './components/ContactHome/ContactHome'
+import { Contabilidade } from './components/Contabilidade/Contabilidade'
 // import { Atendimento } from './components/ContainerAtendimento'
 // import { Atualization } from './components/ContainerAtualization'
 // import { ChargeSection } from './components/ContainerCobrança'
@@ -15,7 +16,7 @@ import { ContainerScroll } from './components/ContainerScroll'
 import { Service } from './components/Serviços'
 import { Footer } from '@/components/layout/Footer'
 
-export function ContactCenterPage() {
+export function Contabilidade() {
   return (
     <>
       <Header />
