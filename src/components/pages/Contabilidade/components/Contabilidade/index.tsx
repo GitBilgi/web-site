@@ -1,0 +1,1 @@
+export { Contabilidade } from './Contabilidade'

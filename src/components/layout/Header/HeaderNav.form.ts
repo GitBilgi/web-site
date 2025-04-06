@@ -20,5 +20,9 @@ export const NavForm: INavForm[] = [
   {
     link: '/contact-center',
     children: 'Contabilidade'
+  },
+  {
+    link: '/contabilidade',
+    children: 'Contabilidade'
   }
 ]
